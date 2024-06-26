@@ -80,6 +80,15 @@ textarea:focus{
     -moz-appearance: textfield;
 }
 
+@keyframes Rotate{
+    0%{
+       transform: rotate(0deg);
+      }
+   100%{
+       transform: rotate(360deg);
+      }
+}
+
 /*Website Custom Style Css For Single Items Start Here*/
 
 /*Heading & Para Style Css*/
@@ -140,7 +149,7 @@ li{
     height: 50px;
     border-radius: 0px;
     padding: 5px 5px;
-    margin: 0;
+    margin: 0 10px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,40 +320,41 @@ section.banner-main-sec{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 200px 0 100px;
+    padding: 175px 0 75px;
     position: relative;
     z-index: 1;
     overflow: hidden;
 }
-.banner-main-sec .banner-main-content{
-    margin: 0 0 40px;
-}
+.banner-main-sec .banner-main-content{}
 .banner-main-content .heading-one{
-    color: #212121;
-    margin: 0 0 10px;
+    color: #fff;
+    margin: 0 0 20px;
 }
 .banner-main-content .heading-one span{
-    color: #F5B339;
+    color: #fff;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
     display: block;
+    position: relative;
+}
+.banner-main-content .heading-one span::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #FD5240;
+    width: 300px;
+    height: 5px;
+    display: block;
+    border-radius: 5px;
 }
 .banner-main-content p{
-    color: #5E5E5E;
-}
-.banner-main-content ul{
-    list-style: disc;
-    padding: 0 0px 0 20px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0;
-}
-.banner-main-content ul li{
-    font-family: "ProximaNova-Semibold";
-    color: #000;
-    margin: 0 10px 10px 0;
-    width: 47%;
+    color: #B9B8B8;
 }
 .banner-main-content .banner-brands{
-    margin: 20px 0;
+    margin: 30px 0;
 }
 .banner-brands .banner-brands-items{
     display: flex;
@@ -354,116 +364,106 @@ section.banner-main-sec{
     width: 125px;
     height: 40px;
     object-fit: scale-down;
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 0;
+}
+.banner-main-content .website-main-buttons{}
+.banner-main-content .website-main-buttons button.popup-btn{
+    background: #fff;
+    color: #05042D;
+    border: 2px solid #fff;
+}
+.banner-main-content .website-main-buttons button.popup-btn:hover{
+    background: #05042D;
+    color: #fff;
+    transform: scale(1.1);
+}
+.banner-main-content .website-main-buttons button.chat-btn{
+    background: #FD5240;
+    color: #fff;
+    border: 2px solid #FD5240;
+    width: 225px;
+}
+.banner-main-content .website-main-buttons button.chat-btn:hover{
+    background: #fff;
+    color: #FD5240;
+    transform: scale(1.1);
 }
 .banner-main-sec .banner-main-img{
     position: relative;
-    bottom: -200px;
-    z-index: -1;
-}
-.banner-main-img::before{
-    content: '';
-    position: absolute;
-    top: -200px;
-    left: 0;
-    background-image: url(../images/wikipedia-browse-img.webp);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 325px;
-    height: 325px;
-    display: block;
-    animation: Rotate 7s linear infinite;
 }
 .banner-main-img img{
     width: 100%;
     height: 100%;
 }
-.banner-main-sec .banner-main-form{
-    background: #1E1E1E;
-    border-radius: 100px;
-    padding: 20px 10px;
+.banner-main-img img.wikipedia-browse{
+    animation: Rotate 7s linear infinite;
 }
-.banner-main-form form{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.banner-main-img .banner-review-slider{
+    margin: -45% 0 0 0;
 }
-.banner-main-form .form-group{
-    width: 100%;
-    margin: 0 10px;
+.banner-review-slider .slick-arrow{
+    display: none !important;
 }
-.banner-main-form .form-group input{
-    background: #fff;
-    font-size: 16px;
-    color: #212121;
-    padding: 10px 20px;
-    width: 100%;
-    height: 60px;
-    border: none;
-    outline: none;
+.banner-main-img .banner-review-box{
+    background: #F6F5F5;
     border-radius: 50px;
+    padding: 50px 50px 50px 50px;
+    position: relative;
+    margin: 50px 80px 50px 50px;
+    z-index: 1;
 }
-.banner-main-form .form-group input::placeholder{
-    color: #A4A4A4;
+.banner-review-box .review-box-img{
+    position: absolute;
+    top: -50px;
+    left: -50px;
 }
-.banner-main-form .form-group button.submit-btn{
-    font-family: "Calibri-Bold";
-    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    border: 2px solid #FCC127;
-    color: #212121;
-    font-size: 18px;
-    width: 100%;
-    height: 60px;
-    border-radius: 50px;
-    padding: 8px 10px;
+.banner-review-box .review-box-img img{
+    width: 115px;
+    height: 115px;
+    border-radius: 100%;
+    border: 3px solid #fff;
+}
+.banner-review-box .review-box-content .heading-five{
+    color: #141414;
+    margin: 0 0 20px;
+}
+.banner-review-box .review-box-content p{
+    color: #676767;
+}
+.banner-review-box .review-rating-area{
+    background: #141414;
+    border: 1px solid #C9C9C9;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .3s ease-in-out;
+    padding: 20px 20px;
+    position: absolute;
+    bottom: -25px;
+    right: -80px;
 }
-.banner-main-form .form-group button.submit-btn:hover{
-    background-position: left bottom;
+.banner-review-box .review-rating-area img{
+    width: 100px;
+    height: 20px;
+}
+.review-rating-area .rating-star-icons{
+    display: flex;
+    gap: 2px;
+    margin: 0 0 0 10px;
+}
+.rating-star-icons img{
+    width: 18px !important;
+    height: 18px !important;
+    margin: 0;
 }
 /*Banner Main Section Css End Here*/
 
-/*Award Brands Section Css Start Here*/
-section.award-brands-wrap{
-    background-color: #1C1C1C;
-    padding: 50px 0px;
-    position: relative;
-    z-index: 1;
+/*Banner Bottom Section Css Start Here*/
+section.banner-bottom-wrap{
+    background-color: #141414;
+    padding: 30px 0px;
 }
-.award-brands-wrap::before{
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -10px;
-    background-image: url(../images/elements/yellow-circle.webp);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100% 100%;
-    width: 40px;
-    height: 40px;
-    z-index: -1;
-}
-.award-brands-wrap .award-brands-head{
-    text-align: center;
-    margin: 0 0 30px;
-}
-.award-brands-head .heading-two{
-    color: #FDFDFE;
-    margin: 0 0 10px;
-}
-.award-brands-head p{
-    color: #7D7D7D;
-}
-.award-brands-wrap .award-brands-slider{
+.banner-bottom-wrap .banner-bottom-slider{
     margin: 0 20px 0;
 }
-.award-brands-slider .slick-arrow{
+.banner-bottom-slider .slick-arrow{
     top: 25%;
     position: absolute;
     background: none;
@@ -472,20 +472,20 @@ section.award-brands-wrap{
     z-index: 9;
     display: none !important;
 }
-.award-brands-slider .slick-prev{
+.banner-bottom-slider .slick-prev{
     left: -15px;
 }
-.award-brands-slider .slick-prev:before{
+.banner-bottom-slider .slick-prev:before{
     content: '\f104';
     position: absolute;
     font-family: 'Font Awesome 6 Pro';
     font-size: 32px;
     color: #000;
 }
-.award-brands-slider .slick-next{
+.banner-bottom-slider .slick-next{
     right: -25px;
 }
-.award-brands-slider .slick-next:before{
+.banner-bottom-slider .slick-next:before{
     content: '\f105';
     position: absolute;
     font-family: 'Font Awesome 6 Pro';
@@ -493,16 +493,16 @@ section.award-brands-wrap{
     color: #000;
     right: 10px;
 }
-.award-brands-slider .award-brands-box{
+.banner-bottom-slider .banner-bottom-box{
     margin: 0 10px 0;
 }
-.award-brands-box img{
-    width: 100px;
+.banner-bottom-box img{
+    width: 175px;
     height: 100px;
     object-fit: contain;
     margin: 0 auto;
 }
-/*Award Brands Section Css End Here*/
+/*Banner Bottom Section Css End Here*/
 
 /*Unlock Story Section Css Start Here*/
 section.unlock-story-wrap{

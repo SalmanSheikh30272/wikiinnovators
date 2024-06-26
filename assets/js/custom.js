@@ -25,13 +25,26 @@
 // );
 //***** Lazy load JS End Here *****//
 
-//*****  Award Brands Slider JS Start Here *****//
-$('.award-brands-slider').slick({
+//***** Banner Main Slider JS Start Here *****//
+$('.banner-review-slider').slick({
   dots: false,
   arrows: false,
   infinite: true,
   speed: 500,
-  slidesToShow: 4,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2000,
+});
+//***** Banner Main Slider JS End Here *****//
+
+//*****  Award Brands Slider JS Start Here *****//
+$('.banner-bottom-slider').slick({
+  dots: false,
+  arrows: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 5,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 1000,

@@ -11,38 +11,55 @@ $page = 'home';
             <div class="row align-items-center justify-content-center">
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="banner-main-content">
-                        <h1 class="heading-one">2 Things!
-                            <span>Wreck Your Online Woes,</span>
-                            <span>Rule the Webosphere!</span>
+                        <h1 class="heading-one">
+                            <span>Welcome To Wikinnovators</span>
+                            Services for Wikipedia Page Creation
                         </h1>
-                        <ul>
-                            <li>Stress-Free Process </li>
-                            <li>Measurable Results</li>
-                            <li>Data-Driven Strategies </li>
-                            <li>Expert-Level Execution </li>
-                        </ul>
-                        <h2 class="heading-one">Turn Your Online Presence
-                            <span>from "Meh" To "Major”</span>
-                        </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <!-- Banner Brands Logos Include Here -->
                         <?php include 'includes/sections/banner-brands-logos.php'; ?>
                         <!-- Banner Brands Logos Include Here -->
+                        <div class="website-main-buttons">
+                            <button class="popup-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Get A Quote</button>
+                            <button class="chat-btn" onclick="<?php echo $locChatClick; ?>">Consult With Expert</button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="banner-main-img">
-                        <img src="assets/images/banner-men-img.webp" data-src="assets/images/banner-men-img.webp" alt="Banner Mobiles" width="100%" height="auto"    class="img-fluid">
-                    </div>
-                </div>
-                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                    <div class="banner-main-form">
-                        <!-- Banner Main Form Include Here -->
-                        <form action="https://leads.infinityprojectmanager.com/brand/wikithinkers/lead" method="GET">
-                            <input name="brand_name" type="hidden" value="wikithinkers.com">
-                            <input id="lead_area" name="modal_form" type="hidden" value="https://wikithinkers.com/">
-                            <?php include 'includes/sections/banner-main-form.php'; ?>
-                        </form>
-                        <!-- Banner Main Form Include Here -->
+                        <img src="assets/images/wikipedia-browse-img.png" data-src="assets/images/wikipedia-browse-img.png" alt="Wikipedia Browser" width="100%" height="auto" class="img-fluid wikipedia-browse">
+                        <div class="banner-review-slider">
+                            <div class="banner-review-box">
+                                <div class="review-box-img">
+                                    <img src="assets/images/testimonials-author-images/img-4.webp" data-src="assets/images/testimonials-author-images/img-4.webp" alt="Thumb" width="115" height="115" class="img-fluid">
+                                </div>
+                                <div class="review-box-content">
+                                    <h3 class="">Lorem Ipsum</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud magna aliqua magna aliqua.</p>
+                                </div>
+                                <div class="review-rating-area">
+                                    <img src="assets/images/banner-logos/sitejabber.png" data-src="assets/images/banner-logos/sitejabber.png" alt="Thumb" width="100" height="20" class="img-fluid">
+                                    <!-- Rating Star Icons Include Here -->
+                                    <?php include 'includes/sections/rating-star-icons.php'; ?>
+                                    <!-- Rating Star Icons Include Here -->
+                                </div>
+                            </div>
+                            <div class="banner-review-box">
+                                <div class="review-box-img">
+                                    <img src="assets/images/testimonials-author-images/img-1.webp" data-src="assets/images/testimonials-author-images/img-1.webp" alt="Thumb" width="115" height="115" class="img-fluid">
+                                </div>
+                                <div class="review-box-content">
+                                    <h3 class="">Lorem Ipsum</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud magna aliqua magna aliqua.</p>
+                                </div>
+                                <div class="review-rating-area">
+                                    <img src="assets/images/banner-logos/sitejabber.png" data-src="assets/images/banner-logos/sitejabber.png" alt="Thumb" width="100" height="20" class="img-fluid">
+                                    <!-- Rating Star Icons Include Here -->
+                                    <?php include 'includes/sections/rating-star-icons.php'; ?>
+                                    <!-- Rating Star Icons Include Here -->
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -50,19 +67,15 @@ $page = 'home';
     </section>
     <!-- Banner Main Section End Here -->
 
-    <!-- Award Brands Section End Here -->
-    <section class="award-brands-wrap">
-        <div class="container">
-            <div class="award-brands-head">
-                <h3 class="heading-two">Consistently Recognized for Excellence</h3>
-                <p>Our dedication to quality and client satisfaction has garnered prestigious awards, solidifying our position as the trusted choice for crafting impactful Wikipedia pages.</p>
-            </div>
-            <!-- Award Brand Slider Include Here -->
-            <?php include 'includes/sections/award-brand-slider.php'; ?>
-            <!-- Award Brand Slider Include Here -->
+    <!-- Banner Bottom Section End Here -->
+    <section class="banner-bottom-wrap">
+        <div class="container-fluid">
+            <!-- Banner Bottom Slider Include Here -->
+            <?php include 'includes/sections/banner-bottom-slider.php'; ?>
+            <!-- Banner Bottom Slider Include Here -->
         </div>
     </section>
-    <!-- Award Brands Section End Here -->
+    <!-- Banner Bottom Section End Here -->
 
     <!-- Unlock Story Section Start Here -->
     <section class="unlock-story-wrap">

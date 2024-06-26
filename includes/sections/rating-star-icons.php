@@ -1,7 +1,7 @@
-<div class="rating-icons">
-    <img src="assets/images/elements/rating-star-icon.webp" data-src="assets/images/elements/rating-star-icon.webp" alt="image" width="20" height="20" />
-    <img src="assets/images/elements/rating-star-icon.webp" data-src="assets/images/elements/rating-star-icon.webp" alt="image" width="20" height="20" />
-    <img src="assets/images/elements/rating-star-icon.webp" data-src="assets/images/elements/rating-star-icon.webp" alt="image" width="20" height="20" />
-    <img src="assets/images/elements/rating-star-icon.webp" data-src="assets/images/elements/rating-star-icon.webp" alt="image" width="20" height="20" />
-    <img src="assets/images/elements/rating-star-icon.webp" data-src="assets/images/elements/rating-star-icon.webp" alt="image" width="20" height="20" />
+<div class="rating-star-icons">
+    <img src="assets/images/elements/rating-star-icon.png" data-src="assets/images/elements/rating-star-icon.png" alt="icon" width="18" height="18" />
+    <img src="assets/images/elements/rating-star-icon.png" data-src="assets/images/elements/rating-star-icon.png" alt="icon" width="18" height="18" />
+    <img src="assets/images/elements/rating-star-icon.png" data-src="assets/images/elements/rating-star-icon.png" alt="icon" width="18" height="18" />
+    <img src="assets/images/elements/rating-star-icon.png" data-src="assets/images/elements/rating-star-icon.png" alt="icon" width="18" height="18" />
+    <img src="assets/images/elements/rating-star-icon.png" data-src="assets/images/elements/rating-star-icon.png" alt="icon" width="18" height="18" />
 </div>
