@@ -38,7 +38,7 @@ $('.banner-review-slider').slick({
 });
 //***** Banner Main Slider JS End Here *****//
 
-//*****  Award Brands Slider JS Start Here *****//
+//*****  Banner Bottom Slider JS Start Here *****//
 $('.banner-bottom-slider').slick({
   dots: false,
   arrows: false,
@@ -75,7 +75,7 @@ $('.banner-bottom-slider').slick({
 
   ]
 });
-//***** Award Brands Slider JS End Here *****//
+//***** Banner Bottom Slider JS End Here *****//
 
 //*****  Service Offer Slider JS Start Here *****//
 $('.service-offer-slider').slick({

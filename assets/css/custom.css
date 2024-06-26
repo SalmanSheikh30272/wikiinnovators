@@ -504,148 +504,217 @@ section.banner-bottom-wrap{
 }
 /*Banner Bottom Section Css End Here*/
 
-/*Unlock Story Section Css Start Here*/
-section.unlock-story-wrap{
-    background-image: url(../images/bg-img/bg-img-element.webp);
+/*Wikipedia Page Section Css Start Here*/
+section.wikipedia-page-wrap{
+    background-image: url(../images/bg-img/wikipedia-page-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100% 80%;
-    padding: 75px 0;
+    background-position: center center;
+    padding: 50px 0;
     position: relative;
     z-index: 1;
 }
-.unlock-story-wrap .unlock-story-head{
+.wikipedia-page-wrap .wikipedia-page-head{
     text-align: center;
-    margin: 0 0 30px;
+    margin: 0 0 50px;
 }
-.unlock-story-head .heading-two{
-    color: #212121;
+.wikipedia-page-head .heading-two{
+    color: #141414;
     margin: 0 0 10px;
 }
-.unlock-story-head .heading-two span{
-    color: #FBC25A;
-    display: block;
+.wikipedia-page-head p{
+    color: #9A9999;
 }
-.unlock-story-head p{
-    color: #5E5E5E;
+.wikipedia-page-inner .wikipedia-page-box{
+    padding: 20px 20px;
+    transition: all .5s ease-in-out;
 }
-.unlock-story-content .short-heading{
-    font-family: "ProximaNova-Bold";
-    color: #000000;
-    font-size: 20px;
-    line-height: 26px;
-    margin: 0 0 10px;
-    display: block;
-    text-transform: capitalize;
+.wikipedia-page-box:hover{
+    box-shadow: 0 0px 20px -20px #000;
 }
-.unlock-story-content .heading-two{
-    color: #212121;
+.wikipedia-page-box .wikipedia-box-img{
+    text-align: center;
     margin: 0 0 20px;
 }
-.unlock-story-content .heading-two span{
-    color: #FBC25A;
-    display: block;
+.wikipedia-box-img img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
 }
-.unlock-story-content p{
-    color: #5E5E5E;
+.wikipedia-page-box .wikipedia-box-content{
+    text-align: center;
+}
+.wikipedia-box-content .heading-five{
+    color: #141414;
+    margin: 0 0 20px;
+}
+.wikipedia-box-content p{
+    color: #9A9999;
+    padding: 0 10px 10px;
+    min-height: 150px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+.wikipedia-box-content p::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.0);
+    border-radius: 5px;
+}
+.wikipedia-box-content p::-webkit-scrollbar{
+    width: 3px;
+    background: #b2b2b2;
+    border-radius: 5px;
+}
+.wikipedia-box-content p::-webkit-scrollbar-thumb{
+    background-color: #FD5240;
+    border-radius: 5px;
+}
+/*Wikipedia Page Section Css End Here*/
+
+/*Unlock Story Section Css Start Here*/
+section.unlock-story-wrap{
+    background-image: url(../images/bg-img/unlock-story-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 80%;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+.unlock-story-content .short-heading{
+    font-family: "linux-SemiBold";
+    color: #141414;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+    display: block;
+    position: relative;
+}
+.unlock-story-content .short-heading::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #FD5240;
+    width: 120px;
+    height: 5px;
+    display: block;
+    border-radius: 5px;
+}
+.unlock-story-content .heading-two{
+    color: #141414;
     margin: 0 0 10px;
 }
-.unlock-story-content ul{
-    margin: 20px 0;
+.unlock-story-content p{
+    color: #9A9999;
 }
-.unlock-story-content ul li{
-    font-family: "ProximaNova-Semibold";
-    color: #5E5E5E;
+.unlock-story-content ul.unlock-story-list{
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-.unlock-story-content ul li img{
-    margin: 0 10px 0 0;
+.unlock-story-content ul.unlock-story-list li{
+    margin: 0 10px;
+}
+.unlock-story-content ul.unlock-story-list li img{
+    width: 50px;
+    height: 50px;
+    margin: 0 0 10px;
+}
+.unlock-story-content ul.unlock-story-list li .heading-three{
+    color: #141414;
+    margin: 0 0 10px;
+}
+.unlock-story-content ul.unlock-story-list li p{
+    color: #9A9999;
+}
+.unlock-story-content .website-main-buttons{}
+.unlock-story-content .website-main-buttons button.popup-btn{
+    background: #05042D;
+    color: #fff;
+    border: 2px solid #05042D;
+}
+.unlock-story-content .website-main-buttons button.popup-btn:hover{
+    background: #fff;
+    color: #05042D;
+    transform: scale(1.1);
+}
+.unlock-story-content .website-main-buttons button.chat-btn{
+    background: #FD5240;
+    color: #fff;
+    border: 2px solid #FD5240;
+    width: 225px;
+}
+.unlock-story-content .website-main-buttons button.chat-btn:hover{
+    background: #fff;
+    color: #FD5240;
+    transform: scale(1.1);
 }
 .unlock-story-inner .unlock-story-img{
-    text-align: right;
+    text-align: center;
 }
 .unlock-story-img img{
     width: 90%;
+    margin: 0 0 -50px;
 }
 /*Unlock Story Section Css End Here*/
 
 /*Service Offer Section Css Start Here*/
 section.service-offer-wrap{
+    background-image: url(../images/bg-img/service-offer-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 50px 0;
-    position: relative;
-    z-index: 1;
-}
-.service-offer-wrap::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #F9F9F9;
-    height: 375px;
-    width: 100%;
-    z-index: -1;
 }
 .service-offer-wrap .service-offer-head{
     text-align: center;
     margin: 0 0 50px;
 }
-.offer-head-content .heading-two{
-    color: #212121;
+.service-offer-head .short-heading{
+    font-family: "linux-SemiBold";
+    color: #141414;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+    display: block;
+    position: relative;
+}
+.service-offer-head .short-heading::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #FD5240;
+    width: 120px;
+    height: 5px;
+    display: block;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+.service-offer-head .heading-two{
+    color: #141414;
     margin: 0 0 10px;
 }
-.offer-head-content .heading-two span{
-    color: #FBC25A;
-    display: block;
-}
-.offer-head-content p{
-    color: #5E5E5E;
-}
-.service-offer-slider .slick-arrow{
-    top: 50%;
-    position: absolute;
-    background: none;
-    border: none;
-    font-size: 0;
-    z-index: 9;
-}
-.service-offer-slider .slick-arrow::before{
-    position: absolute;
-    font-family: 'Font Awesome 6 Pro';
-    background: #000;
-    color: #fff;
-    font-size: 24px;
-    font-weight: 700;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border-radius: 100%;
-}
-.service-offer-slider .slick-prev{
-    left: -65px;
-}
-.service-offer-slider .slick-prev:before{
-    content: '\f060';
-}
-.service-offer-slider .slick-next{
-    right: -15px;
-}
-.service-offer-slider .slick-next:before{
-    content: '\f061';
+.service-offer-head p{
+    color: #9A9999;
 }
 .service-offer-inner .service-offer-box{
-    background-color: #fff;
+    background: #fff;
+    border: 2px solid #EBEBEB;
     padding: 40px 40px;
-    margin: 15px 15px;
-    border-radius: 30px 30px;
-    box-shadow: 0 0px 20px -20px #000;
+    margin: 0 0 50px;
     transition: all .5s ease-in-out;
+    position: relative;
 }
 .service-offer-box:hover{
-    background-color: transparent;
-    box-shadow: none;
+    background: #080731;
+    border: 2px solid #8CD2D0;
 }
-.offer-box-head .offer-box-img{
-    text-align: center;
+.service-offer-box .offer-box-img{
     margin: 0 0 20px;
 }
 .offer-box-img img{
@@ -653,151 +722,77 @@ section.service-offer-wrap{
     height: 75px;
     object-fit: contain;
     margin: 0 auto;
+    transition: all .3s ease-in-out;
 }
-.service-offer-box .offer-box-content{
-    text-align: center;
+.service-offer-box:hover .offer-box-img img{
+    filter: invert(1);
 }
+.service-offer-box .offer-box-content{}
 .offer-box-content .heading-four{
-    color: #5A5A5A;
+    color: #141414;
     margin: 0 0 20px;
-    height: 75px;
+    transition: all .3s ease-in-out;
+}
+.service-offer-box:hover .offer-box-content .heading-four{
+    color: #fff;
 }
 .offer-box-content p{
-    color: #A1A1A1;
-    padding: 0 10px 10px;
+    color: #9A9999;
+    padding: 0 10px 10px 0;
     min-height: 200px;
     max-height: 200px;
     overflow-y: auto;
+    transition: all .3s ease-in-out;
+}
+.service-offer-box:hover .offer-box-content p{
+    color: #fff;
 }
 .offer-box-content p::-webkit-scrollbar-track{
     -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.0);
-    border-radius: 0px;
+    border-radius: 5px;
 }
 .offer-box-content p::-webkit-scrollbar{
     width: 3px;
     background: #b2b2b2;
-    border-radius: 0px;
+    border-radius: 5px;
 }
 .offer-box-content p::-webkit-scrollbar-thumb{
-    background-color: #000;
-    border-radius: 0px;
+    background-color: #FD5240;
+    border-radius: 5px;
+}
+.service-offer-box:hover .website-main-buttons{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
+.service-offer-box .website-main-buttons{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -27px;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(30px);
+    transition: all .3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.service-offer-box .website-main-buttons button.popup-btn{
+    background: #FD5240;
+    color: #fff;
+    border: 2px solid #FD5240;
+    width: 225px;
+    margin: 0 auto;
+}
+.service-offer-box .website-main-buttons button.popup-btn:hover{
+    background: #fff;
+    color: #FD5240;
+    transform: scale(1.1);
 }
 /*Service Offer Section Css End Here*/
 
-/*Step Works Section Css Start Here*/
-section.step-works-wrap{
-    padding: 50px 0;
-}
-.step-works-wrap .step-works-head{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   margin: 0 0 50px;
-}
-.step-works-head .step-head-content{
-    width: 50%;
-}
-.step-head-content .heading-two{
-    color: #212121;
-    margin: 0 0 10px;
-}
-.step-head-content .heading-two span{
-    color: #FBC25A;
-    display: block;
-}
-.step-head-content p{
-    color: #5E5E5E;
-}
-.step-works-head .website-main-buttons{
-    margin: 0;
-}
-.step-works-head .website-main-buttons button.popup-btn{
-    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    border: 2px solid #FCC127;
-    color: #212121;
-}
-.step-works-head .website-main-buttons button.popup-btn:hover{
-    background-position: left bottom;
-}
-.step-works-head .website-main-buttons button.chat-btn{
-    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    border: 2px solid #FCC127;
-    color: #212121;
-}
-.step-works-head .website-main-buttons button.chat-btn:hover{
-    background-position: left bottom;
-}
-.step-works-wrap .step-works-inner .row{
-    justify-content: space-between;
-}
-.step-works-inner .step-works-box{
-    position: relative;
-    padding: 100px 10px 50px;
-    z-index: 1;
-    transition: all .3s ease-in-out;
-}
-.step-works-box::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: -100px;
-    background: #F9F9F9;
-    width: 375px;
-    height: 400px;
-    border-radius: 100%;
-    z-index: -1;
-    transition: all .3s ease-in-out;
-    opacity: 0;
-}
-.step-works-box:hover::before{
-    opacity: 1;
-}
-.step-works-box span.step-count{
-    font-family: "ProximaNova-Regular";
-    position: absolute;
-    top: -5px;
-    color: #FFFCF7;
-    font-size: 110px;
-    letter-spacing: 5px;
-    z-index: -1;
-    transition: all .3s ease-in-out;
-}
-.step-works-box:hover span.step-count{
-    color: #FBC25A;
-}
-.works-box-content .heading-five{
-    color: #343434;
-    margin: 0 0 20px;
-    height: 75px;
-}
-.works-box-content p{
-    color: #A2A2A2;
-}
-.works-box-content p::-webkit-scrollbar-track{
-    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.0);
-    border-radius: 0px;
-}
-.works-box-content p::-webkit-scrollbar{
-    width: 3px;
-    background: #b2b2b2;
-    border-radius: 0px;
-}
-.works-box-content p::-webkit-scrollbar-thumb{
-    background-color: #000;
-    border-radius: 0px;
-}
-/*Step Works Section Css End Here*/
-
 /*Main CTA Section Css Start Here*/
 section.cta-main-wrap{
-    background-image: url(../images/bg-img/cta-main-bg2.webp);
-    background-color: #000;
+    background-image: url(../images/bg-img/cta-main-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 0%;
@@ -805,53 +800,56 @@ section.cta-main-wrap{
     position: relative;
     z-index: 1;
 }
+.cta-main-wrap::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #080731;
+    opacity: 0.9;
+    width: 100%;
+    z-index: -1;
+}
 .cta-main-wrap .cta-main-content{
     text-align: center;
 }
-.cta-main-content .heading-two{
-    color: #FDFDFE;
+.cta-main-content .heading-one{
+    color: #fff;
     margin: 0 0 20px;
 }
-.cta-main-content .heading-two span{
-    color: #FBC25A;
-    display: block;
-}
 .cta-main-content p{
-    color: #AEAEAE;
+    color: #E8E8E8;
 }
 .cta-main-content .website-main-buttons{
     justify-content: center;
 }
 .cta-main-content .website-main-buttons button.popup-btn{
-    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    border: 2px solid #FCC127;
-    color: #212121;
+    background: #fff;
+    color: #05042D;
+    border: 2px solid #fff;
 }
 .cta-main-content .website-main-buttons button.popup-btn:hover{
-    background-position: left bottom;
+    background: #05042D;
+    color: #fff;
+    transform: scale(1.1);
 }
-.cta-main-content .website-main-buttons button.chat-btn,
-.cta-main-content .website-main-buttons a.call-btn{
-    background: linear-gradient(to right, #fbfbfb 50%, #000 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    border: 2px solid #707070;
-    color: #FCC127;
+.cta-main-content .website-main-buttons button.chat-btn{
+    background: #FD5240;
+    color: #fff;
+    border: 2px solid #FD5240;
+    width: 225px;
 }
-.cta-main-content .website-main-buttons button.chat-btn:hover,
-.cta-main-content .website-main-buttons a.call-btn:hover{
-    background-position: left bottom;
+.cta-main-content .website-main-buttons button.chat-btn:hover{
+    background: #fff;
+    color: #FD5240;
+    transform: scale(1.1);
 }
 /*Main CTA Section Css End Here*/
 
 /*Why Choose Section Css Start Here*/
 section.why-choose-wrap{
-    background-image: url(../images/bg-img/bg-img-element.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     padding: 50px 0;
     position: relative;
     z-index: 1;
@@ -860,16 +858,12 @@ section.why-choose-wrap{
     text-align: center;
     margin: 0 0 50px;
 }
-.choose-head-content .heading-two{
-    color: #212121;
+.why-choose-head .heading-two{
+    color: #141414;
     margin: 0 0 10px;
 }
-.choose-head-content .heading-two span{
-    color: #FBC25A;
-    display: block;
-}
-.choose-head-content p{
-    color: #5E5E5E;
+.why-choose-head p{
+    color: #9A9999;
 }
 .why-choose-inner .short-heading{
     font-family: "ProximaNova-Bold";
