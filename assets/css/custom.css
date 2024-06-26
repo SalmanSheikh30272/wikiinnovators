@@ -1,0 +1,4400 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: "linux-Bold";
+    src: url("../fonts/linux-Bold.ttf");
+}
+@font-face {
+    font-family: "linux-SemiBold";
+    src: url("../fonts/linux-SemiBold.ttf");
+}
+@font-face {
+    font-family: "linux-Medium";
+    src: url("../fonts/linux-Medium.ttf");
+}
+@font-face {
+    font-family: "linux-Regular";
+    src: url("../fonts/linux-Regular.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "linux-SemiBold";
+    text-transform: capitalize;
+}
+
+p,
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input,
+textarea{
+    margin: 0;
+    padding: 0;
+}
+
+a,
+button{
+    margin: 0;
+    padding: 0;
+}
+
+a:hover{
+    color: inherit;
+}
+
+body{
+    overflow-x: hidden;
+    background: #fff;
+    font-family: "Poppins", sans-serif;
+}
+
+main{
+    overflow: hidden;
+}
+
+a,
+button,
+input,
+textarea:focus{
+    outline: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.form-group input::-webkit-outer-spin-button,
+.form-group input::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+.form-group input[type=number]{
+    appearance: textfield;
+    -moz-appearance: textfield;
+}
+
+/*Website Custom Style Css For Single Items Start Here*/
+
+/*Heading & Para Style Css*/
+.heading-one{
+    font-size: 80px;
+    line-height: 86px;
+}
+.heading-two{
+    font-size: 60px;
+    line-height: 66px;
+}
+.heading-three{
+    font-size: 30px;
+    line-height: 36px;
+}
+.heading-four{
+    font-size: 24px;
+    line-height: 30px;
+}
+.heading-five{
+    font-size: 22px;
+    line-height: 28px;
+}
+.heading-six{
+    font-size: 20px;
+    line-height: 26px;
+}
+.heading-seven{
+    font-size: 16px;
+    line-height: 22px;
+}
+p{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+li{
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0 0 5px;
+}
+/*Heading & Para Style Css*/
+
+/*Buttons Style Css*/
+.website-main-buttons{
+    margin: 30px 0 0;
+    display: flex;
+    align-items: center;
+}
+.website-main-buttons a.read-more-btn,
+.website-main-buttons button.popup-btn,
+.website-main-buttons button.chat-btn,
+.website-main-buttons a.call-btn{
+    font-size: 16px;
+    font-weight: 600;
+    width: 175px;
+    height: 50px;
+    border-radius: 0px;
+    padding: 5px 5px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+/*Buttons Style Css*/
+
+/*Website Custom Style Css For Single Items End Here*/
+
+/*Header Css Start Here*/
+header{
+    background: transparent;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    transition: all .3s ease-in-out;
+}
+header.sticky{
+    background: #080731;
+    box-shadow: 0 10px 40px -25px #1c1c1c;
+}
+header nav.navbar{
+    padding: 30px 0 20px;
+    align-items: center;
+    position: relative;
+}
+header nav.navbar .navbar-brand{
+    width: 250px;
+    padding: 0;
+    margin: 0;
+}
+header .navbar-toggler{
+    background-color: #fff;
+}
+header .navbar-toggler:focus{
+    box-shadow: none;
+}
+header .navbar-collapse .navbar-main-nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+header .navbar-main-nav .navbar-main-center{
+    width: 100%;
+    margin: 0 10px;
+}
+header .navbar-main-center ul.navbar-nav{
+    justify-content: end;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item{
+    margin: 0 20px;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item a.nav-link{    
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 15px 0px;
+    text-transform: capitalize;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item:hover a.nav-link{
+    color: #9A9999;
+}
+header ul.navbar-nav .nav-item.dropdown .dropdown-toggle{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header ul.navbar-nav .nav-item.dropdown .dropdown-toggle::after{
+    content: "";
+    border-width: 5px 5px 0px 5px;
+    border-color: #fff transparent transparent transparent;
+    border-style: solid;
+    margin: 0 0 0 5px;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu{
+    position: absolute;
+    background: #fff;
+    top: 50px;
+    left: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 15px 45px -20px #212121;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 9;
+    -webkit-transform: translateY(-35px);
+    -ms-transform: translateY(35px);
+    transform: translateY(35px);
+    -webkit-transition: all ease .3s;
+    -moz-transition: all ease .3s;
+    transition: all ease .3s;
+    display: block;
+}
+header .navbar-nav .nav-item.dropdown:hover ul.dropdown-menu{
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li{
+    padding: 0;
+    margin: 0;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a{
+    color: #080731;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 10px 10px;
+    margin: 0;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a i{
+    color: #FD5240;
+    margin: 0 5px 0 0;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a:hover{
+    background: #FD5240;
+    color: #fff;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a:hover i{
+    color: #fff;
+}
+header .navbar-main-nav .navbar-buttons{}
+header .navbar-main-nav .navbar-buttons button.chat-btn{
+    background: #FD5240;
+    color: #fff;
+    border: 2px solid #FD5240;
+    font-size: 16px;
+    font-weight: 600;
+    width: 175px;
+    height: 50px;
+    border-radius: 0px;
+    padding: 5px 5px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+header .navbar-main-nav .navbar-buttons button.chat-btn:hover{
+    background: #fff;
+    color: #FD5240;
+    transform: scale(1.1);
+}
+/*Header Css End Here*/
+
+/**************************************************************************
+ --------------------- Home Page Folds Css Start Here ---------------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Banner Main Section Css Start Here*/
+section.banner-main-sec{
+    background-image: url(../images/bg-img/banner-main-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 200px 0 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.banner-main-sec .banner-main-content{
+    margin: 0 0 40px;
+}
+.banner-main-content .heading-one{
+    color: #212121;
+    margin: 0 0 10px;
+}
+.banner-main-content .heading-one span{
+    color: #F5B339;
+    display: block;
+}
+.banner-main-content p{
+    color: #5E5E5E;
+}
+.banner-main-content ul{
+    list-style: disc;
+    padding: 0 0px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.banner-main-content ul li{
+    font-family: "ProximaNova-Semibold";
+    color: #000;
+    margin: 0 10px 10px 0;
+    width: 47%;
+}
+.banner-main-content .banner-brands{
+    margin: 20px 0;
+}
+.banner-brands .banner-brands-items{
+    display: flex;
+    align-items: center;
+}
+.banner-brands .banner-brands-items img{
+    width: 125px;
+    height: 40px;
+    object-fit: scale-down;
+    margin: 0 20px 0 0;
+}
+.banner-main-sec .banner-main-img{
+    position: relative;
+    bottom: -200px;
+    z-index: -1;
+}
+.banner-main-img::before{
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: 0;
+    background-image: url(../images/wikipedia-browse-img.webp);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 325px;
+    height: 325px;
+    display: block;
+    animation: Rotate 7s linear infinite;
+}
+.banner-main-img img{
+    width: 100%;
+    height: 100%;
+}
+.banner-main-sec .banner-main-form{
+    background: #1E1E1E;
+    border-radius: 100px;
+    padding: 20px 10px;
+}
+.banner-main-form form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner-main-form .form-group{
+    width: 100%;
+    margin: 0 10px;
+}
+.banner-main-form .form-group input{
+    background: #fff;
+    font-size: 16px;
+    color: #212121;
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+}
+.banner-main-form .form-group input::placeholder{
+    color: #A4A4A4;
+}
+.banner-main-form .form-group button.submit-btn{
+    font-family: "Calibri-Bold";
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #FCC127;
+    color: #212121;
+    font-size: 18px;
+    width: 100%;
+    height: 60px;
+    border-radius: 50px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+.banner-main-form .form-group button.submit-btn:hover{
+    background-position: left bottom;
+}
+/*Banner Main Section Css End Here*/
+
+/*Award Brands Section Css Start Here*/
+section.award-brands-wrap{
+    background-color: #1C1C1C;
+    padding: 50px 0px;
+    position: relative;
+    z-index: 1;
+}
+.award-brands-wrap::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    background-image: url(../images/elements/yellow-circle.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 100%;
+    width: 40px;
+    height: 40px;
+    z-index: -1;
+}
+.award-brands-wrap .award-brands-head{
+    text-align: center;
+    margin: 0 0 30px;
+}
+.award-brands-head .heading-two{
+    color: #FDFDFE;
+    margin: 0 0 10px;
+}
+.award-brands-head p{
+    color: #7D7D7D;
+}
+.award-brands-wrap .award-brands-slider{
+    margin: 0 20px 0;
+}
+.award-brands-slider .slick-arrow{
+    top: 25%;
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 0;
+    z-index: 9;
+    display: none !important;
+}
+.award-brands-slider .slick-prev{
+    left: -15px;
+}
+.award-brands-slider .slick-prev:before{
+    content: '\f104';
+    position: absolute;
+    font-family: 'Font Awesome 6 Pro';
+    font-size: 32px;
+    color: #000;
+}
+.award-brands-slider .slick-next{
+    right: -25px;
+}
+.award-brands-slider .slick-next:before{
+    content: '\f105';
+    position: absolute;
+    font-family: 'Font Awesome 6 Pro';
+    font-size: 32px;
+    color: #000;
+    right: 10px;
+}
+.award-brands-slider .award-brands-box{
+    margin: 0 10px 0;
+}
+.award-brands-box img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+/*Award Brands Section Css End Here*/
+
+/*Unlock Story Section Css Start Here*/
+section.unlock-story-wrap{
+    background-image: url(../images/bg-img/bg-img-element.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 80%;
+    padding: 75px 0;
+    position: relative;
+    z-index: 1;
+}
+.unlock-story-wrap .unlock-story-head{
+    text-align: center;
+    margin: 0 0 30px;
+}
+.unlock-story-head .heading-two{
+    color: #212121;
+    margin: 0 0 10px;
+}
+.unlock-story-head .heading-two span{
+    color: #FBC25A;
+    display: block;
+}
+.unlock-story-head p{
+    color: #5E5E5E;
+}
+.unlock-story-content .short-heading{
+    font-family: "ProximaNova-Bold";
+    color: #000000;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 0 10px;
+    display: block;
+    text-transform: capitalize;
+}
+.unlock-story-content .heading-two{
+    color: #212121;
+    margin: 0 0 20px;
+}
+.unlock-story-content .heading-two span{
+    color: #FBC25A;
+    display: block;
+}
+.unlock-story-content p{
+    color: #5E5E5E;
+    margin: 0 0 10px;
+}
+.unlock-story-content ul{
+    margin: 20px 0;
+}
+.unlock-story-content ul li{
+    font-family: "ProximaNova-Semibold";
+    color: #5E5E5E;
+}
+.unlock-story-content ul li img{
+    margin: 0 10px 0 0;
+}
+.unlock-story-inner .unlock-story-img{
+    text-align: right;
+}
+.unlock-story-img img{
+    width: 90%;
+}
+/*Unlock Story Section Css End Here*/
+
+/*Service Offer Section Css Start Here*/
+section.service-offer-wrap{
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+.service-offer-wrap::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #F9F9F9;
+    height: 375px;
+    width: 100%;
+    z-index: -1;
+}
+.service-offer-wrap .service-offer-head{
+    text-align: center;
+    margin: 0 0 50px;
+}
+.offer-head-content .heading-two{
+    color: #212121;
+    margin: 0 0 10px;
+}
+.offer-head-content .heading-two span{
+    color: #FBC25A;
+    display: block;
+}
+.offer-head-content p{
+    color: #5E5E5E;
+}
+.service-offer-slider .slick-arrow{
+    top: 50%;
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 0;
+    z-index: 9;
+}
+.service-offer-slider .slick-arrow::before{
+    position: absolute;
+    font-family: 'Font Awesome 6 Pro';
+    background: #000;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100%;
+}
+.service-offer-slider .slick-prev{
+    left: -65px;
+}
+.service-offer-slider .slick-prev:before{
+    content: '\f060';
+}
+.service-offer-slider .slick-next{
+    right: -15px;
+}
+.service-offer-slider .slick-next:before{
+    content: '\f061';
+}
+.service-offer-inner .service-offer-box{
+    background-color: #fff;
+    padding: 40px 40px;
+    margin: 15px 15px;
+    border-radius: 30px 30px;
+    box-shadow: 0 0px 20px -20px #000;
+    transition: all .5s ease-in-out;
+}
+.service-offer-box:hover{
+    background-color: transparent;
+    box-shadow: none;
+}
+.offer-box-head .offer-box-img{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.offer-box-img img{
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.service-offer-box .offer-box-content{
+    text-align: center;
+}
+.offer-box-content .heading-four{
+    color: #5A5A5A;
+    margin: 0 0 20px;
+    height: 75px;
+}
+.offer-box-content p{
+    color: #A1A1A1;
+    padding: 0 10px 10px;
+    min-height: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.offer-box-content p::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.0);
+    border-radius: 0px;
+}
+.offer-box-content p::-webkit-scrollbar{
+    width: 3px;
+    background: #b2b2b2;
+    border-radius: 0px;
+}
+.offer-box-content p::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border-radius: 0px;
+}
+/*Service Offer Section Css End Here*/
+
+/*Step Works Section Css Start Here*/
+section.step-works-wrap{
+    padding: 50px 0;
+}
+.step-works-wrap .step-works-head{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 0 0 50px;
+}
+.step-works-head .step-head-content{
+    width: 50%;
+}
+.step-head-content .heading-two{
+    color: #212121;
+    margin: 0 0 10px;
+}
+.step-head-content .heading-two span{
+    color: #FBC25A;
+    display: block;
+}
+.step-head-content p{
+    color: #5E5E5E;
+}
+.step-works-head .website-main-buttons{
+    margin: 0;
+}
+.step-works-head .website-main-buttons button.popup-btn{
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #FCC127;
+    color: #212121;
+}
+.step-works-head .website-main-buttons button.popup-btn:hover{
+    background-position: left bottom;
+}
+.step-works-head .website-main-buttons button.chat-btn{
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #FCC127;
+    color: #212121;
+}
+.step-works-head .website-main-buttons button.chat-btn:hover{
+    background-position: left bottom;
+}
+.step-works-wrap .step-works-inner .row{
+    justify-content: space-between;
+}
+.step-works-inner .step-works-box{
+    position: relative;
+    padding: 100px 10px 50px;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+}
+.step-works-box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -100px;
+    background: #F9F9F9;
+    width: 375px;
+    height: 400px;
+    border-radius: 100%;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+}
+.step-works-box:hover::before{
+    opacity: 1;
+}
+.step-works-box span.step-count{
+    font-family: "ProximaNova-Regular";
+    position: absolute;
+    top: -5px;
+    color: #FFFCF7;
+    font-size: 110px;
+    letter-spacing: 5px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+.step-works-box:hover span.step-count{
+    color: #FBC25A;
+}
+.works-box-content .heading-five{
+    color: #343434;
+    margin: 0 0 20px;
+    height: 75px;
+}
+.works-box-content p{
+    color: #A2A2A2;
+}
+.works-box-content p::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.0);
+    border-radius: 0px;
+}
+.works-box-content p::-webkit-scrollbar{
+    width: 3px;
+    background: #b2b2b2;
+    border-radius: 0px;
+}
+.works-box-content p::-webkit-scrollbar-thumb{
+    background-color: #000;
+    border-radius: 0px;
+}
+/*Step Works Section Css End Here*/
+
+/*Main CTA Section Css Start Here*/
+section.cta-main-wrap{
+    background-image: url(../images/bg-img/cta-main-bg2.webp);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+.cta-main-wrap .cta-main-content{
+    text-align: center;
+}
+.cta-main-content .heading-two{
+    color: #FDFDFE;
+    margin: 0 0 20px;
+}
+.cta-main-content .heading-two span{
+    color: #FBC25A;
+    display: block;
+}
+.cta-main-content p{
+    color: #AEAEAE;
+}
+.cta-main-content .website-main-buttons{
+    justify-content: center;
+}
+.cta-main-content .website-main-buttons button.popup-btn{
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #FCC127;
+    color: #212121;
+}
+.cta-main-content .website-main-buttons button.popup-btn:hover{
+    background-position: left bottom;
+}
+.cta-main-content .website-main-buttons button.chat-btn,
+.cta-main-content .website-main-buttons a.call-btn{
+    background: linear-gradient(to right, #fbfbfb 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #707070;
+    color: #FCC127;
+}
+.cta-main-content .website-main-buttons button.chat-btn:hover,
+.cta-main-content .website-main-buttons a.call-btn:hover{
+    background-position: left bottom;
+}
+/*Main CTA Section Css End Here*/
+
+/*Why Choose Section Css Start Here*/
+section.why-choose-wrap{
+    background-image: url(../images/bg-img/bg-img-element.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+.why-choose-wrap .why-choose-head{
+    text-align: center;
+    margin: 0 0 50px;
+}
+.choose-head-content .heading-two{
+    color: #212121;
+    margin: 0 0 10px;
+}
+.choose-head-content .heading-two span{
+    color: #FBC25A;
+    display: block;
+}
+.choose-head-content p{
+    color: #5E5E5E;
+}
+.why-choose-inner .short-heading{
+    font-family: "ProximaNova-Bold";
+    color: #1C1C1C;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 30px 0;
+    display: block;
+    text-transform: capitalize;
+    text-align: center;
+}
+.why-choose-inner .why-choose-box{
+    background: #181818;
+    border: 1px solid #181818;
+    border-radius: 30px;
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+    margin: 40px 0;
+}
+.choose-box-head .choose-box-img{
+    background: #FFFFFF;
+    width: 110px;
+    height: 110px;
+    line-height: 110px;
+    border-radius: 100%;
+    border: 1px solid #EEEEEE;
+    margin: 0px auto -20px;
+    position: relative;
+    top: -50px;
+}
+.choose-box-img img{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+.why-choose-box .choose-box-content{
+    padding: 0 10px 10px;
+    min-height: 185px;
+    max-height: 185px;
+    overflow-y: auto;
+}
+.choose-box-content::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.0);
+    border-radius: 0px;
+}
+.choose-box-content::-webkit-scrollbar{
+    width: 3px;
+    background: #b2b2b2;
+    border-radius: 0px;
+}
+.choose-box-content::-webkit-scrollbar-thumb{
+    background-color: #FCC127;
+    border-radius: 0px;
+}
+.choose-box-content .heading-five{
+    color: #fff;
+    margin: 0 0 20px;
+}
+.choose-box-content p{
+    color: #fff;   
+}
+.why-choose-inner .website-main-buttons{
+    justify-content: center;
+}
+.why-choose-inner .website-main-buttons button.popup-btn{
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #FCC127;
+    color: #212121;
+}
+.why-choose-inner .website-main-buttons button.popup-btn:hover{
+    background-position: left bottom;
+}
+.why-choose-inner .website-main-buttons button.chat-btn{
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #FCC127;
+    color: #212121;
+}
+.why-choose-inner .website-main-buttons button.chat-btn:hover{
+    background-position: left bottom;
+}
+section.why-choose-wrap.why-choose-lightwrap .why-choose-inner .why-choose-box{
+    background: #FCFCFC;
+    border: 1px solid #EFEFEF;
+}
+.why-choose-wrap.why-choose-lightwrap .why-choose-box .choose-box-head .choose-box-img{
+    background: #212121;
+}
+.why-choose-wrap.why-choose-lightwrap .why-choose-box .choose-box-content .heading-five{
+    color: #212121;
+}
+.why-choose-wrap.why-choose-lightwrap .why-choose-box .choose-box-content p{
+    color: #929292;
+}
+/*Why Choose Section Css End Here*/
+
+/*Great Pride Section Css Start Here*/
+section.gert-pride-main{
+    padding: 50px 0px;
+    position: relative;
+    z-index: 1;
+    background: url(../images/bg-img/great-pride-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.gert-pri-content-main .gert-pri-content-head{
+    text-align: center;
+    margin: 0 0 30px;
+}
+.gert-pri-content-main .gert-pri-content-head .heading-two{
+    color: #212121;
+    margin: 0 0 10px;
+}
+.gert-pri-content-main .gert-pri-content-head .heading-two span{
+    color: #fbc25a;
+    display: block;
+}
+.gert-pri-content-main .gert-pri-content-head p{
+    color: #858585;
+}
+.gert-pri-content-main .gert-pride-tab-btn{
+    margin: 30px 0px;
+    position: relative;
+}
+.gert-pri-content-main .gert-pride-tab-btn ul{
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.gert-pri-content-main .gert-pride-tab-btn ul li button{
+    font-family: "Calibri-Bold";
+    background: #212121;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 30px;
+    color: #fff;
+    width: 175px;
+    height: 50px;
+}
+.gert-pri-content-main .gert-pride-tab-btn ul li button.active{
+    background-color: #fbc25a;
+    color: #212121;
+}
+.gert-pri-content-main .gert-pride-tab-btn ul li button:focus-visible{
+    box-shadow: none;
+}
+.gert-pride-tab-items-list .gert-pride-column:nth-child(2){
+    margin-top: 200px;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-img-dv{
+    margin: 0 auto 35px;
+    display: flex;
+    justify-content: center;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-img-dv img{
+    width: 125px;
+    height: 125px;
+    border: 4px solid #fbc25a;
+    border-radius: 100%;
+}
+#pills-port2 .gert-pride-tab-items-list .auth-cont-main .auth-img-dv img {
+    border: none;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv{
+    text-align: center;
+    background: #e2e2e2;
+    padding: 13px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 1;
+    width: 80%;
+    margin: 0 auto 20px;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv .heading-seven{
+    font-family: "Calibri-Bold";
+    color: #212121;
+    margin: 0;
+    text-transform: uppercase;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv:before{
+    content: "";
+    background: transparent;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20px, -43px);
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid #e2e2e2;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-cont-text{
+    text-align: center;
+    width: 55%;
+    margin: 0 auto;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-cont-text p{
+    color: #6d6d6d;
+}
+/*Great Pride Section CSS End Here*/
+  
+/*Testimonials Section CSS Start Here*/
+section.testi-main-sec{
+    padding: 50px 0px;
+}
+.testi-lft-text-main .heading-two{
+    color: #212121;
+    margin: 0 0 20px;
+}
+.testi-lft-text-main .heading-two span{
+    color: #fbc25a;
+    font-family: "ProximaNova-Bold";
+}
+.testi-lft-text-main p{
+    color: #4A4A4A;
+}
+.testi-lft-text-main .website-main-buttons button.chat-btn{
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #FCC127;
+    color: #212121;
+}
+.testi-lft-text-main .website-main-buttons button.chat-btn:hover{
+    background-position: left bottom;
+}
+.testi-auth-image-main .testi-auth-images{
+    background-color: #1e1e1e;
+    padding: 0px 50px 30px;
+    border-radius: 35px;
+    margin: 55px 10px 0;
+}
+.testi-auth-images .testi-auth-image-items img{
+    width: 100%;
+    height: 100%;
+    margin-top: -50px;
+}
+.testi-auth-image-items .heading-six{
+    color: #fff;
+    margin: 10px 0;
+}
+.testi-auth-image-items p{
+    color: #fff;
+    text-transform: uppercase;
+}
+.testi-auth-image-items .rating-icons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: left;
+    gap: 3px;
+}
+.testi-auth-image-items .rating-icons img{
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+.testi-auth-content-main .testi-auth-content-items img{
+    width: 45px;
+    height: 45px;
+    margin-bottom: 25px;
+}
+.testi-auth-content-items .testi-content-main p{
+    color: #4A4A4A;
+}
+.testi-auth-content-items .testi-reviews-icon-main{
+    margin-top: 30px;
+}
+.testi-auth-content-items .testi-reviews-icon-main ul{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.testi-auth-content-items .testi-reviews-icon-main ul li{
+      margin: 0;
+}
+.testi-auth-content-items .testi-reviews-icon-main ul li img{
+      margin: 0;
+      width: 105px;
+      height: 25px;
+      object-fit: contain;
+}
+.testi-auth-content-main .slick-arrow{
+    position: absolute;
+    top: inherit;
+    bottom: -40%;
+    left: inherit;
+    background: none;
+    border: none;
+    font-size: 0;
+    z-index: 9;
+}
+.testi-auth-content-main .slick-arrow:before{
+    font-family: "Font Awesome 5 Pro";
+    color: #fff;
+    background: #000;
+    font-size: 18px;
+    font-weight: 600;
+    width: 45px;
+    height: 45px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 100%;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testi-auth-content-main .slick-prev.slick-arrow:before{
+    content: "\f060";
+}
+.testi-auth-content-main .slick-next.slick-arrow:before{
+    content: "\f061";
+}
+.testi-auth-content-main .slick-next.slick-arrow{
+    right: 0;
+    left: 15%;
+}
+.testi-auth-content-main .slick-arrow.slick-disabled:before{
+    background-color: #e1e1e1;
+}
+/*Testimonials Section CSS End Here*/
+
+/*FAQS Section Css Start Here*/
+section.faqs-sec-wrap{
+    padding: 50px 0;
+}
+.faqs-sec-wrap .faqs-sec-head{
+    text-align: center;
+    margin: 0 0 50px;
+}
+.faqs-sec-head .heading-two{
+    color: #141414;
+    margin: 0 0 10px;
+}
+.faqs-sec-head p{
+    color: #9A9999;
+}
+.faqs-sec-item .accordion .accordion-item{
+    margin: 0 0 10px;
+    border-radius: 0px;
+    background: transparent;
+    border: none;
+}
+.faqs-sec-item .accordion-item .accordion-header button.accordion-button{
+    font-family: "Poppins", sans-serif;
+    background: #080731;
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.faqs-sec-item .accordion-item .accordion-header button.accordion-button.collapsed{
+    background: #C8C8D1;
+}
+.faqs-sec-item .accordion-item .accordion-header .accordion-button::after{
+    content: "\2b";
+    background-image: none;
+    background: #FD5240;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 100%;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all 0.3s ease-in-out;
+}
+.faqs-sec-item .accordion-item .accordion-header .accordion-button:not(.collapsed)::after{
+    content: "\f068";
+    font-family: "Font Awesome 6 Pro";
+    font-size: 20px;
+    transform: rotate(0deg);
+}
+.faqs-sec-item .accordion-item .accordion-collapse .accordion-body{
+    font-family: "Poppins", sans-serif;
+    background: #fff;
+    color: #6D6D6D;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    padding: 20px 20px;
+    border-radius: 0;
+}
+/*FAQS Section Css End Here*/
+
+/**************************************************************************
+ --------------------- Home Page Folds Css End Here -----------------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+--------------------- About Page Folds Css Start Here ---------------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/*About Banner Section Css Start Here*/
+section.about-banner-main{
+    padding: 100px 0px 50px;
+    background: url(../images/bg-img/about-banner-bg.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.about-banner-main .about-banner-content-main{
+    text-align: center;
+}
+.about-banner-main .about-banner-content-main .heading-one{
+    color: #212121;
+}
+.about-banner-main .about-banner-content-main .heading-one span{
+    color: #fbc25a;
+}
+/*About Banner Section Css End Here*/
+  
+/*Who We Are Section CSS Start Here*/
+section.who-we-are-sec-main{
+    padding: 50px 0px;
+    background: #1c1c1c;
+}
+.who-we-are-content-main .who-we-are-cont-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.who-we-are-cont-head .heading-two{
+    color: #fff;
+}
+.who-we-are-cont-head .heading-two span{
+    color: #fbc25a;
+    display: block;
+    font-family: "ProximaNova-Bold";
+}
+.who-we-are-cont-head .website-main-buttons{
+    margin: 0;
+}
+.who-we-are-cont-head .website-main-buttons button.popup-btn{
+    background: linear-gradient(to right, #fdfdfe 50%, #fcc127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #fcc127;
+    color: #212121;
+}
+.who-we-are-cont-head .website-main-buttons button.popup-btn:hover{
+    background-position: left bottom;
+}
+.who-we-are-cont-head .website-main-buttons button.chat-btn{
+    background: linear-gradient(to right, #fcc127 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #fcc127;
+    color: #fff;
+}
+.who-we-are-cont-head .website-main-buttons button.chat-btn:hover{
+    background-position: left bottom;
+    color: #212121;
+}
+.who-we-are-content-main .who-we-are-content-para{
+    margin-top: 30px;
+}
+.who-we-are-content-main .who-we-are-content-para p{
+    font-size: 20px;
+    color: #9e9e9e;
+    line-height: 27px;
+    font-family: "Segoe-UI";
+    margin-bottom: 25px;
+}
+/*Who We Are Section CSS End Here*/
+
+/*About Sapcer Section CSS Start Here*/
+section.about-space-main{
+    position: relative;
+    z-index: -1;
+    background: url(../images/bg-img/about-wiki.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 445px;
+}
+section.about-space-main:before{
+    content: "";
+    background: #000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    opacity: 0.4;
+}
+/*About Sapcer Section CSS End Here*/
+  
+/**************************************************************************
+--------------------- About Page Folds Css End Here -----------------------
+--------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+--------------------- Service Page Folds Css Start Here -------------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/*Service Banner Section Css Start Here*/
+section.service-banner-sec{
+    background-image: url(../images/bg-img/banner-main-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 200px 0 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.service-banner-content .heading-one{
+    color: #212121;
+    margin: 0 0 10px;
+}
+.service-banner-content .heading-one span{
+    color: #F5B339;
+    display: block;
+}
+.service-banner-content p{
+    color: #5E5E5E;
+}
+.service-banner-content ul{
+    list-style: disc;
+    padding: 0 0px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.service-banner-content ul li{
+    font-family: "ProximaNova-Semibold";
+    color: #000;
+    margin: 0 10px 10px 0;
+    width: 100%;
+}
+.service-banner-content .service-banner-brands{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.service-banner-brands img{
+    object-fit: scale-down;
+    margin: 0 12px 0 0;
+}
+.service-banner-content .website-main-buttons button.popup-btn{
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #FCC127;
+    color: #212121;
+}
+.service-banner-content .website-main-buttons button.popup-btn:hover{
+    background-position: left bottom;
+}
+.service-banner-content .website-main-buttons button.chat-btn,
+.service-banner-content .website-main-buttons a.call-btn{
+    background: linear-gradient(to right, #fbfbfb 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #707070;
+    color: #FCC127;
+}
+.service-banner-content .website-main-buttons button.chat-btn:hover,
+.service-banner-content .website-main-buttons a.call-btn:hover{
+    background-position: left bottom;
+}
+.service-banner-sec .service-banner-form{
+    background: #1c1c1c;
+    width: 75%;
+    padding: 30px 30px;
+    margin: 0 auto;
+    border-radius: 0px 25px 25px 25px;
+}
+.service-banner-form .heading-three{
+    font-family: "ProximaNova-Semibold";
+    color: #fff;
+    margin: 0 0 10px
+}
+.service-banner-form .heading-three span{
+    color: #FBC25A;
+}
+.service-banner-form .form-group{
+    margin: 0 0 10px;
+}
+.service-banner-form .form-group.select-form-group{
+    position: relative;
+    z-index: 1;
+    margin: 0 0 20px;
+}
+.service-banner-form .form-group.select-form-group::after{
+    content: "\f078";
+    font-family: "Font Awesome 6 Pro";
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    z-index: -1;
+}
+.service-banner-form .form-group .form-select{
+    font-family: "ProximaNova-Semibold";
+    background-color: transparent;
+    color: #ffff;
+    font-size: 16px;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #707070;
+    outline: none;
+    box-shadow: none;
+    padding: 10px 30px 10px 10px;
+    cursor: pointer;
+    background-image: none;
+    position: relative;
+}
+.service-banner-form .form-group .form-select option{
+    font-family: "ProximaNova-Regular";
+    background-color: #000;
+}
+.service-banner-form .form-group input{
+    background: #fff;
+    font-size: 16px;
+    color: #212121;
+    padding: 10px 20px;
+    width: 100%;
+    height: 60px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.service-banner-form .form-group input::placeholder{
+    color: #A4A4A4;
+}
+.service-banner-form .form-group textarea{
+    background: #fff;
+    color: #212121;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+    height: 100px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+}
+.banner-editing-form form .form-group textarea::placeholder{
+    color: #A4A4A4;
+}
+.service-banner-form .form-group button.submit-btn{
+    font-family: "Calibri-Bold";
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #FCC127;
+    color: #212121;
+    font-size: 18px;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    padding: 8px 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+.service-banner-form .form-group button.submit-btn:hover{
+    background-position: left bottom;
+}
+/*Service Banner Section Css End Here*/
+
+/*CTA Bnner Section Css Start Here*/
+section.cta-banner-wrap{
+    background-image: url(../images/bg-img/cta-main-bg2.webp);
+    background-color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 0%;
+    padding: 100px 0;
+    position: relative;
+    z-index: 1;
+}
+.cta-banner-content .heading-two{
+    color: #FDFDFE;
+    margin: 0 0 20px;
+}
+.cta-banner-content .heading-two span{
+    color: #FBC25A;
+    display: block;
+}
+.cta-banner-content p{
+    color: #AEAEAE;
+}
+.cta-banner-content ul{
+    margin: 20px 0;
+}
+.cta-banner-content ul li{
+    color: #AEAEAE;
+}
+.cta-banner-content ul li img{
+    margin: 0 10px 0 0;
+}
+.cta-banner-content .website-main-buttons button.popup-btn{
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #FCC127;
+    color: #212121;
+}
+.cta-banner-content .website-main-buttons button.popup-btn:hover{
+    background-position: left bottom;
+}
+.cta-banner-content .website-main-buttons button.chat-btn,
+.cta-banner-content .website-main-buttons a.call-btn{
+    background: linear-gradient(to right, #fbfbfb 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #707070;
+    color: #FCC127;
+}
+.cta-banner-content .website-main-buttons button.chat-btn:hover,
+.cta-banner-content .website-main-buttons a.call-btn:hover{
+    background-position: left bottom;
+}
+.cta-banner-wrap .cta-banner-img{
+    text-align: center;
+}
+/*CTA Banner Section Css End Here*/
+
+/*Creative Service Section Css Start Here*/
+section.creative-service-wrap{
+    background-image: url(../images/bg-img/bg-img-element.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 10%;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+.creative-service-wrap .creative-service-head{
+    text-align: center;
+    margin: 0 0 50px;
+}
+.creative-service-head .heading-two{
+    color: #212121;
+    margin: 0 0 10px;
+}
+.creative-service-head  .heading-two span{
+    color: #FBC25A;
+    display: block;
+}
+.creative-service-head  p{
+    color: #5E5E5E;
+}
+.creative-service-inner .creative-service-box{
+    padding: 0px 20px;
+    text-align: center;
+    height: 100%;
+    border-right: 1px solid #E5E5E5;
+}
+.creative-service-box.service-box-last{
+    border-right: inherit;
+}
+.creative-service-box img{
+    margin: 0 0 20px;
+}
+.creative-service-box .service-box-content{
+    min-height: auto;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 0 5px;
+}
+.service-box-content::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.0);
+    border-radius: 0px;
+}
+.service-box-content::-webkit-scrollbar{
+    width: 3px;
+    background: #b2b2b2;
+    border-radius: 0px;
+}
+.service-box-content::-webkit-scrollbar-thumb{
+    background-color: #FCC127;
+    border-radius: 0px;
+}
+.service-box-content .heading-four{
+    color: #5A5A5A;
+    height: 70px;
+    margin: 0 0 20px;
+}
+.service-box-content p{
+    color: #A2A2A2;
+}
+/*Creative Service Section Css End Here*/
+
+/*Business Individual Section Css Start Here*/
+section.business-individual-wrap{
+    background: #1E1E1E;
+    padding: 50px 0;
+}
+.business-individual-wrap .business-individual-head{
+    text-align: center;
+    margin: 0 0 50px;
+}
+.individual-head-content .heading-two{
+    color: #FFFFFF;
+    margin: 0 0 10px;
+}
+.individual-head-content .heading-two span{
+    color: #FBC25A;
+    display: block;
+}
+.individual-head-content .short-heading{
+    font-family: "ProximaNova-Bold";
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+    margin: 0 0 10px;
+    display: block;
+    text-transform: capitalize;
+    text-align: center;
+}
+.individual-head-content p{
+    color: #AEAEAE;
+}
+.business-individual-inner .business-individual-box{
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 30px;
+    padding: 30px 30px;
+    margin: 0 0 40px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.business-individual-box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 100%;
+    background: #FCFCFC;
+    border-radius: 30px;
+    z-index: -1;
+    transition: all .5s ease-in-out;
+}
+.business-individual-box:hover::after{
+    width: 100%;
+    height: 100%;
+}
+.business-individual-box .individual-box-img{
+    margin: 0 0 20px;
+}
+.individual-box-img img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.individual-box-content .heading-four{
+    color: #1E1E1E;
+    margin: 0 0 20px;
+}
+.individual-box-content p{
+    color: #9A9A9A;
+    min-height: 200px;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 0 5px;
+}
+.individual-box-content p::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.0);
+    border-radius: 0px;
+}
+.individual-box-content p::-webkit-scrollbar{
+    width: 3px;
+    background: #b2b2b2;
+    border-radius: 0px;
+}
+.individual-box-content p::-webkit-scrollbar-thumb{
+    background-color: #FCC127;
+    border-radius: 0px;
+}
+section.business-individual-wrap.business-individual-lightwrap{
+    background: #F6F6F6;
+}
+.business-individual-wrap.business-individual-lightwrap .individual-head-content .heading-two{
+    color: #1C1C1C;
+}
+.business-individual-wrap.business-individual-lightwrap .individual-head-content .short-heading{
+    color: #1C1C1C;
+}
+.business-individual-wrap.business-individual-lightwrap .individual-head-content p{
+    color: #6d6d6d;
+}
+/*Business Individual Section Css End Here*/
+
+/*About Info Section Css Start Here*/
+section.about-info-wrap{
+    background-image: url(../images/bg-img/bg-img-element.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px 0;
+    position: relative;
+    z-index: 1;
+}
+.about-info-inner .about-info-content{
+    padding: 50px 0;
+    border-bottom: 1px solid #D5D5D5;
+}
+.about-info-content .heading-two{
+    color: #1C1C1C;
+    margin: 0 0 20px;
+}
+.about-info-content .heading-two span{
+    color: #fbc25a;
+    display: block;
+}
+.about-info-content .heading-three{
+    color: #393939;
+    margin: 20px 0;
+}
+.about-info-content p{
+    color: #929292;
+    margin: 0 0 20px;
+}
+/*About Info Section Css End Here*/
+
+/*Main Info Section Css Start Here*/
+section.main-info-wrap{
+    padding: 50px 0;
+}
+.main-info-content .heading-two{
+    color: #212121;
+    margin: 0 0 10px;
+}
+.main-info-content .heading-two span{
+    color: #fbc25a;
+    display: block;
+}
+.main-info-content .heading-three{
+    color: #393939;
+    margin: 20px 0;
+}
+.main-info-content p{
+    color: #929292;
+}
+.main-info-inner .main-info-image{
+    text-align: left;
+}
+/*Main Info Section Css End Here*/
+
+/**************************************************************************
+--------------------- Service Page Folds Css End Here ---------------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+ --------------------- Contact Page Folds Css Start Here ------------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Contact Banner Css Start Here*/
+section.contact-banner-wrap{
+    padding: 150px 0 50px;
+    position: relative;
+    z-index: 1;
+}
+.contact-banner-wrap .contact-banner-content{}
+.contact-banner-content .heading-one{
+    color: #212121;
+    margin: 0 0 20px;
+}
+.contact-banner-content p{
+    color: #000000;
+}
+.contact-banner-content ul.footer-social-list{
+    margin: 20px 0;
+}
+.contact-banner-content ul.footer-social-list li a{
+    color: #999999;
+    border-radius: 10px;
+    background: linear-gradient(to right, #FCC127 50%, #F4F4F4 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+.contact-banner-wrap .contact-banner-images{
+    text-align: center;
+}
+.contact-banner-images img{}
+/*Contact Banner Css End Here*/
+
+/*Contact Area Section Css Start Here*/
+section.contact-area-wrap{
+    background: #F8F8F8;
+    padding: 100px 0;
+}
+.contact-area-wrap .contact-area-content{
+    border-right: 2px solid #707070;
+    padding: 0 50px 0 0;
+    margin: 0 50px 0 0;
+    height: 100%;
+}
+.contact-area-content .contact-area-head{
+    margin: 0 0 20px;
+}
+.contact-area-head .heading-two{
+    color: #FBC25A;
+    font-size: 74px;
+    line-height: 80px;
+    margin: 0 0 10px;
+}
+.contact-area-content .contact-area-form{}
+.contact-area-form .heading-four{
+    color: #000000;
+    margin: 0 0 10px;
+}
+.contact-area-form p{
+    color: #6d6d6d;
+}
+.contact-area-form form{
+    margin: 20px 0 0 0;
+}
+.contact-area-form .form-group{
+    margin: 0 0 20px;
+}
+.contact-area-form .form-group input{
+    width: 100%;
+    background: transparent;
+    color: #212121;
+    font-size: 20px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #FBC25A;
+    outline: none;
+    padding: 15px 5px;
+    box-shadow: none;
+}
+.contact-area-form .form-group input::placeholder{
+    color: #212121;
+}
+.contact-area-form .form-group select{
+    font-family: "ProximaNova-Regular";
+    background-color: transparent;
+    width: 100%;
+    color: #212121;
+    font-size: 20px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #FBC25A;
+    outline: none;
+    padding: 15px 5px;
+    box-shadow: none;
+    position: relative;
+    cursor: pointer;
+}
+.contact-area-form .form-group select option{
+    padding: 10px 10px;
+    font-size: 16px;
+}
+.contact-area-form .form-group textarea{
+    width: 100%;
+    height: 120px;
+    background: transparent;
+    color: #212121;
+    font-size: 20px;
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #FBC25A;
+    resize: none;
+    outline: none;
+    padding: 10px 5px;
+    box-shadow: none;
+}
+.contact-area-form .form-group textarea::placeholder{
+    color: #212121;
+}
+.contact-area-form .form-group button.submit-btn{
+    font-family: "Calibri-Bold";
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border: 2px solid #FCC127;
+    color: #212121;
+    font-size: 18px;
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease-in-out;
+}
+.contact-area-form .form-group button.submit-btn:hover{
+    background-position: left bottom;
+}
+.contact-area-wrap .contact-area-item{}
+.contact-area-item .contact-item-box{
+    margin: 0 0 20px;
+}
+.contact-item-box .heading-three{
+    color: #1c1c1c;
+    margin: 0 0 10px;
+}
+.contact-item-box p{
+    color: #1C1C1C;
+}
+.contact-item-box a{
+    font-size: 18px;
+    line-height: 24px;
+    color: #FBC25A;
+    display: flex;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    text-transform: lowercase;
+}
+.contact-item-box a:hover{
+    transform: translateX(10px);
+}
+.contact-item-box a i{
+    background-color: #FFF9EE;
+    color: #FBC25A;
+    font-size: 16px;
+    border: 1px solid #FBC25A;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+.contact-item-box .address-para{
+    font-family: "ProximaNova-Semibold";
+    color: #FBC25A;
+    display: flex;
+    align-items: center;
+}
+.contact-item-box .address-para i{
+    background-color: #FFF9EE;
+    color: #FBC25A;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #FBC25A;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 37px;
+    text-align: center;
+    margin: 0 10px 0 0;
+}
+/*Contact Area Section Css End Here*/
+
+/**************************************************************************
+ --------------------- Contact Page Folds Css End Here --------------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Footer Css Start Here*/
+footer.footer-main-sec{
+    background: #080731;
+    position: relative;
+}
+.footer-main-sec .footer-top{
+    padding: 100px 0;
+    border-bottom: 1px solid #F8F8F8;
+}
+.footer-logo-area .footer-logo{
+    width: 250px;
+    margin: 0 0 40px;
+}
+.footer-logo-area p{
+    color: #B4B4B4;
+}
+.footer-top .footer-links-area{
+    margin: 0 10px;
+}
+.footer-links-area .heading-three{
+    color: #fff;
+    margin: 0 0 40px;
+}
+.footer-links-area ul.footer-nav-links li{
+    margin: 0 0 10px;
+}
+.footer-links-area ul.footer-nav-links a{
+    color: #B4B4B4;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+    display: block;
+    text-transform: capitalize;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, #FD5240 50%, #B4B4B4 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: all .3s ease-in-out;
+}
+.footer-links-area ul.footer-nav-links a:hover{
+    transition: all 0.9s cubic-bezier(0.000, 0.000, 0.230, 1);
+    background-position: 0%;
+}
+.footer-top .footer-disclaimer-area p{
+    color: #B4B4B4;
+}
+.footer-top .footer-disclaimer-area p span{
+    color: #FD5240;
+}
+.footer-main-sec .footer-bottom{
+    padding: 10px 0;
+}
+.footer-bottom .footer-copyright{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-copyright p{
+    color: #B4B4B4;
+    margin: 0;
+}
+.footer-copyright .footer-payments-card{
+    display: flex;
+}
+.footer-payments-card img{
+    width: 40px;
+    height: 25px;
+    object-fit: cover;
+    margin: 0 5px;
+}
+ul.footer-social-list{
+    display: flex;
+}
+ul.footer-social-list li a{
+    background: #FCC127;
+    color: #212121;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 44px;
+    text-align: center;
+    border-radius: 100%;
+    margin: 0 5px 0 0;
+    display: block;
+    position: relative;
+    transition: all .5s ease-in-out;
+    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+ul.footer-social-list li a:hover{
+    background-position: left bottom;
+}
+ul.footer-social-list li a img{
+    padding: 8px;
+    margin: -5px 0 0 0;
+}
+/*Footer Css End Here*/
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px){
+
+/*Website Custom Style Responsive Css For Single Items Start Here*/
+
+/*Heading & Para Style Responsive Css*/
+.heading-one{
+    font-size: 36px;
+    line-height: 42px;
+}
+.heading-two{
+    font-size: 42px;
+    line-height: 48px;
+}
+.heading-three{
+    font-size: 28px;
+    line-height: 34px;
+}
+.heading-four{
+    font-size: 20px;
+    line-height: 26px;
+}
+.heading-five{
+    font-size: 20px;
+    line-height: 26px;
+}
+/*Heading & Para Style Responsive Css*/
+
+/*Website Custom Style Responsive Css For Single Items End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css Start Here ----------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Banner Main Section Responsive Css Start Here*/
+section.banner-main-sec{
+    padding: 160px 0 60px;
+}
+.banner-main-sec .banner-main-img{
+    bottom: -160px;
+}
+.banner-main-img::before{
+    top: -250px;
+}
+/*Banner Main Section Responsive Css End Here*/
+
+/*Unlock Story Section Responsive Css Start Here*/
+.unlock-story-content ul li img{
+    margin: 0 5px 0 0;
+}
+/*Unlock Story Section Responsive Css End Here*/
+
+/*Service Offer Section Responsive Css Start Here*/
+.service-offer-slider .slick-prev{
+    left: -20px;
+}
+.service-offer-slider .slick-next{
+    right: 25px;
+}
+.service-offer-inner .service-offer-box{
+    padding: 40px 30px;
+}
+/*Service Offer Section Responsive Css End Here*/
+
+/*Step Works Section Responsive Css Start Here*/
+.step-works-box::before{
+    left: -30px;
+    width: 225px;
+    height: 100%;
+    border-radius: 70px;
+}
+/*Step Works Section Responsive Css End Here*/
+
+/*Great Pride Section Responsive Css Start Here*/
+.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv{
+    width: 100%;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-cont-text{
+    width: 70%;
+}
+/*Great Pride Section Responsive CSS End Here*/
+
+/*Testimonials Section Responsive CSS Start Here*/
+.testi-auth-image-main .testi-auth-images{
+    padding: 0 30px 30px
+}
+/*Testimonials Section Responsive CSS End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css End Here ------------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+/*Website Custom Style Responsive Css For Single Items Start Here*/
+
+/*Heading & Para Style Responsive Css*/
+.heading-one{
+    font-size: 32px;
+    line-height: 38px;
+}
+.heading-two{
+    font-size: 34px;
+    line-height: 40px;
+}
+.heading-three{
+    font-size: 28px;
+    line-height: 34px;
+}
+.heading-four{
+    font-size: 20px;
+    line-height: 26px;
+}
+.heading-five{
+    font-size: 18px;
+    line-height: 22px;
+}
+.heading-six{
+    font-size: 16px;
+    line-height: 22px;
+}
+p{
+    font-size: 14px;
+    line-height: 20px;
+}
+li{
+    font-size: 14px;
+    line-height: 20px;
+}
+/*Heading & Para Style Responsive Css*/
+
+/*Buttons Style Responsive Css*/
+.website-main-buttons{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.website-main-buttons a.read-more-btn,
+.website-main-buttons button.popup-btn,
+.website-main-buttons button.chat-btn,
+.website-main-buttons a.call-btn{
+    font-size: 16px;
+    margin: 0 5px 5px;
+}
+.website-main-buttons span.or-end{
+    margin: 10px 10px 15px 10px;
+}
+/*Buttons Style Responsive Css*/
+
+/*Website Custom Style Responsive Css For Single Items End Here*/
+
+/*Header Responsive Css Start Here*/
+header nav.navbar .navbar-brand{
+    width: 200px;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item{
+    margin: 0 10px;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 8px;
+}
+/*Header Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css Start Here ----------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Banner Main Section Responsive Css Start Here*/
+section.banner-main-sec{
+    padding: 130px 0 50px;
+}
+.banner-main-content ul li{
+    width: 100%;
+}
+.banner-brands .banner-brands-items img{
+    margin: 0 10px 0 0;
+}
+.banner-main-img::before{
+    top: -250px;
+}
+.banner-main-form .form-group{
+    margin: 0px 5px;
+}
+.banner-main-form .form-group button.submit-btn{
+    font-size: 16px;
+}
+/*Banner Main Section Responsive Css End Here*/
+
+/*Unlock Story Section Responsive Css Start Here*/
+.unlock-story-content ul li img{
+    margin: 0 5px 0 0;
+}
+/*Unlock Story Section Responsive Css End Here*/
+
+/*Service Offer Section Responsive Css Start Here*/
+.service-offer-slider .slick-prev{
+    left: -20px;
+}
+.service-offer-slider .slick-next{
+    right: 25px;
+}
+.service-offer-inner .service-offer-box{
+    padding: 40px 30px;
+}
+.offer-box-content .heading-four{
+    height: inherit;
+}
+/*Service Offer Section Responsive Css End Here*/
+
+/*Step Works Section Responsive Css Start Here*/
+.step-works-head .step-head-content{
+    width: 60%;
+}
+.step-works-head .website-main-buttons{
+    justify-content: end;
+}
+.step-works-wrap .step-works-inner .row{
+    justify-content: center;
+}
+.step-works-box::before{
+    left: -40px;
+    background: #F9F9F9;
+    width: 350px;
+    height: 375px;
+}
+.step-works-box span.step-count{
+    margin: 0 20px;
+}
+.step-works-box .works-box-content{
+    width: 75%;
+    margin: 0 auto;
+}
+/*Step Works Section Responsive Css End Here*/
+
+/*Why Choose Section Css Responsive Start Here*/
+.why-choose-box .choose-box-content{
+    min-height: 210px;
+    max-height: 210px;
+}
+/*Why Choose Section Css Responsive End Here*/
+
+/*Great Pride Section Responsive Css Start Here*/
+.gert-pri-content-main .gert-pride-tab-btn ul{
+    gap: 20px;
+}
+.gert-pri-content-main .gert-pride-tab-btn ul li button{
+    font-size: 16px;
+    line-height: 22px;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv{
+    width: 100%;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-cont-text{
+    width: 70%;
+}
+/*Great Pride Section Responsive CSS End Here*/
+
+/*Testimonials Section Responsive CSS Start Here*/
+.testi-lft-text-main .website-main-buttons{
+    justify-content: left;
+}
+.testi-auth-image-main .testi-auth-images{
+    padding: 0 30px 30px
+}
+.testi-auth-content-items .testi-reviews-icon-main{
+    margin-top: 20px;
+}
+.testi-auth-content-main .slick-arrow{
+    bottom: -25%;
+}
+/*Testimonials Section Responsive CSS End Here*/
+
+/*FAQS Section Responsive Css Start Here*/
+.faqs-sec-item .accordion-item .accordion-header button.accordion-button{
+    font-size: 18px;
+    line-height: 24px;
+}
+.faqs-sec-item .accordion-item .accordion-collapse .accordion-body{
+    font-size: 14px;
+    line-height: 20px;
+}
+/*FAQS Section Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css End Here ------------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+--------------- Service Page Folds Responsive Css Start Here --------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/*Service Banner Section Responsive Css Start Here*/
+section.service-banner-sec{
+    padding: 150px 0 50px
+}
+.service-banner-brands img{
+    margin: 0 5px 10px;
+}
+.service-banner-content .website-main-buttons{
+    justify-content: left;
+}
+.service-banner-sec .service-banner-form{
+    width: 100%;
+}
+.service-banner-form .form-group button.submit-btn{
+    font-size: 16px;
+}
+/*Service Banner Section Responsive Css End Here*/
+
+/*CTA Bnner Section Responsive Css Start Here*/
+section.cta-banner-wrap{
+    padding: 50px 0;
+}
+.cta-banner-content .website-main-buttons{
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+/*CTA Banner Section Responsive Css End Here*/
+
+/*Creative Service Section Responsive Css Start Here*/
+.creative-service-inner .creative-service-box{
+    padding: 20px 10px;
+}
+.creative-service-box .service-box-content{
+    min-height: inherit;
+    max-height: inherit;
+}
+.service-box-content .heading-four{
+    height: inherit;
+}
+/*Creative Service Section Responsive Css End Here*/
+
+/*Business Individual Section Responsive Css Start Here*/
+.individual-box-content p{
+    min-height: 175px;
+    max-height: 175px;
+}
+/*Business Individual Section Responsive Css End Here*/
+
+/**************************************************************************
+---------------- Service Page Folds Responsive Css End Here ---------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+ --------------- Contact Page Folds Responsive Css Start Here -------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Contact Area Section Responsive Css Start Here*/
+.contact-area-wrap .contact-area-content{
+    padding: 0 20px 0 0;
+    margin: 0 20px 0 0;
+}
+/*Contact Area Section Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Contact Page Folds Responsive Css End Here ---------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Footer Responsive Css Start Here*/
+.footer-logo-area .footer-logo{
+    width: 200px;
+}
+.footer-links-area ul.footer-nav-links a{
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-copyright .footer-payments-card{
+    margin: 0 5px 0;
+}
+ul.footer-social-list li a{
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 39px;
+}
+/*Footer Responsive Css End Here*/
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+/*Website Custom Style Responsive Css For Single Items Start Here*/
+
+/*Heading & Para Style Responsive Css*/
+.heading-one{
+    font-size: 32px;
+    line-height: 38px;
+}
+.heading-two{
+    font-size: 34px;
+    line-height: 40px;
+}
+.heading-three{
+    font-size: 28px;
+    line-height: 34px;
+}
+.heading-four{
+    font-size: 20px;
+    line-height: 26px;
+}
+.heading-five{
+    font-size: 18px;
+    line-height: 22px;
+}
+.heading-six{
+    font-size: 16px;
+    line-height: 22px;
+}
+p{
+    font-size: 14px;
+    line-height: 20px;
+}
+li{
+    font-size: 14px;
+    line-height: 20px;
+}
+/*Heading & Para Style Responsive Css*/
+
+/*Buttons Style Responsive Css*/
+.website-main-buttons{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.website-main-buttons a.read-more-btn,
+.website-main-buttons button.popup-btn,
+.website-main-buttons button.chat-btn,
+.website-main-buttons a.call-btn{
+    font-size: 16px;
+    margin: 0 5px 5px;
+}
+.website-main-buttons span.or-end{
+    margin: 10px 10px 15px 10px;
+}
+/*Buttons Style Responsive Css*/
+
+/*Website Custom Style Responsive Css For Single Items End Here*/
+
+/*Header Responsive Css Start Here*/
+header nav.navbar{
+    padding: 20px 0 20px;
+}
+header nav.navbar .navbar-brand{
+    width: 200px;
+}
+header .navbar-expand-lg .navbar-collapse{
+    background: #e2e2e2;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+header .navbar-main-nav .navbar-main-center{
+    width: 100%;
+    margin: 0;
+}
+header .navbar-main-center ul.navbar-nav{
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item{
+    margin: 0 10px;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item a.nav-link{    
+    padding: 10px 0px;
+}
+header ul.navbar-nav .nav-item.dropdown .dropdown-toggle::after{
+    opacity: 1;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu{
+    position: unset;
+    width: 100%;
+    top: 0;
+    box-shadow: none;
+    padding: unset;
+    opacity: unset;
+    visibility: unset;
+    transform: inherit;
+    display: none;
+}
+header .navbar-nav .nav-item.dropdown:hover ul.dropdown-menu{
+    transform: inherit;
+    opacity: inherit;
+    visibility: inherit;
+    display: none;
+}
+header .navbar-nav .nav-item a.nav-link.dropdown-toggle.show ul.dropdown-menu{
+    display: block;
+}
+header .navbar-nav .nav-item.dropdown:hover ul.dropdown-menu{
+    display: none;
+}
+header .navbar-nav .nav-item.dropdown:hover ul.dropdown-menu.show{
+    display: block;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 8px;
+}
+/*Header Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css Start Here ----------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Banner Main Section Responsive Css Start Here*/
+section.banner-main-sec{
+    padding: 125px 0 50px
+}
+.banner-main-sec .banner-main-content{
+    text-align: center;
+    margin: 0 0 40px
+}
+.banner-main-content ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.banner-main-content ul li{
+    width: 100%;
+}
+.banner-brands .banner-brands-items{
+    flex-wrap: wrap;
+    justify-content: center
+}
+.banner-brands .banner-brands-items img{
+    margin: 0 5px 0;
+}
+.banner-main-sec .banner-main-img{
+    bottom: -5px;
+}
+.banner-main-img::before{
+    display: none;
+}
+.banner-main-sec .banner-main-form{
+    border-radius: 50px;
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+.banner-main-form form{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.banner-main-form .form-group{
+    width: 100%;
+    margin: 5px 10px;
+}
+.banner-main-form .form-group input{
+    font-size: 14px;
+    padding: 10px 10px;
+}
+.banner-main-form .form-group button.submit-btn{
+    font-size: 16px;
+}
+/*Banner Main Section Responsive Css End Here*/
+
+/*Award Brands Section Responsive Css Start Here*/
+section.award-brands-wrap{
+    padding: 30px 0px;
+}
+/*Award Brands Section Responsive Css End Here*/
+
+/*Unlock Story Section Responsive Css Start Here*/
+section.unlock-story-wrap{
+    padding: 30px 0;
+}
+.unlock-story-inner .unlock-story-content{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.unlock-story-content ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.unlock-story-content ul li img{
+    margin: 0 5px 0 0;
+}
+.unlock-story-inner .unlock-story-img{
+    text-align: center;
+}
+/*Unlock Story Section Responsive Css End Here*/
+
+/*Service Offer Section Responsive Css Start Here*/
+section.service-offer-wrap{
+    padding: 30px 0;
+}
+.service-offer-wrap .service-offer-head{
+    margin: 0 0 30px;
+}
+.service-offer-slider .slick-arrow::before{
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+}
+.service-offer-slider .slick-prev{
+    left: -30px;
+}
+.service-offer-slider .slick-next{
+    right: 0px;
+}
+.service-offer-inner .service-offer-box{
+    padding: 40px 30px;
+    margin: 10px 10px;
+}
+/*Service Offer Section Responsive Css End Here*/
+
+/*Step Works Section Responsive Css Start Here*/
+section.step-works-wrap{
+    padding: 30px 0;
+}
+.step-works-wrap .step-works-head{
+    justify-content: center;
+    margin: 0 0 30px;
+    flex-direction: column;
+    text-align: center;
+}
+.step-works-head .step-head-content{
+    width: 100%;
+}
+.step-works-head .website-main-buttons{
+    margin: 20px 0 0;
+}
+.step-works-wrap .step-works-inner .row{
+    justify-content: center;
+}
+.step-works-inner .step-works-box{
+    text-align: center;
+}
+.step-works-box::before{
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.step-works-box span.step-count{
+    left: 0;
+    right: 0;
+}
+/*Step Works Section Responsive Css End Here*/
+
+/*Main CTA Section Responsive Css Start Here*/
+section.cta-main-wrap{
+    padding: 30px 0;
+}
+/*Main CTA Section Css Responsive End Here*/
+
+/*Why Choose Section Css Responsive Start Here*/
+section.why-choose-wrap{
+    padding: 30px 0;
+}
+.why-choose-wrap .why-choose-head{
+    margin: 0 0 30px;
+}
+.why-choose-inner .short-heading{
+    font-size: 20px;
+    line-height: 26px;
+}
+.why-choose-box .choose-box-content{
+    min-height: 210px;
+    max-height: 210px;
+}
+.why-choose-inner .website-main-buttons{
+    margin: 0;
+}
+/*Why Choose Section Css Responsive End Here*/
+
+/*Great Pride Section Responsive Css Start Here*/
+section.gert-pride-main{
+    padding: 30px 0px;
+}
+.gert-pri-content-main .gert-pride-tab-btn ul{
+    gap: 10px;
+    position: inherit;
+    left: inherit;
+    top: inherit;
+}
+.gert-pri-content-main .gert-pride-tab-btn ul li button{
+    font-size: 16px;
+    line-height: 22px;
+}
+.gert-pride-tab-items-list .gert-pride-column:nth-child(2){
+    margin-top: 0px;
+}
+.gert-pride-tab-items-list .auth-cont-main{
+    margin: 0 0 20px;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv{
+    width: 75%;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-cont-text{
+    width: 60%;
+}
+/*Great Pride Section Responsive CSS End Here*/
+
+/*Testimonials Section Responsive CSS Start Here*/
+section.testi-main-sec{
+    padding: 30px 0px;
+}
+.testi-main-sec .testi-lft-text-main{
+    text-align: center;
+    margin: 0 0 30px;
+}
+.testi-auth-content-main .slick-arrow{
+    bottom: -20%;
+}
+/*Testimonials Section Responsive CSS End Here*/
+
+/*FAQS Section Responsive Css Start Here*/
+section.faqs-sec-wrap{
+    padding: 30px 0;
+}
+.faqs-sec-wrap .faqs-sec-head{
+    margin: 0 0 30px;
+}
+.faqs-sec-item .accordion-item .accordion-header button.accordion-button{
+    font-size: 18px;
+    line-height: 24px;
+}
+.faqs-sec-item .accordion-item .accordion-collapse .accordion-body{
+    font-size: 14px;
+    line-height: 20px;
+}
+/*FAQS Section Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css End Here ------------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+---------------- About Page Folds Responsive Css Start Here ---------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/*Who We Are Section Responsive CSS Start Here*/
+section.who-we-are-sec-main{
+    padding: 30px 0px;
+}
+.who-we-are-content-main .who-we-are-cont-head{
+    justify-content: center;
+    margin: 0 0 30px;
+    flex-direction: column;
+    text-align: center;
+}
+.who-we-are-content-main .who-we-are-content-para{
+    text-align: center;
+}
+.who-we-are-content-main .who-we-are-content-para p{
+    font-size: 16px;
+    line-height: 22px;
+}
+/*Who We Are Section Responsive CSS End Here*/
+
+/*About Sapcer Section Responsive CSS Start Here*/
+section.about-space-main{
+    display: none;
+}
+/*About Sapcer Section Responsive CSS End Here*/
+  
+/**************************************************************************
+---------------- About Page Folds Responsive Css End Here -----------------
+--------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+--------------- Service Page Folds Responsive Css Start Here --------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/*Service Banner Section Responsive Css Start Here*/
+section.service-banner-sec{
+    padding: 125px 0 50px
+}
+.service-banner-sec .service-banner-content{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.service-banner-content ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.service-banner-content .service-banner-brands{
+    justify-content: center;
+}
+.service-banner-brands img{
+    margin: 0 5px 10px;
+}
+.service-banner-sec .service-banner-form{
+    width: 80%;
+}
+.service-banner-form .form-group button.submit-btn{
+    font-size: 16px;
+}
+/*Service Banner Section Responsive Css End Here*/
+
+/*CTA Bnner Section Responsive Css Start Here*/
+section.cta-banner-wrap{
+    padding: 50px 0;
+}
+.cta-banner-content .website-main-buttons{
+    flex-wrap: nowrap;
+    justify-content: left;
+}
+/*CTA Banner Section Responsive Css End Here*/
+
+/*Creative Service Section Responsive Css Start Here*/
+section.creative-service-wrap{
+    padding: 30px 0;
+}
+.creative-service-inner .creative-service-box{
+    padding: 30px 20px;
+    border-right: inherit;
+}
+.creative-service-box .service-box-content{
+    min-height: inherit;
+    max-height: inherit;
+}
+.service-box-content .heading-four{
+    height: inherit;
+}
+/*Creative Service Section Responsive Css End Here*/
+
+/*Business Individual Section Responsive Css Start Here*/
+section.business-individual-wrap{
+    padding: 30px 0;
+}
+.business-individual-wrap .business-individual-head{
+    margin: 0 0 30px;
+}
+.individual-head-content .short-heading{
+    font-size: 20px;
+    line-height: 26px;
+}
+.individual-box-content p{
+    min-height: 175px;
+    max-height: 175px;
+}
+/*Business Individual Section Responsive Css End Here*/
+
+/*About Info Section Responsive Css Start Here*/
+section.about-info-wrap{
+    padding: 30px 0;
+}
+.about-info-inner .about-info-content{
+    padding: 30px 0;
+    text-align: center;
+}
+/*About Info Section Responsive Css End Here*/
+
+/*Main Info Section Responsive Css Start Here*/
+section.main-info-wrap{
+    padding: 30px 0;
+}
+/*Main Info Section Responsive Css End Here*/
+
+/**************************************************************************
+---------------- Service Page Folds Responsive Css End Here ---------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+ --------------- Contact Page Folds Responsive Css Start Here -------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Contact Banner Responsive Css Start Here*/
+section.contact-banner-wrap{
+    padding: 120px 0 50px;
+}
+.contact-banner-wrap .contact-banner-content{
+    text-align: center;
+}
+.contact-banner-content ul.footer-social-list{
+    justify-content: center;
+}
+/*Contact Banner Responsive Css End Here*/
+
+/*Contact Area Section Responsive Css Start Here*/
+section.contact-area-wrap{
+    padding: 50px 0;
+}
+.contact-area-wrap .contact-area-content{
+    padding: 0 20px 0 0;
+    margin: 0 20px 0 0;
+}
+.contact-area-head .heading-two{
+    font-size: 40px;
+    line-height: 46px;
+}
+.contact-area-form .form-group input{
+    font-size: 16px;
+}
+.contact-area-form .form-group select{
+    font-size: 16px;
+}
+.contact-area-form .form-group textarea{
+    font-size: 16px;
+}
+.contact-area-form .form-group button.submit-btn{
+    font-size: 16px;
+}
+.contact-item-box a{
+    font-size: 16px;
+    line-height: 22px;
+}
+/*Contact Area Section Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Contact Page Folds Responsive Css End Here ---------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Footer Responsive Css Start Here*/
+.footer-main-sec .footer-top{
+    padding: 50px 0;
+}
+.footer-top .footer-logo-area{
+    margin: 0 0 20px;
+}
+.footer-logo-area .footer-logo{
+    width: 200px;
+    margin: 0 0 20px;
+}
+.footer-top .footer-links-area{
+    margin: 0 0 20px;
+}
+.footer-links-area .heading-six{
+    margin: 0 0 20px;
+}
+.footer-links-area ul.footer-nav-links a{
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-copyright .footer-payments-card{
+    margin: 0 10px 0;
+}
+ul.footer-social-list li a{
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 39px;
+}
+/*Footer Responsive Css End Here*/
+
+}
+@media only screen and (min-width: 576px) and (max-width: 767px){
+
+/*Website Custom Style Responsive Css For Single Items Start Here*/
+
+/*Heading & Para Style Responsive Css*/
+.heading-one{
+    font-size: 32px;
+    line-height: 38px;
+}
+.heading-two{
+    font-size: 34px;
+    line-height: 40px;
+}
+.heading-three{
+    font-size: 28px;
+    line-height: 34px;
+}
+.heading-four{
+    font-size: 20px;
+    line-height: 26px;
+}
+.heading-five{
+    font-size: 18px;
+    line-height: 22px;
+}
+.heading-six{
+    font-size: 16px;
+    line-height: 22px;
+}
+p{
+    font-size: 14px;
+    line-height: 20px;
+}
+li{
+    font-size: 14px;
+    line-height: 20px;
+}
+/*Heading & Para Style Responsive Css*/
+
+/*Buttons Style Responsive Css*/
+.website-main-buttons{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.website-main-buttons a.read-more-btn,
+.website-main-buttons button.popup-btn,
+.website-main-buttons button.chat-btn,
+.website-main-buttons a.call-btn{
+    font-size: 16px;
+    margin: 0 5px 5px;
+}
+.website-main-buttons span.or-end{
+    margin: 10px 10px 15px 10px;
+}
+/*Buttons Style Responsive Css*/
+
+/*Website Custom Style Responsive Css For Single Items End Here*/
+
+/*Header Responsive Css Start Here*/
+header nav.navbar{
+    padding: 20px 0 20px;
+}
+header nav.navbar .navbar-brand{
+    width: 200px;
+}
+header .navbar-expand-lg .navbar-collapse{
+    background: #e2e2e2;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+header .navbar-main-nav .navbar-main-center{
+    width: 100%;
+    margin: 0;
+}
+header .navbar-main-center ul.navbar-nav{
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item{
+    margin: 0 10px;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item a.nav-link{    
+    padding: 10px 0px;
+}
+header ul.navbar-nav .nav-item.dropdown .dropdown-toggle::after{
+    opacity: 1;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu{
+    position: unset;
+    width: 100%;
+    top: 0;
+    box-shadow: none;
+    padding: unset;
+    opacity: unset;
+    visibility: unset;
+    transform: inherit;
+    display: none;
+}
+header .navbar-nav .nav-item.dropdown:hover ul.dropdown-menu{
+    transform: inherit;
+    opacity: inherit;
+    visibility: inherit;
+    display: none;
+}
+header .navbar-nav .nav-item a.nav-link.dropdown-toggle.show ul.dropdown-menu{
+    display: block;
+}
+header .navbar-nav .nav-item.dropdown:hover ul.dropdown-menu{
+    display: none;
+}
+header .navbar-nav .nav-item.dropdown:hover ul.dropdown-menu.show{
+    display: block;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 8px;
+}
+/*Header Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css Start Here ----------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Banner Main Section Responsive Css Start Here*/
+section.banner-main-sec{
+    padding: 100px 0 50px;
+}
+.banner-main-sec .banner-main-content{
+    text-align: center;
+    margin: 0 0 40px
+}
+.banner-main-content ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.banner-main-content ul li{
+    width: 100%;
+}
+.banner-brands .banner-brands-items{
+    flex-wrap: wrap;
+    justify-content: center
+}
+.banner-brands .banner-brands-items img{
+    margin: 0 5px 0;
+}
+.banner-main-sec .banner-main-img{
+    bottom: -5px;
+}
+.banner-main-img::before{
+    display: none;
+}
+.banner-main-sec .banner-main-form{
+    border-radius: 50px;
+}
+.banner-main-form form{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.banner-main-form .form-group{
+    width: 100%;
+    margin: 5px 10px;
+}
+.banner-main-form .form-group input{
+    font-size: 14px;
+    padding: 10px 10px;
+}
+.banner-main-form .form-group button.submit-btn{
+    font-size: 16px;
+}
+/*Banner Main Section Responsive Css End Here*/
+
+/*Award Brands Section Responsive Css Start Here*/
+section.award-brands-wrap{
+    padding: 30px 0px;
+}
+.award-brands-wrap::before{
+    left: -25px;
+}
+/*Award Brands Section Responsive Css End Here*/
+
+/*Unlock Story Section Responsive Css Start Here*/
+section.unlock-story-wrap{
+    padding: 30px 0;
+}
+.unlock-story-inner .unlock-story-content{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.unlock-story-content ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.unlock-story-content ul li img{
+    margin: 0 5px 0 0;
+}
+.unlock-story-inner .unlock-story-img{
+    text-align: center;
+}
+/*Unlock Story Section Responsive Css End Here*/
+
+/*Service Offer Section Responsive Css Start Here*/
+section.service-offer-wrap{
+    padding: 30px 0;
+}
+.service-offer-wrap .service-offer-head{
+    margin: 0 0 30px;
+}
+.service-offer-slider .slick-arrow::before{
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    display: none !important;
+}
+.service-offer-slider .slick-prev{
+    left: -10px;
+}
+.service-offer-slider .slick-next{
+    right: 20px;
+}
+.service-offer-inner .service-offer-box{
+    padding: 30px 30px;
+    margin: 10px 10px;
+    border-radius: 30px 20px;
+}
+.offer-box-content .heading-four{
+    height: inherit;
+}
+/*Service Offer Section Responsive Css End Here*/
+
+/*Step Works Section Responsive Css Start Here*/
+section.step-works-wrap{
+    padding: 30px 0;
+}
+.step-works-wrap .step-works-head{
+    justify-content: center;
+    margin: 0 0 30px;
+    flex-direction: column;
+    text-align: center;
+}
+.step-works-head .step-head-content{
+    width: 100%;
+}
+.step-works-head .website-main-buttons{
+    margin: 20px 0 0;
+}
+.step-works-wrap .step-works-inner .row{
+    justify-content: center;
+}
+.step-works-inner .step-works-box{
+    text-align: center;
+}
+.step-works-box::before{
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.step-works-box span.step-count{
+    left: 0;
+    right: 0;
+}
+/*Step Works Section Responsive Css End Here*/
+
+/*Main CTA Section Responsive Css Start Here*/
+section.cta-main-wrap{
+    padding: 30px 0;
+}
+/*Main CTA Section Css Responsive End Here*/
+
+/*Why Choose Section Css Responsive Start Here*/
+section.why-choose-wrap{
+    padding: 30px 0;
+}
+.why-choose-wrap .why-choose-head{
+    margin: 0 0 30px;
+}
+.why-choose-inner .short-heading{
+    font-size: 20px;
+    line-height: 26px;
+}
+.why-choose-box .choose-box-content{
+    min-height: 210px;
+    max-height: 210px;
+}
+.why-choose-inner .website-main-buttons{
+    margin: 0;
+}
+/*Why Choose Section Css Responsive End Here*/
+
+/*Great Pride Section Responsive Css Start Here*/
+section.gert-pride-main{
+    padding: 30px 0px;
+}
+.gert-pri-content-main .gert-pride-tab-btn ul{
+    gap: 5px;
+    position: inherit;
+    left: inherit;
+    top: inherit;
+}
+.gert-pri-content-main .gert-pride-tab-btn ul li button{
+    font-size: 16px;
+    line-height: 22px;
+}
+.gert-pride-tab-items-list .gert-pride-column:nth-child(2){
+    margin-top: 0px;
+}
+.gert-pride-tab-items-list .auth-cont-main{
+    margin: 0 0 20px;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv{
+    width: 100%;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-cont-text{
+    width: 75%;
+}
+/*Great Pride Section Responsive CSS End Here*/
+
+/*Testimonials Section Responsive CSS Start Here*/
+section.testi-main-sec{
+    padding: 30px 0px 75px;
+}
+.testi-main-sec .testi-lft-text-main{
+    text-align: center;
+    margin: 0 0 30px;
+}
+.testi-auth-image-main .testi-auth-images{
+    margin: 55px 10px 20px;
+}
+.testi-auth-images .testi-auth-image-items{
+    text-align: center;
+}
+.testi-auth-image-items .rating-icons{
+    justify-content: center;
+}
+.testi-auth-content-main .testi-auth-content-items{
+    text-align: center;
+}
+.testi-auth-content-items .testi-reviews-icon-main ul{
+    justify-content: center;
+}
+.testi-auth-content-main .slick-arrow{
+    bottom: -20%;
+}
+.testi-auth-content-main .slick-arrow:before{
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.testi-auth-content-main .slick-next.slick-arrow{
+    right: 0;
+    left: inherit;
+}
+/*Testimonials Section Responsive CSS End Here*/
+
+/*FAQS Section Responsive Css Start Here*/
+section.faqs-sec-wrap{
+    padding: 30px 0;
+}
+.faqs-sec-wrap .faqs-sec-head{
+    margin: 0 0 30px;
+}
+.faqs-sec-item .accordion-item .accordion-header button.accordion-button{
+    font-size: 18px;
+    line-height: 24px;
+}
+.faqs-sec-item .accordion-item .accordion-collapse .accordion-body{
+    font-size: 14px;
+    line-height: 20px;
+}
+/*FAQS Section Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css End Here ------------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+---------------- About Page Folds Responsive Css Start Here ---------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/*Who We Are Section Responsive CSS Start Here*/
+section.who-we-are-sec-main{
+    padding: 30px 0px;
+}
+.who-we-are-content-main .who-we-are-cont-head{
+    justify-content: center;
+    margin: 0 0 30px;
+    flex-direction: column;
+    text-align: center;
+}
+.who-we-are-content-main .who-we-are-content-para{
+    text-align: center;
+}
+.who-we-are-content-main .who-we-are-content-para p{
+    font-size: 16px;
+    line-height: 22px;
+}
+/*Who We Are Section Responsive CSS End Here*/
+
+/*About Sapcer Section Responsive CSS Start Here*/
+section.about-space-main{
+    display: none;
+}
+/*About Sapcer Section Responsive CSS End Here*/
+  
+/**************************************************************************
+---------------- About Page Folds Responsive Css End Here -----------------
+--------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+--------------- Service Page Folds Responsive Css Start Here --------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/*Service Banner Section Responsive Css Start Here*/
+section.service-banner-sec{
+    padding: 100px 0 50px
+}
+.service-banner-sec .service-banner-content{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.service-banner-content ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.service-banner-content .service-banner-brands{
+    justify-content: center;
+}
+.service-banner-brands img{
+    margin: 0 5px 10px;
+}
+.service-banner-sec .service-banner-form{
+    width: 100%;
+}
+.service-banner-form .form-group button.submit-btn{
+    font-size: 16px;
+}
+/*Service Banner Section Responsive Css End Here*/
+
+/*CTA Bnner Section Responsive Css Start Here*/
+section.cta-banner-wrap{
+    padding: 50px 0;
+}
+.cta-banner-wrap .cta-banner-content{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.cta-banner-content ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+/*CTA Banner Section Responsive Css End Here*/
+
+/*Creative Service Section Responsive Css Start Here*/
+section.creative-service-wrap{
+    padding: 30px 0;
+}
+.creative-service-inner .creative-service-box{
+    padding: 30px 20px;
+    border-right: inherit;
+    border-bottom: 1px solid #E5E5E5;
+}
+.creative-service-box.service-box-last{
+    border-bottom: inherit;
+}
+.creative-service-box .service-box-content{
+    min-height: inherit;
+    max-height: inherit;
+}
+.service-box-content .heading-four{
+    height: inherit;
+}
+/*Creative Service Section Responsive Css End Here*/
+
+/*Business Individual Section Responsive Css Start Here*/
+section.business-individual-wrap{
+    padding: 30px 0;
+}
+.business-individual-wrap .business-individual-head{
+    margin: 0 0 30px;
+}
+.individual-head-content .short-heading{
+    font-size: 20px;
+    line-height: 26px;
+}
+/*Business Individual Section Responsive Css End Here*/
+
+/*About Info Section Responsive Css Start Here*/
+section.about-info-wrap{
+    padding: 30px 0;
+}
+.about-info-inner .about-info-content{
+    padding: 30px 0;
+    text-align: center;
+}
+/*About Info Section Responsive Css End Here*/
+
+/*Main Info Section Responsive Css Start Here*/
+section.main-info-wrap{
+    padding: 30px 0;
+}
+.main-info-inner .main-info-content{
+    text-align: center;
+}
+.main-info-inner .main-info-image{
+    text-align: center;
+    margin: 0 0 20px;
+}
+/*Main Info Section Responsive Css End Here*/
+
+/**************************************************************************
+---------------- Service Page Folds Responsive Css End Here ---------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+ --------------- Contact Page Folds Responsive Css Start Here -------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Contact Banner Responsive Css Start Here*/
+section.contact-banner-wrap{
+    padding: 120px 0 50px;
+}
+.contact-banner-wrap .contact-banner-content{
+    text-align: center;
+}
+.contact-banner-content ul.footer-social-list{
+    justify-content: center;
+}
+/*Contact Banner Responsive Css End Here*/
+
+/*Contact Area Section Responsive Css Start Here*/
+section.contact-area-wrap{
+    padding: 50px 0;
+}
+.contact-area-wrap .contact-area-content{
+    border-right: inherit;
+    border-bottom: 1px solid #707070;
+    padding: 0 0 30px;
+    margin: 0 0 30px;
+}
+.contact-area-head .heading-two{
+    font-size: 50px;
+    line-height: 56px;
+}
+.contact-area-form .form-group{
+    text-align: center;
+}
+.contact-area-form .form-group input{
+    font-size: 16px;
+}
+.contact-area-form .form-group select{
+    font-size: 16px;
+}
+.contact-area-form .form-group textarea{
+    font-size: 16px;
+}
+.contact-area-form .form-group button.submit-btn{
+    font-size: 16px;
+}
+.contact-item-box a{
+    font-size: 16px;
+    line-height: 22px;
+}
+/*Contact Area Section Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Contact Page Folds Responsive Css End Here ---------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Footer Responsive Css Start Here*/
+.footer-main-sec .footer-top{
+    padding: 50px 0;
+}
+.footer-top .footer-logo-area{
+    margin: 0 0 20px;
+}
+.footer-logo-area .footer-logo{
+    width: 200px;
+    margin: 0 0 20px;
+}
+.footer-top .footer-links-area{
+    margin: 0 0 20px;
+}
+.footer-links-area .heading-six{
+    margin: 0 0 20px;
+}
+.footer-links-area ul.footer-nav-links a{
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-bottom .footer-copyright{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-copyright .footer-payments-card{
+    margin: 10px 0 0;
+}
+ul.footer-social-list{
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+ul.footer-social-list li a{
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 39px;
+}
+/*Footer Responsive Css End Here*/
+}
+@media only screen and (min-width: 300px) and (max-width: 575px){
+
+/*Website Custom Style Responsive Css For Single Items Start Here*/
+
+/*Heading & Para Style Responsive Css*/
+.heading-one{
+    font-size: 32px;
+    line-height: 38px;
+}
+.heading-two{
+    font-size: 34px;
+    line-height: 40px;
+}
+.heading-three{
+    font-size: 28px;
+    line-height: 34px;
+}
+.heading-four{
+    font-size: 20px;
+    line-height: 26px;
+}
+.heading-five{
+    font-size: 18px;
+    line-height: 22px;
+}
+.heading-six{
+    font-size: 16px;
+    line-height: 22px;
+}
+p{
+    font-size: 14px;
+    line-height: 20px;
+}
+li{
+    font-size: 14px;
+    line-height: 20px;
+}
+/*Heading & Para Style Responsive Css*/
+
+/*Buttons Style Responsive Css*/
+.website-main-buttons{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.website-main-buttons a.read-more-btn,
+.website-main-buttons button.popup-btn,
+.website-main-buttons button.chat-btn,
+.website-main-buttons a.call-btn{
+    font-size: 16px;
+    margin: 0 5px 5px;
+}
+.website-main-buttons span.or-end{
+    margin: 10px 20px 15px 10px;
+    width: 100%;
+}
+/*Buttons Style Responsive Css*/
+
+/*Website Custom Style Responsive Css For Single Items End Here*/
+
+/*Header Responsive Css Start Here*/
+header nav.navbar{
+    padding: 20px 0 20px;
+}
+header nav.navbar .navbar-brand{
+    width: 175px;
+}
+header .navbar-expand-lg .navbar-collapse{
+    background: #e2e2e2;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+header .navbar-collapse .navbar-main-nav{}
+header .navbar-main-nav .navbar-main-center{
+    width: 100%;
+    margin: 0;
+}
+header .navbar-main-center ul.navbar-nav{
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item{
+    margin: 0 10px;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item a.nav-link{    
+    padding: 10px 0px;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item.dropdown{}
+header ul.navbar-nav .nav-item.dropdown .dropdown-toggle::after{
+    opacity: 1;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu{
+    position: unset;
+    width: 100%;
+    top: 0;
+    box-shadow: none;
+    padding: unset;
+    opacity: unset;
+    visibility: unset;
+    transform: inherit;
+    display: none;
+}
+header .navbar-nav .nav-item.dropdown:hover ul.dropdown-menu{
+    transform: inherit;
+    opacity: inherit;
+    visibility: inherit;
+    display: none;
+}
+header .navbar-nav .nav-item a.nav-link.dropdown-toggle.show ul.dropdown-menu{
+    display: block;
+}
+header .navbar-nav .nav-item.dropdown:hover ul.dropdown-menu{
+    display: none;
+}
+header .navbar-nav .nav-item.dropdown:hover ul.dropdown-menu.show{
+    display: block;
+}
+header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 8px 8px;
+}
+/*Header Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css Start Here ----------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Banner Main Section Responsive Css Start Here*/
+section.banner-main-sec{
+    padding: 100px 0 50px;
+}
+.banner-main-sec .banner-main-content{
+    text-align: center;
+    margin: 0 0 40px
+}
+.banner-main-content ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.banner-main-content ul li{
+    width: 100%;
+}
+.banner-brands .banner-brands-items{
+    flex-wrap: wrap;
+    justify-content: center
+}
+.banner-brands .banner-brands-items img{
+    margin: 0 5px 0;
+}
+.banner-main-sec .banner-main-img{
+    bottom: -5px;
+}
+.banner-main-img::before{
+    display: none;
+}
+.banner-main-sec .banner-main-form{
+    border-radius: 50px;
+}
+.banner-main-form form{
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.banner-main-form .form-group{
+    width: 100%;
+    margin: 5px 10px;
+}
+.banner-main-form .form-group input{
+    font-size: 14px;
+    padding: 10px 10px;
+}
+.banner-main-form .form-group button.submit-btn{
+    font-size: 16px;
+}
+/*Banner Main Section Responsive Css End Here*/
+
+/*Award Brands Section Responsive Css Start Here*/
+section.award-brands-wrap{
+    padding: 30px 0px;
+}
+.award-brands-wrap::before{
+    left: -25px;
+}
+/*Award Brands Section Responsive Css End Here*/
+
+/*Unlock Story Section Responsive Css Start Here*/
+section.unlock-story-wrap{
+    padding: 30px 0;
+}
+.unlock-story-inner .unlock-story-content{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.unlock-story-content ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.unlock-story-content ul li img{
+    margin: 0 5px 0 0;
+}
+.unlock-story-inner .unlock-story-img{
+    text-align: center;
+}
+/*Unlock Story Section Responsive Css End Here*/
+
+/*Service Offer Section Responsive Css Start Here*/
+section.service-offer-wrap{
+    padding: 30px 0;
+}
+.service-offer-wrap .service-offer-head{
+    margin: 0 0 30px;
+}
+.service-offer-slider .slick-arrow::before{
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    display: none !important;
+}
+.service-offer-slider .slick-prev{
+    left: -10px;
+}
+.service-offer-slider .slick-next{
+    right: 20px;
+}
+.service-offer-inner .service-offer-box{
+    padding: 30px 30px;
+    margin: 10px 10px;
+    border-radius: 30px 20px;
+}
+.offer-box-content .heading-four{
+    height: inherit;
+}
+.offer-box-content p{
+    min-height: inherit;
+    max-height: inherit;
+}
+/*Service Offer Section Responsive Css End Here*/
+
+/*Step Works Section Responsive Css Start Here*/
+section.step-works-wrap{
+    padding: 30px 0;
+}
+.step-works-wrap .step-works-head{
+    justify-content: center;
+    margin: 0 0 30px;
+    flex-direction: column;
+    text-align: center;
+}
+.step-works-head .step-head-content{
+    width: 100%;
+}
+.step-works-head .website-main-buttons{
+    margin: 20px 0 0;
+}
+.step-works-wrap .step-works-inner .row{
+    justify-content: center;
+}
+.step-works-inner .step-works-box{
+    text-align: center;
+}
+.step-works-box::before{
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.step-works-box span.step-count{
+    left: 0;
+    right: 0;
+}
+.works-box-content .heading-five{
+    height: inherit;
+}
+/*Step Works Section Responsive Css End Here*/
+
+/*Main CTA Section Responsive Css Start Here*/
+section.cta-main-wrap{
+    padding: 30px 0;
+}
+/*Main CTA Section Css Responsive End Here*/
+
+/*Why Choose Section Css Responsive Start Here*/
+section.why-choose-wrap{
+    padding: 30px 0;
+}
+.why-choose-wrap .why-choose-head{
+    margin: 0 0 30px;
+}
+.why-choose-inner .short-heading{
+    font-size: 20px;
+    line-height: 26px;
+}
+.why-choose-box .choose-box-content{
+    min-height: inherit;
+    max-height: inherit;
+}
+.why-choose-inner .website-main-buttons{
+    margin: 0;
+}
+/*Why Choose Section Css Responsive End Here*/
+
+/*Great Pride Section Responsive Css Start Here*/
+section.gert-pride-main{
+    padding: 30px 0px;
+}
+.gert-pri-content-main .gert-pride-tab-btn ul{
+    gap: 5px;
+    position: inherit;
+    left: inherit;
+    top: inherit;
+}
+.gert-pri-content-main .gert-pride-tab-btn ul li button{
+    font-size: 16px;
+    line-height: 22px;
+}
+.gert-pride-tab-items-list .gert-pride-column:nth-child(2){
+    margin-top: 0px;
+}
+.gert-pride-tab-items-list .auth-cont-main{
+    margin: 0 0 20px;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv{
+    width: 100%;
+}
+.gert-pride-tab-items-list .auth-cont-main .auth-cont-text{
+    width: 75%;
+}
+/*Great Pride Section Responsive CSS End Here*/
+
+/*Testimonials Section Responsive CSS Start Here*/
+section.testi-main-sec{
+    padding: 30px 0px 75px;
+}
+.testi-main-sec .testi-lft-text-main{
+    text-align: center;
+    margin: 0 0 30px;
+}
+.testi-auth-image-main .testi-auth-images{
+    padding: 0px 30px 30px;
+    margin: 55px 10px 20px;
+}
+.testi-auth-images .testi-auth-image-items{
+    text-align: center;
+}
+.testi-auth-image-items .rating-icons{
+    justify-content: center;
+}
+.testi-auth-content-main .testi-auth-content-items{
+    text-align: center;
+}
+.testi-auth-content-items .testi-reviews-icon-main ul{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.testi-auth-content-main .slick-arrow{
+    bottom: -20%;
+}
+.testi-auth-content-main .slick-arrow:before{
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+}
+.testi-auth-content-main .slick-next.slick-arrow{
+    right: 0;
+    left: inherit;
+}
+/*Testimonials Section Responsive CSS End Here*/
+
+/*FAQS Section Responsive Css Start Here*/
+section.faqs-sec-wrap{
+    padding: 30px 0;
+}
+.faqs-sec-wrap .faqs-sec-head{
+    margin: 0 0 30px;
+}
+.faqs-sec-item .accordion-item .accordion-header button.accordion-button{
+    font-size: 18px;
+    line-height: 24px;
+}
+.faqs-sec-item .accordion-item .accordion-collapse .accordion-body{
+    font-size: 14px;
+    line-height: 20px;
+}
+/*FAQS Section Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css End Here ------------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+---------------- About Page Folds Responsive Css Start Here ---------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/*Who We Are Section Responsive CSS Start Here*/
+section.who-we-are-sec-main{
+    padding: 30px 0px;
+}
+.who-we-are-content-main .who-we-are-cont-head{
+    justify-content: center;
+    margin: 0 0 30px;
+    flex-direction: column;
+    text-align: center;
+}
+.who-we-are-content-main .who-we-are-content-para{
+    text-align: center;
+}
+.who-we-are-content-main .who-we-are-content-para p{
+    font-size: 16px;
+    line-height: 22px;
+}
+/*Who We Are Section Responsive CSS End Here*/
+
+/*About Sapcer Section Responsive CSS Start Here*/
+section.about-space-main{
+    display: none;
+}
+/*About Sapcer Section Responsive CSS End Here*/
+  
+/**************************************************************************
+---------------- About Page Folds Responsive Css End Here -----------------
+--------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+--------------- Service Page Folds Responsive Css Start Here --------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/*Service Banner Section Responsive Css Start Here*/
+section.service-banner-sec{
+    padding: 100px 0 50px
+}
+.service-banner-sec .service-banner-content{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.service-banner-content ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.service-banner-content .service-banner-brands{
+    justify-content: center;
+}
+.service-banner-brands img{
+    margin: 0 5px 10px;
+}
+.service-banner-sec .service-banner-form{
+    padding: 30px 20px;
+    width: 100%;
+}
+.service-banner-form .form-group.select-form-group::after{
+    font-size: 14px;
+    right: 5px;
+    top: 12px;
+}
+.service-banner-form .form-group .form-select{
+    font-size: 14px;
+    padding: 10px 20px 10px 5px;
+}
+.service-banner-form .form-group button.submit-btn{
+    font-size: 16px;
+}
+/*Service Banner Section Responsive Css End Here*/
+
+/*CTA Bnner Section Responsive Css Start Here*/
+section.cta-banner-wrap{
+    padding: 50px 0;
+}
+.cta-banner-wrap .cta-banner-content{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.cta-banner-content ul{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+/*CTA Banner Section Responsive Css End Here*/
+
+/*Creative Service Section Responsive Css Start Here*/
+section.creative-service-wrap{
+    padding: 30px 0;
+}
+.creative-service-inner .creative-service-box{
+    padding: 30px 20px;
+    border-right: inherit;
+    border-bottom: 1px solid #E5E5E5;
+}
+.creative-service-box.service-box-last{
+    border-bottom: inherit;
+}
+.creative-service-box .service-box-content{
+    min-height: inherit;
+    max-height: inherit;
+}
+.service-box-content .heading-four{
+    height: inherit;
+}
+/*Creative Service Section Responsive Css End Here*/
+
+/*Business Individual Section Responsive Css Start Here*/
+section.business-individual-wrap{
+    padding: 30px 0;
+}
+.business-individual-wrap .business-individual-head{
+    margin: 0 0 30px;
+}
+.individual-head-content .short-heading{
+    font-size: 20px;
+    line-height: 26px;
+}
+.individual-box-content p{
+    min-height: inherit;
+    max-height: inherit;
+}
+/*Business Individual Section Responsive Css End Here*/
+
+/*About Info Section Responsive Css Start Here*/
+section.about-info-wrap{
+    padding: 30px 0;
+}
+.about-info-inner .about-info-content{
+    padding: 30px 0;
+    text-align: center;
+}
+/*About Info Section Responsive Css End Here*/
+
+/*Main Info Section Responsive Css Start Here*/
+section.main-info-wrap{
+    padding: 30px 0;
+}
+.main-info-inner .main-info-content{
+    text-align: center;
+}
+.main-info-inner .main-info-image{
+    text-align: center;
+    margin: 0 0 20px;
+}
+/*Main Info Section Responsive Css End Here*/
+
+/**************************************************************************
+---------------- Service Page Folds Responsive Css End Here ---------------
+---------------------------------------------------------------------------
+**************************************************************************/
+
+/**************************************************************************
+ --------------- Contact Page Folds Responsive Css Start Here -------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Contact Banner Responsive Css Start Here*/
+section.contact-banner-wrap{
+    padding: 120px 0 50px;
+}
+.contact-banner-wrap .contact-banner-content{
+    text-align: center;
+}
+.contact-banner-content ul.footer-social-list{
+    justify-content: center;
+}
+/*Contact Banner Responsive Css End Here*/
+
+/*Contact Area Section Responsive Css Start Here*/
+section.contact-area-wrap{
+    padding: 50px 0;
+}
+.contact-area-wrap .contact-area-content{
+    border-right: inherit;
+    border-bottom: 1px solid #707070;
+    padding: 0 0 30px;
+    margin: 0 0 30px;
+}
+.contact-area-head .heading-two{
+    font-size: 50px;
+    line-height: 56px;
+}
+.contact-area-form .form-group{
+    text-align: center;
+}
+.contact-area-form .form-group input{
+    font-size: 16px;
+}
+.contact-area-form .form-group select{
+    font-size: 16px;
+}
+.contact-area-form .form-group textarea{
+    font-size: 16px;
+}
+.contact-area-form .form-group button.submit-btn{
+    font-size: 16px;
+}
+.contact-item-box a{
+    font-size: 16px;
+    line-height: 22px;
+}
+/*Contact Area Section Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Contact Page Folds Responsive Css End Here ---------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Footer Responsive Css Start Here*/
+.footer-main-sec .footer-top{
+    padding: 50px 0;
+}
+.footer-top .footer-logo-area{
+    margin: 0 0 20px;
+}
+.footer-logo-area .footer-logo{
+    width: 200px;
+    margin: 0 0 20px;
+}
+.footer-top .footer-links-area{
+    margin: 0 0 20px;
+}
+.footer-links-area .heading-six{
+    margin: 0 0 20px;
+}
+.footer-links-area ul.footer-nav-links a{
+    font-size: 14px;
+    line-height: 20px;
+}
+.footer-bottom .footer-copyright{
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-copyright .footer-payments-card{
+    margin: 10px 0 0;
+}
+ul.footer-social-list{
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+ul.footer-social-list li a{
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    line-height: 39px;
+}
+/*Footer Responsive Css End Here*/
+}
