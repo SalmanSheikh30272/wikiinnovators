@@ -186,7 +186,7 @@ $page = 'home';
                     <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
                         <div class="service-offer-box">
                             <div class="offer-box-img">
-                                <img src="assets/images/service-offer-icons/ser-2.png" data-src="assets/images/service-offer-icons/ser-2.png" alt="Icon" width="75" height="75"  class="img-fluid">
+                                <img src="assets/images/service-offer-icons/ser-1.png" data-src="assets/images/service-offer-icons/ser-1.png" alt="Icon" width="75" height="75"  class="img-fluid">
                             </div>
                             <div class="offer-box-content">
                                 <a href="void::" tabindex="0"> 
@@ -318,11 +318,11 @@ $page = 'home';
                         <div class="why-choose-box">
                             <div class="choose-box-head">
                                 <div class="choose-box-img">
-                                    <img src="assets/images/service-offer-icons/search-anal.webp" data-src="assets/images/service-offer-icons/search-anal.webp" alt="Research Analysis" width="45" height="45"  class="img-fluid">
+                                    <img src="assets/images/service-offer-icons/research-analys.png" data-src="assets/images/service-offer-icons/research-analys.png" alt="Research Analysis" width="45" height="45" class="img-fluid">
                                 </div>
                             </div>
                             <div class="choose-box-content">
-                                <h4 class="heading-five">Hit us up!</h4>
+                                <h4 class="heading-five">Research & Analysis</h4>
                                 <p>No project is too big or too small! Just shoot us a message and Let us know what you have in we're all ears (and thumbs, we're good at typing too).</p>
                             </div>
                         </div>
@@ -331,11 +331,11 @@ $page = 'home';
                         <div class="why-choose-box">
                             <div class="choose-box-head">
                                 <div class="choose-box-img">
-                                    <img src="assets/images/service-offer-icons/article-writing.webp" data-src="assets/images/service-offer-icons/article-writing.webp" alt="Article Writing" width="45" height="45"  class="img-fluid">
+                                    <img src="assets/images/service-offer-icons/article-write.png" data-src="assets/images/service-offer-icons/article-write.png" alt="Article Writing" width="45" height="45" class="img-fluid">
                                 </div>
                             </div>
                             <div class="choose-box-content">
-                                <h4 class="heading-five">Braintrust Time</h4>
+                                <h4 class="heading-five">Wikipedia Article Writing</h4>
                                 <p>Let's chat about your project. We'll ask questions you answer them, and then we'll figure out the best approach to get your idea breathing.</p>
                             </div>
                         </div>
@@ -344,11 +344,11 @@ $page = 'home';
                         <div class="why-choose-box">
                             <div class="choose-box-head">
                                 <div class="choose-box-img">
-                                    <img src="assets/images/service-offer-icons/feedback.webp" data-src="assets/images/service-offer-icons/feedback.webp" alt="Feedback" width="45" height="45"  class="img-fluid">
+                                    <img src="assets/images/service-offer-icons/feedback-rev.png" data-src="assets/images/service-offer-icons/feedback-rev.png" alt="Feedback" width="45" height="45" class="img-fluid">
                                 </div>
                             </div>
                             <div class="choose-box-content">
-                                <h4 class="heading-five">Let's Get Rolling</h4>
+                                <h4 class="heading-five">Feedback & Revisions</h4>
                                 <p>Once the plan is hatched, we'll take your thought process and mold into something amazing while also keeping you in the loop at every step.</p>
                             </div>
                         </div>
@@ -357,11 +357,11 @@ $page = 'home';
                         <div class="why-choose-box">
                             <div class="choose-box-head">
                                 <div class="choose-box-img">
-                                    <img src="assets/images/service-offer-icons/article-publishing.webp" data-src="assets/images/service-offer-icons/article-publishing.webp" alt="Article Publishing" width="45" height="45"  class="img-fluid">
+                                    <img src="assets/images/service-offer-icons/article-publish.png" data-src="assets/images/service-offer-icons/article-publish.png" alt="Article Publishing" width="45" height="45" class="img-fluid">
                                 </div>
                             </div>
                             <div class="choose-box-content">
-                                <h4 class="heading-five">High Fives All Around!</h4>
+                                <h4 class="heading-five">Article Publishing</h4>
                                 <p>Okay fine. We’ll let you take a sneak peek (or two) of your finished project, and we make sure it's exactly what you been expecting it to be.</p>
                             </div>
                         </div>
@@ -370,18 +370,13 @@ $page = 'home';
                         <div class="why-choose-box">
                             <div class="choose-box-head">
                                 <div class="choose-box-img">
-                                    <img src="assets/images/service-offer-icons/monitoring.webp" data-src="assets/images/service-offer-icons/monitoring.webp" alt="Monitoring" width="45" height="45"  class="img-fluid">
+                                    <img src="assets/images/service-offer-icons/upkeep-monitor.png" data-src="assets/images/service-offer-icons/upkeep-monitor.png" alt="Monitoring" width="45" height="45" class="img-fluid">
                                 </div>
                             </div>
                             <div class="choose-box-content">
-                                <h4 class="heading-five">We're Still Here…</h4>
+                                <h4 class="heading-five">Upkeep & Monitoring</h4>
                                 <p>Even after launch, we're just a shout away. We'll answer questions, provide support, and help you celebrate your success!</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                        <div class="website-main-buttons">
-                            <button class="popup-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Let's Talk</button>
                         </div>
                     </div>
                 </div>
@@ -390,149 +385,116 @@ $page = 'home';
     </section>
     <!-- Why Choose Section End Here -->
 
-    <!-- Great Pride Section Start Here -->
-    <section class="gert-pride-main">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <div class="gert-pri-content-main">
-                        <div class="gert-pri-content-head">
-                            <h3 class="heading-two">Wikithinkers <span>Hall of Fame</span></h3>
-                            <p>Browse our portfolio and witness the incredible transformations – watch your page rise to the top with our expert help!</p>
-                        </div>
-                        <!-- Great pride Section Include here -->
-                        <?php include 'includes/sections/great-pride.php' ;?>
-                        <!-- Great pride Section Include here -->
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Great Pride Section End Here -->
-
     <!-- Testimonials Section Start Here -->
     <section class="testi-main-sec">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="testi-lft-text-main">
-                        <h2 class="heading-two">Happy Clients & <span>Their Success Stories</span></h2>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xxl-5">
+                    <div class="testi-main-left">
+                        <span class="short-heading">Testimonials</span>
+                        <h2 class="heading-two">What Our Clients Say Drives Us to Go Above & Beyond.</h2>
+                        <p>Have you or your company gotten much press or media attention from unbiased, respectable third parties? If that's the case, you might be eligible for a Wikipedia profile. Wikipedia content is a by-product of what the press, media, or academic community writes about a subject. It attempts to be an impartial collection of verifiable and established facts. Notability cannot be earned merely through blogs, press releases, product information, or self-published items. Contact us for a free evaluation to see whether or not you qualify for a spot on the internet's most popular website.</p>
                         <div class="website-main-buttons">
-                            <button class="chat-btn" onclick="<?php echo $locChatClick; ?>">Let's Talk</button>
+                            <button class="popup-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Get A Quote</button>
+                            <button class="chat-btn" onclick="<?php echo $locChatClick; ?>">Consult With Expert</button>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                    <div class="testi-auth-image-main">
+                    <div class="testi-auth-main">
                         <div class="testi-auth-images">
-                            <div class="testi-auth-image-items">
-                                <img src="assets/images/testimonials-author-images/img-1.webp" data-src="assets/images/testimonials-author-images/img-1.webp" alt="image"  class="img-fluid"  width="100%" height="auto"  />
-                                <h3 class="heading-six">Ayesha Khan</h3>
+                            <div class="testi-images-items">
+                                <img src="assets/images/testimonials-author-images/img-1.webp" data-src="assets/images/testimonials-author-images/img-1.webp" alt="image" class="img-fluid" width="100%" height="auto" />
+                                <h3 class="heading-seven">Ayesha Khan</h3>
                                 <p>Marketing Manager at Green Solutions</p>
-                                <!-- Award Brand Slider Include Here -->
+                                <!-- Rating Star Icons Include Here -->
                                 <?php include 'includes/sections/rating-star-icons.php'; ?>
-                                <!-- Award Brand Slider Include Here -->
+                                <!-- Rating Star Icons Include Here -->
                             </div>
                         </div>
                         <div class="testi-auth-images">
-                            <div class="testi-auth-image-items">
-                                <img src="assets/images/testimonials-author-images/img-2.webp" data-src="assets/images/testimonials-author-images/img-2.webp" alt="image"  class="img-fluid" width="100%" height="auto"   />
-                                <h3 class="heading-six">Christopher Wong</h3>
+                            <div class="testi-images-items">
+                                <img src="assets/images/testimonials-author-images/img-2.webp" data-src="assets/images/testimonials-author-images/img-2.webp" alt="image" class="img-fluid" width="100%" height="auto" />
+                                <h3 class="heading-seven">Christopher Wong</h3>
                                 <p>CEO of Tech Toys</p>
-                                <!-- Award Brand Slider Include Here -->
+                                <!-- Rating Star Icons Include Here -->
                                 <?php include 'includes/sections/rating-star-icons.php'; ?>
-                                <!-- Award Brand Slider Include Here -->
+                                <!-- Rating Star Icons Include Here -->
                             </div>
                         </div>
                         <div class="testi-auth-images">
-                            <div class="testi-auth-image-items">
-                                <img src="assets/images/testimonials-author-images/img-4.webp" data-src="assets/images/testimonials-author-images/img-4.webp" alt="image"  class="img-fluid" width="100%" height="auto"   />
-                                <h3 class="heading-six">Elijah Rodriguez</h3>
+                            <div class="testi-images-items">
+                                <img src="assets/images/testimonials-author-images/img-4.webp" data-src="assets/images/testimonials-author-images/img-4.webp" alt="image" class="img-fluid" width="100%" height="auto" />
+                                <h3 class="heading-seven">Elijah Rodriguez</h3>
                                 <p>Head Chef at The Spice Gallery</p>
-                                <!-- Award Brand Slider Include Here -->
+                                <!-- Rating Star Icons Include Here -->
                                 <?php include 'includes/sections/rating-star-icons.php'; ?>
-                                <!-- Award Brand Slider Include Here -->
+                                <!-- Rating Star Icons Include Here -->
                             </div>
                         </div>
                         <div class="testi-auth-images">
-                            <div class="testi-auth-image-items">
-                                <img src="assets/images/testimonials-author-images/img-3.webp" data-src="assets/images/testimonials-author-images/img-3.webp" alt="image"  class="img-fluid" width="100%" height="auto"   />
-                                <h3 class="heading-six">Michael Anderson</h3>
+                            <div class="testi-images-items">
+                                <img src="assets/images/testimonials-author-images/img-3.webp" data-src="assets/images/testimonials-author-images/img-3.webp" alt="image" class="img-fluid" width="100%" height="auto" />
+                                <h3 class="heading-seven">Michael Anderson</h3>
                                 <p>Owner of Local Coffee Shop</p>
-                                <!-- Award Brand Slider Include Here -->
+                                <!-- Rating Star Icons Include Here -->
                                 <?php include 'includes/sections/rating-star-icons.php'; ?>
-                                <!-- Award Brand Slider Include Here -->
+                                <!-- Rating Star Icons Include Here -->
                             </div>
                         </div>
                         <div class="testi-auth-images">
-                            <div class="testi-auth-image-items">
-                                <img src="assets/images/testimonials-author-images/img-5.webp" data-src="assets/images/testimonials-author-images/img-5.webp" alt="image"  class="img-fluid" width="100%" height="auto"   />
-                                <h3 class="heading-six">Kimberly Choi</h3>
+                            <div class="testi-images-items">
+                                <img src="assets/images/testimonials-author-images/img-5.webp" data-src="assets/images/testimonials-author-images/img-5.webp" alt="image" class="img-fluid" width="100%" height="auto" />
+                                <h3 class="heading-seven">Kimberly Choi</h3>
                                 <p>HOD at Creative Edge</p>
-                                <!-- Award Brand Slider Include Here -->
+                                <!-- Rating Star Icons Include Here -->
                                 <?php include 'includes/sections/rating-star-icons.php'; ?>
-                                <!-- Award Brand Slider Include Here -->
+                                <!-- Rating Star Icons Include Here -->
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-5 col-xl-5 col-xxl-5">
-                    <div class="testi-auth-content-main">
-                        <div class="testi-auth-content-items">
-                            <img src="assets/images/elements/quotes.webp" data-src="assets/images/elements/quotes.webp" alt="image"  class="img-fluid"  width="45" height="45"/>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="testi-auth-content">
+                        <div class="testi-content-items">
                             <div class="testi-content-main">
                                 <p>New things were happening at our company all the time, but our page wasn't reflecting that.  Wikithinkers helped in revamping everything. Now our page is up-to-date and shows off our company's growth perfectly!</p>
                             </div>
-                            <div class="testi-reviews-icon-main">
-                                <!-- Testi Review Icon Main Include Here -->
-                                <?php include 'includes/sections/testi-review-icon-main.php'; ?>
-                                <!-- Testi Review Icon Main Include Here -->
-                            </div>
+                            <!-- Testi Review Icon Include Here -->
+                            <?php include 'includes/sections/testi-review-icon.php'; ?>
+                            <!-- Testi Review Icon Include Here -->
                         </div>
-                        <div class="testi-auth-content-items">
-                            <img src="assets/images/elements/quotes.webp" data-src="assets/images/elements/quotes.webp" alt="image"  class="img-fluid" width="45" height="45" />
+                        <div class="testi-content-items">
                             <div class="testi-content-main">
                                 <p>Wikithinkers monitors our online reputation and helps us deal with unfair reviews.  They helped us craft a calm, professional response that protected our brand image.  Lifesavers!</p>
                             </div>
-                            <div class="testi-reviews-icon-main">
-                                <!-- Testi Review Icon Main Include Here -->
-                                <?php include 'includes/sections/testi-review-icon-main.php'; ?>
-                                <!-- Testi Review Icon Main Include Here -->
-                            </div>
+                            <!-- Testi Review Icon Include Here -->
+                            <?php include 'includes/sections/testi-review-icon.php'; ?>
+                            <!-- Testi Review Icon Include Here -->
                         </div>
-                        <div class="testi-auth-content-items">
-                            <img src="assets/images/elements/quotes.webp" data-src="assets/images/elements/quotes.webp" alt="image"  class="img-fluid" width="45" height="45" />
+                        <div class="testi-content-items">
                             <div class="testi-content-main">
                                 <p>Honestly, Wikipedia editing seemed way too complicated for us to handle ourselves. This team made the whole process smooth and stress-free.  They wrote a fantastic page for our company, and it's really helped boost our online presence.</p>
                             </div>
-                            <div class="testi-reviews-icon-main">
-                                <!-- Testi Review Icon Main Include Here -->
-                                <?php include 'includes/sections/testi-review-icon-main.php'; ?>
-                                <!-- Testi Review Icon Main Include Here -->
-                            </div>
+                            <!-- Testi Review Icon Include Here -->
+                            <?php include 'includes/sections/testi-review-icon.php'; ?>
+                            <!-- Testi Review Icon Include Here -->
                         </div>
-                        <div class="testi-auth-content-items">
-                            <img src="assets/images/elements/quotes.webp" data-src="assets/images/elements/quotes.webp" alt="image"  class="img-fluid" width="45" height="45" />
+                        <div class="testi-content-items">
                             <div class="testi-content-main">
                                 <p>We wanted a Wikipedia page, but we weren't sure where to start. So we hired this incredible team. They created a great page for us, and they even monitor it for any potential issues.</p>
                             </div>
-                            <div class="testi-reviews-icon-main">
-                                <!-- Testi Review Icon Main Include Here -->
-                                <?php include 'includes/sections/testi-review-icon-main.php'; ?>
-                                <!-- Testi Review Icon Main Include Here -->
-                            </div>
+                            <!-- Testi Review Icon Include Here -->
+                            <?php include 'includes/sections/testi-review-icon.php'; ?>
+                            <!-- Testi Review Icon Include Here -->
                         </div>
-                        <div class="testi-auth-content-items">
-                            <img src="assets/images/elements/quotes.webp" data-src="assets/images/elements/quotes.webp" alt="image"  class="img-fluid" width="45" height="45" />
+                        <div class="testi-content-items">
                             <div class="testi-content-main">
                                 <p>Our Wikipedia page was full of outdated information.  Wikithinkers Writers came in and gave it a complete refresh.  Now our page is accurate and reflects our company's current success.  We've even seen a bump in website traffic since the update!</p>
                             </div>
-                            <div class="testi-reviews-icon-main">
-                                <!-- Testi Review Icon Main Include Here -->
-                                <?php include 'includes/sections/testi-review-icon-main.php'; ?>
-                                <!-- Testi Review Icon Main Include Here -->
-                            </div>
+                            <!-- Testi Review Icon Include Here -->
+                            <?php include 'includes/sections/testi-review-icon.php'; ?>
+                            <!-- Testi Review Icon Include Here -->
                         </div>
                     </div>
                 </div>

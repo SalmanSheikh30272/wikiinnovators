@@ -117,8 +117,8 @@ textarea:focus{
     line-height: 26px;
 }
 .heading-seven{
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 18px;
+    line-height: 24px;
 }
 p{
     font-size: 16px;
@@ -865,26 +865,20 @@ section.why-choose-wrap{
 .why-choose-head p{
     color: #9A9999;
 }
-.why-choose-inner .short-heading{
-    font-family: "ProximaNova-Bold";
-    color: #1C1C1C;
-    font-size: 24px;
-    line-height: 30px;
-    margin: 30px 0;
-    display: block;
-    text-transform: capitalize;
-    text-align: center;
-}
 .why-choose-inner .why-choose-box{
-    background: #181818;
-    border: 1px solid #181818;
-    border-radius: 30px;
+    background: #fff;
+    border: 2px solid #EBEBEB;
     text-align: center;
     padding: 0px 20px 20px 20px;
     margin: 40px 0;
+    transition: all .3s ease-in-out;
+}
+.why-choose-box:hover{
+    background: #080731;
+    border: 2px solid #8CD2D0;
 }
 .choose-box-head .choose-box-img{
-    background: #FFFFFF;
+    background: #FD5240;
     width: 110px;
     height: 110px;
     line-height: 110px;
@@ -893,6 +887,10 @@ section.why-choose-wrap{
     margin: 0px auto -20px;
     position: relative;
     top: -50px;
+    transition: all .4s ease-in-out;
+}
+.why-choose-box:hover .choose-box-img{
+    transform: rotate(360deg);
 }
 .choose-box-img img{
     width: 45px;
@@ -901,276 +899,156 @@ section.why-choose-wrap{
 }
 .why-choose-box .choose-box-content{
     padding: 0 10px 10px;
-    min-height: 185px;
-    max-height: 185px;
+    min-height: 200px;
+    max-height: 200px;
     overflow-y: auto;
 }
 .choose-box-content::-webkit-scrollbar-track{
     -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0.0);
-    border-radius: 0px;
+    border-radius: 5px;
 }
 .choose-box-content::-webkit-scrollbar{
     width: 3px;
     background: #b2b2b2;
-    border-radius: 0px;
+    border-radius: 5px;
 }
 .choose-box-content::-webkit-scrollbar-thumb{
-    background-color: #FCC127;
-    border-radius: 0px;
+    background-color: #FD5240;
+    border-radius: 5px;
 }
 .choose-box-content .heading-five{
-    color: #fff;
+    color: #141414;
     margin: 0 0 20px;
 }
+.why-choose-box:hover .heading-five{
+    color: #fff;
+}
 .choose-box-content p{
-    color: #fff;   
-}
-.why-choose-inner .website-main-buttons{
-    justify-content: center;
-}
-.why-choose-inner .website-main-buttons button.popup-btn{
-    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    border: 2px solid #FCC127;
-    color: #212121;
-}
-.why-choose-inner .website-main-buttons button.popup-btn:hover{
-    background-position: left bottom;
-}
-.why-choose-inner .website-main-buttons button.chat-btn{
-    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    border: 2px solid #FCC127;
-    color: #212121;
-}
-.why-choose-inner .website-main-buttons button.chat-btn:hover{
-    background-position: left bottom;
-}
-section.why-choose-wrap.why-choose-lightwrap .why-choose-inner .why-choose-box{
-    background: #FCFCFC;
-    border: 1px solid #EFEFEF;
-}
-.why-choose-wrap.why-choose-lightwrap .why-choose-box .choose-box-head .choose-box-img{
-    background: #212121;
-}
-.why-choose-wrap.why-choose-lightwrap .why-choose-box .choose-box-content .heading-five{
-    color: #212121;
-}
-.why-choose-wrap.why-choose-lightwrap .why-choose-box .choose-box-content p{
-    color: #929292;
+    color: #9A9999;   
 }
 /*Why Choose Section Css End Here*/
-
-/*Great Pride Section Css Start Here*/
-section.gert-pride-main{
-    padding: 50px 0px;
-    position: relative;
-    z-index: 1;
-    background: url(../images/bg-img/great-pride-bg.webp);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-.gert-pri-content-main .gert-pri-content-head{
-    text-align: center;
-    margin: 0 0 30px;
-}
-.gert-pri-content-main .gert-pri-content-head .heading-two{
-    color: #212121;
-    margin: 0 0 10px;
-}
-.gert-pri-content-main .gert-pri-content-head .heading-two span{
-    color: #fbc25a;
-    display: block;
-}
-.gert-pri-content-main .gert-pri-content-head p{
-    color: #858585;
-}
-.gert-pri-content-main .gert-pride-tab-btn{
-    margin: 30px 0px;
-    position: relative;
-}
-.gert-pri-content-main .gert-pride-tab-btn ul{
-    justify-content: center;
-    gap: 30px;
-    position: absolute;
-    left: 0;
-    right: 0;
-}
-.gert-pri-content-main .gert-pride-tab-btn ul li button{
-    font-family: "Calibri-Bold";
-    background: #212121;
-    font-size: 18px;
-    line-height: 24px;
-    border-radius: 30px;
-    color: #fff;
-    width: 175px;
-    height: 50px;
-}
-.gert-pri-content-main .gert-pride-tab-btn ul li button.active{
-    background-color: #fbc25a;
-    color: #212121;
-}
-.gert-pri-content-main .gert-pride-tab-btn ul li button:focus-visible{
-    box-shadow: none;
-}
-.gert-pride-tab-items-list .gert-pride-column:nth-child(2){
-    margin-top: 200px;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-img-dv{
-    margin: 0 auto 35px;
-    display: flex;
-    justify-content: center;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-img-dv img{
-    width: 125px;
-    height: 125px;
-    border: 4px solid #fbc25a;
-    border-radius: 100%;
-}
-#pills-port2 .gert-pride-tab-items-list .auth-cont-main .auth-img-dv img {
-    border: none;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv{
-    text-align: center;
-    background: #e2e2e2;
-    padding: 13px;
-    border-radius: 50px;
-    position: relative;
-    z-index: 1;
-    width: 80%;
-    margin: 0 auto 20px;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv .heading-seven{
-    font-family: "Calibri-Bold";
-    color: #212121;
-    margin: 0;
-    text-transform: uppercase;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv:before{
-    content: "";
-    background: transparent;
-    position: absolute;
-    width: 0;
-    height: 0;
-    top: 50%;
-    left: 50%;
-    transform: translate(-20px, -43px);
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
-    border-bottom: 20px solid #e2e2e2;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-cont-text{
-    text-align: center;
-    width: 55%;
-    margin: 0 auto;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-cont-text p{
-    color: #6d6d6d;
-}
-/*Great Pride Section CSS End Here*/
   
 /*Testimonials Section CSS Start Here*/
 section.testi-main-sec{
-    padding: 50px 0px;
+    background: #F9F9F9;
+    padding: 50px 0px 100px;
 }
-.testi-lft-text-main .heading-two{
-    color: #212121;
+.testi-main-sec .testi-main-left{}
+.testi-main-left .short-heading{
+    font-family: "linux-SemiBold";
+    color: #141414;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+    display: block;
+    position: relative;
+}
+.testi-main-left .short-heading::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #FD5240;
+    width: 120px;
+    height: 5px;
+    display: block;
+    border-radius: 5px;
+}
+.testi-main-left .heading-two{
+    color: #141414;
     margin: 0 0 20px;
 }
-.testi-lft-text-main .heading-two span{
-    color: #fbc25a;
-    font-family: "ProximaNova-Bold";
+.testi-main-left p{
+    color: #9A9999;
 }
-.testi-lft-text-main p{
-    color: #4A4A4A;
+.testi-main-left .website-main-buttons{}
+.testi-main-left .website-main-buttons button.popup-btn{
+    background: #fff;
+    color: #05042D;
+    border: 2px solid #fff;
 }
-.testi-lft-text-main .website-main-buttons button.chat-btn{
-    background: linear-gradient(to right, #FDFDFE 50%, #FCC127 50%);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    border: 2px solid #FCC127;
-    color: #212121;
+.testi-main-left .website-main-buttons button.popup-btn:hover{
+    background: #05042D;
+    color: #fff;
+    transform: scale(1.1);
 }
-.testi-lft-text-main .website-main-buttons button.chat-btn:hover{
-    background-position: left bottom;
+.testi-main-left .website-main-buttons button.chat-btn{
+    background: #FD5240;
+    color: #fff;
+    border: 2px solid #FD5240;
+    width: 225px;
 }
-.testi-auth-image-main .testi-auth-images{
-    background-color: #1e1e1e;
-    padding: 0px 50px 30px;
-    border-radius: 35px;
+.testi-main-left .website-main-buttons button.chat-btn:hover{
+    background: #fff;
+    color: #FD5240;
+    transform: scale(1.1);
+}
+.testi-auth-main .testi-auth-images{
+    background: #080731;
+    border: 2px solid #8CD2D0;
+    padding: 0px 50px 50px;
     margin: 55px 10px 0;
 }
-.testi-auth-images .testi-auth-image-items img{
+.testi-auth-images .testi-images-items img{
     width: 100%;
     height: 100%;
-    margin-top: -50px;
+    margin: -50px 0 20px;
 }
-.testi-auth-image-items .heading-six{
+.testi-images-items .heading-seven{
     color: #fff;
-    margin: 10px 0;
+    margin: 0 0 10px;
 }
-.testi-auth-image-items p{
+.testi-images-items p{
     color: #fff;
     text-transform: uppercase;
 }
-.testi-auth-image-items .rating-icons{
-    margin-top: 10px;
+.testi-images-items .rating-star-icons{
+    margin: 10px 0 0 0;
     display: flex;
     justify-content: left;
-    gap: 3px;
+    gap: 2px;
 }
-.testi-auth-image-items .rating-icons img{
+.testi-images-items .rating-star-icons img{
     margin: 0;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
 }
-.testi-auth-content-main .testi-auth-content-items img{
-    width: 45px;
-    height: 45px;
-    margin-bottom: 25px;
+.testi-content-items .testi-content-main p{
+    color: #9A9999;
 }
-.testi-auth-content-items .testi-content-main p{
-    color: #4A4A4A;
-}
-.testi-auth-content-items .testi-reviews-icon-main{
-    margin-top: 30px;
-}
-.testi-auth-content-items .testi-reviews-icon-main ul{
+.testi-content-items ul.testi-reviews-icon{
     display: flex;
-    gap: 15px;
+    gap: 10px;
     align-items: center;
+    margin: 30px 0;
 }
-.testi-auth-content-items .testi-reviews-icon-main ul li{
-      margin: 0;
+.testi-content-items ul.testi-reviews-icon li{
+    margin: 0;
 }
-.testi-auth-content-items .testi-reviews-icon-main ul li img{
-      margin: 0;
-      width: 105px;
-      height: 25px;
-      object-fit: contain;
+.testi-content-items ul.testi-reviews-icon li img{
+    width: 100px;
+    height: 25px;
+    object-fit: contain;
 }
-.testi-auth-content-main .slick-arrow{
+.testi-auth-main .slick-arrow{
     position: absolute;
     top: inherit;
-    bottom: -40%;
-    left: inherit;
+    bottom: -10%;
     background: none;
     border: none;
     font-size: 0;
     z-index: 9;
 }
-.testi-auth-content-main .slick-arrow:before{
+.testi-auth-main .slick-arrow:before{
     font-family: "Font Awesome 5 Pro";
     color: #fff;
-    background: #000;
+    background: #FD5240;
     font-size: 18px;
     font-weight: 600;
-    width: 45px;
-    height: 45px;
-    line-height: 32px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     border-radius: 100%;
     opacity: 1;
@@ -1178,17 +1056,19 @@ section.testi-main-sec{
     justify-content: center;
     align-items: center;
 }
-.testi-auth-content-main .slick-prev.slick-arrow:before{
+.testi-auth-main .slick-prev{
+    left: 5%;
+}
+.testi-auth-main .slick-prev.slick-arrow:before{
     content: "\f060";
 }
-.testi-auth-content-main .slick-next.slick-arrow:before{
+.testi-auth-main .slick-next{
+    left: 20%;
+}
+.testi-auth-main .slick-next.slick-arrow:before{
     content: "\f061";
 }
-.testi-auth-content-main .slick-next.slick-arrow{
-    right: 0;
-    left: 15%;
-}
-.testi-auth-content-main .slick-arrow.slick-disabled:before{
+.testi-auth-main .slick-arrow.slick-disabled:before{
     background-color: #e1e1e1;
 }
 /*Testimonials Section CSS End Here*/
