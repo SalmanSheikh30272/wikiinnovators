@@ -572,6 +572,32 @@ $page = 'home';
     </section>
     <!--FAQS Question Section End Here -->
 
+    <!--Main Contact Form Section Start Here -->
+    <section class="main-contact-form">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="contact-form-side">
+                        <h4 class="heading-two">Get A Free Consultation</h4>
+                        <!-- Contact Form Side Form Include Here -->
+                        <form action="https://leads.infinityprojectmanager.com/brand/wikinnovators/lead" method="GET">
+                            <input name="brand_name" type="hidden" value="wikinnovators.com">
+                            <input id="lead_area" name="modal_form" type="hidden" value="https://wikinnovators.com/">
+                            <?php include 'includes/sections/contact-form-side.php'; ?>
+                        </form>
+                        <!-- Contact Form Side Form Include Here -->
+                    </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    <div class="main-contact-img">
+                        <img src="assets/images/contact-form-img.png" data-src="assets/images/contact-form-img.png" alt="Img" width="100%" height="auto" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Main Contact Form Section End Here -->
+
 </main>
 
 <?php

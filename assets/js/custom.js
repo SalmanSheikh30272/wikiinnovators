@@ -1,8 +1,8 @@
 //***** Sticky Header JS Start Here *****//
-// window.addEventListener("scroll", function () {
-//   var header = document.querySelector("header");
-//   header.classList.toggle("sticky", window.scrollY > 50);
-// });
+window.addEventListener("scroll", function () {
+  var header = document.querySelector("header");
+  header.classList.toggle("sticky", window.scrollY > 50);
+});
 //***** Sticky Header JS End Here *****//
 
 //***** Lazy load JS Start Here *****//

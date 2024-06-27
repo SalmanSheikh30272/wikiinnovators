@@ -165,7 +165,7 @@ li{
 header{
     background: transparent;
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 1000;
     transition: all .3s ease-in-out;
@@ -1144,6 +1144,113 @@ section.faqs-sec-wrap{
     border-radius: 0;
 }
 /*FAQS Section Css End Here*/
+
+/*Main Contact Form Section Css Start Here*/
+section.main-contact-form{
+    background: #F9F9F9;
+    padding: 50px 0px;
+}
+.main-contact-form .contact-form-side{
+    width: 75%;
+    margin: 0 auto;
+}
+.contact-form-side .heading-two{
+    color: #141414;
+    margin: 0 0 20px
+}
+.contact-form-side .form-group{
+    margin: 0 0 10px;
+}
+.contact-form-side .form-group.select-form-group{
+    position: relative;
+    z-index: 1;
+    margin: 0 0 20px;
+}
+.contact-form-side .form-group.select-form-group::after{
+    content: "\f078";
+    font-family: "Font Awesome 6 Pro";
+    color: #9A9999;
+    font-size: 18px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    z-index: -1;
+}
+.contact-form-side .form-group .form-select{
+    background-color: transparent;
+    color: #9A9999;
+    font-size: 18px;
+    line-height: 24px;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #9A9999;
+    outline: none;
+    box-shadow: none;
+    padding: 10px 30px 10px 10px;
+    cursor: pointer;
+    background-image: none;
+    position: relative;
+}
+.contact-form-side .form-group .form-select option{
+    background-color: #fff;
+    font-size: 16px;
+}
+.contact-form-side .form-group input{
+    background: #fff;
+    font-size: 16px;
+    color: #141414;
+    padding: 10px 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.contact-form-side .form-group input::placeholder{
+    color: #A4A4A4;
+}
+.contact-form-side .form-group textarea{
+    background: #fff;
+    font-size: 16px;
+    color: #141414;
+    border: none;
+    width: 100%;
+    height: 100px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+}
+.contact-form-side .form-group textarea::placeholder{
+    color: #A4A4A4;
+}
+.contact-form-side .form-group button.submit-btn{
+    background: #FD5240;
+    color: #fff;
+    border: 2px solid #FD5240;
+    font-size: 16px;
+    font-weight: 600;
+    width: 175px;
+    height: 50px;
+    border-radius: 0px;
+    padding: 5px 5px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    transition: all .3s ease-in-out;
+    position: relative;
+}
+.contact-form-side .form-group button.submit-btn:hover{
+    background: #fff;
+    color: #FD5240;
+}
+.main-contact-form .main-contact-img{}
+.main-contact-form .main-contact-img img{}
+/*Main Contact Form Section Css End Here*/
 
 /**************************************************************************
  --------------------- Home Page Folds Css End Here -----------------------
