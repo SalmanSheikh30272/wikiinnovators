@@ -231,6 +231,7 @@ header ul.navbar-nav .nav-item.dropdown .dropdown-toggle::after{
     margin: 0 0 0 5px;
     transition: all .3s ease-in-out;
     opacity: 0;
+    display: none;
 }
 header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu{
     position: absolute;
@@ -1391,109 +1392,16 @@ ul.footer-social-list li a img{
 
 /*Heading & Para Style Responsive Css*/
 .heading-one{
-    font-size: 36px;
-    line-height: 42px;
+    font-size: 54px;
+    line-height: 60px;
 }
 .heading-two{
-    font-size: 42px;
-    line-height: 48px;
+    font-size: 40px;
+    line-height: 46px;
 }
 .heading-three{
-    font-size: 28px;
-    line-height: 34px;
-}
-.heading-four{
-    font-size: 20px;
-    line-height: 26px;
-}
-.heading-five{
-    font-size: 20px;
-    line-height: 26px;
-}
-/*Heading & Para Style Responsive Css*/
-
-/*Website Custom Style Responsive Css For Single Items End Here*/
-
-/**************************************************************************
- --------------- Home Page Folds Responsive Css Start Here ----------------
- --------------------------------------------------------------------------
-**************************************************************************/
-
-/*Banner Main Section Responsive Css Start Here*/
-section.banner-main-sec{
-    padding: 160px 0 60px;
-}
-.banner-main-sec .banner-main-img{
-    bottom: -160px;
-}
-.banner-main-img::before{
-    top: -250px;
-}
-/*Banner Main Section Responsive Css End Here*/
-
-/*Unlock Story Section Responsive Css Start Here*/
-.unlock-story-content ul li img{
-    margin: 0 5px 0 0;
-}
-/*Unlock Story Section Responsive Css End Here*/
-
-/*Service Offer Section Responsive Css Start Here*/
-.service-offer-slider .slick-prev{
-    left: -20px;
-}
-.service-offer-slider .slick-next{
-    right: 25px;
-}
-.service-offer-inner .service-offer-box{
-    padding: 40px 30px;
-}
-/*Service Offer Section Responsive Css End Here*/
-
-/*Step Works Section Responsive Css Start Here*/
-.step-works-box::before{
-    left: -30px;
-    width: 225px;
-    height: 100%;
-    border-radius: 70px;
-}
-/*Step Works Section Responsive Css End Here*/
-
-/*Great Pride Section Responsive Css Start Here*/
-.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv{
-    width: 100%;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-cont-text{
-    width: 70%;
-}
-/*Great Pride Section Responsive CSS End Here*/
-
-/*Testimonials Section Responsive CSS Start Here*/
-.testi-auth-image-main .testi-auth-images{
-    padding: 0 30px 30px
-}
-/*Testimonials Section Responsive CSS End Here*/
-
-/**************************************************************************
- --------------- Home Page Folds Responsive Css End Here ------------------
- --------------------------------------------------------------------------
-**************************************************************************/
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px){
-
-/*Website Custom Style Responsive Css For Single Items Start Here*/
-
-/*Heading & Para Style Responsive Css*/
-.heading-one{
-    font-size: 32px;
-    line-height: 38px;
-}
-.heading-two{
-    font-size: 34px;
-    line-height: 40px;
-}
-.heading-three{
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 26px;
+    line-height: 32px;
 }
 .heading-four{
     font-size: 20px;
@@ -1504,6 +1412,143 @@ section.banner-main-sec{
     line-height: 22px;
 }
 .heading-six{
+    font-size: 16px;
+    line-height: 22px;
+}
+.heading-seven{
+    font-size: 16px;
+    line-height: 22px;
+}
+p{
+    font-size: 14px;
+    line-height: 20px;
+}
+li{
+    font-size: 14px;
+    line-height: 20px;
+}
+/*Heading & Para Style Responsive Css*/
+
+/*Buttons Style Responsive Css*/
+.website-main-buttons a.read-more-btn,
+.website-main-buttons button.popup-btn,
+.website-main-buttons button.chat-btn,
+.website-main-buttons a.call-btn{
+    font-size: 14px;
+    width: 150px;
+}
+/*Buttons Style Responsive Css*/
+
+/*Website Custom Style Responsive Css For Single Items End Here*/
+
+/*Header Responsive Css Start Here*/
+header nav.navbar .navbar-brand{
+    width: 200px;
+}
+header .navbar-main-center ul.navbar-nav li.nav-item{
+    margin: 0 10px;
+}
+header .navbar-main-nav .navbar-buttons button.chat-btn{
+    font-size: 14px;
+    width: 150px;
+}
+/*Header Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css Start Here ----------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+/*Banner Main Section Responsive Css Start Here*/
+.banner-main-content .website-main-buttons button.chat-btn{
+    width: 200px;
+}
+.banner-review-box .review-rating-area{
+    right: -50px
+}
+/*Banner Main Section Responsive Css End Here*/
+
+/*Wikipedia Page Section Responsive Css Start Here*/
+.wikipedia-page-inner .wikipedia-page-box{
+    padding: 10px 10px;
+}
+/*Wikipedia Page Section Responsive Css End Here*/
+
+/*Unlock Story Section Responsive Css Start Here*/
+.unlock-story-content ul.unlock-story-list{
+    grid-template-columns: 1fr 1fr;
+}
+.unlock-story-content .website-main-buttons button.chat-btn{
+    width: 200px;
+}
+/*Unlock Story Section Responsive Css End Here*/
+
+/*Service Offer Section Responsive Css Start Here*/
+.service-offer-inner .service-offer-box{
+    padding: 40px 20px 40px;
+}
+/*Service Offer Section Responsive Css End Here*/
+
+/*Main CTA Section Responsive Css Start Here*/
+.cta-main-content .website-main-buttons button.chat-btn{
+    width: 200px;
+}
+/*Main CTA Section Css Responsive End Here*/
+
+/*Testimonials Section Responsive CSS Start Here*/
+.testi-main-left .website-main-buttons button.chat-btn{
+    width: 200px;
+}
+.testi-auth-main .testi-auth-images{
+    padding: 0px 30px 30px;
+}
+/*Testimonials Section Responsive CSS End Here*/
+
+/*Main Contact Form Section Responsive Css Start Here*/
+.main-contact-form .contact-form-side{
+    width: 85%;
+}
+.contact-form-side .form-group.select-form-group::after{
+    font-size: 16px;
+}
+/*Main Contact Form Section Responsive Css End Here*/
+
+/**************************************************************************
+ --------------- Home Page Folds Responsive Css End Here ------------------
+ --------------------------------------------------------------------------
+**************************************************************************/
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+/*Website Custom Style Responsive Css For Single Items Start Here*/
+
+/*Heading & Para Style Responsive Css*/
+.heading-one{
+    font-size: 42px;
+    line-height: 48px;
+}
+.heading-two{
+    font-size: 34px;
+    line-height: 40px;
+}
+.heading-three{
+    font-size: 24px;
+    line-height: 30px;
+}
+.heading-four{
+    font-size: 20px;
+    line-height: 26px;
+}
+.heading-five{
+    font-size: 18px;
+    line-height: 22px;
+}
+.heading-six{
+    font-size: 16px;
+    line-height: 22px;
+}
+.heading-seven{
     font-size: 16px;
     line-height: 22px;
 }
@@ -1520,17 +1565,14 @@ li{
 /*Buttons Style Responsive Css*/
 .website-main-buttons{
     flex-wrap: wrap;
-    justify-content: center;
 }
 .website-main-buttons a.read-more-btn,
 .website-main-buttons button.popup-btn,
 .website-main-buttons button.chat-btn,
 .website-main-buttons a.call-btn{
-    font-size: 16px;
+    font-size: 14px;
     margin: 0 5px 5px;
-}
-.website-main-buttons span.or-end{
-    margin: 10px 10px 15px 10px;
+    width: 150px;
 }
 /*Buttons Style Responsive Css*/
 
@@ -1543,10 +1585,17 @@ header nav.navbar .navbar-brand{
 header .navbar-main-center ul.navbar-nav li.nav-item{
     margin: 0 10px;
 }
+header .navbar-main-center ul.navbar-nav li.nav-item a.nav-link{
+    font-size: 14px;
+    line-height: 20px;
+}
 header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a{
     font-size: 14px;
     line-height: 20px;
-    padding: 8px 8px;
+}
+header .navbar-main-nav .navbar-buttons button.chat-btn{
+    font-size: 14px;
+    width: 150px;
 }
 /*Header Responsive Css End Here*/
 
@@ -1556,198 +1605,79 @@ header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a{
 **************************************************************************/
 
 /*Banner Main Section Responsive Css Start Here*/
-section.banner-main-sec{
-    padding: 130px 0 50px;
+.banner-main-content .website-main-buttons button.chat-btn{
+    width: 200px;
 }
-.banner-main-content ul li{
-    width: 100%;
-}
-.banner-brands .banner-brands-items img{
-    margin: 0 10px 0 0;
-}
-.banner-main-img::before{
-    top: -250px;
-}
-.banner-main-form .form-group{
-    margin: 0px 5px;
-}
-.banner-main-form .form-group button.submit-btn{
-    font-size: 16px;
+.banner-review-box .review-rating-area{
+    right: -50px
 }
 /*Banner Main Section Responsive Css End Here*/
 
+/*Wikipedia Page Section Responsive Css Start Here*/
+.wikipedia-page-inner .wikipedia-page-box{
+    padding: 10px 10px;
+}
+/*Wikipedia Page Section Responsive Css End Here*/
+
 /*Unlock Story Section Responsive Css Start Here*/
-.unlock-story-content ul li img{
-    margin: 0 5px 0 0;
+.unlock-story-content ul.unlock-story-list{
+    grid-template-columns: 1fr 1fr;
+}
+.unlock-story-content .website-main-buttons button.chat-btn{
+    width: 200px;
 }
 /*Unlock Story Section Responsive Css End Here*/
 
 /*Service Offer Section Responsive Css Start Here*/
-.service-offer-slider .slick-prev{
-    left: -20px;
-}
-.service-offer-slider .slick-next{
-    right: 25px;
-}
 .service-offer-inner .service-offer-box{
-    padding: 40px 30px;
-}
-.offer-box-content .heading-four{
-    height: inherit;
+    padding: 20px 20px 40px;
 }
 /*Service Offer Section Responsive Css End Here*/
 
-/*Step Works Section Responsive Css Start Here*/
-.step-works-head .step-head-content{
-    width: 60%;
+/*Main CTA Section Responsive Css Start Here*/
+.cta-main-content .website-main-buttons button.chat-btn{
+    width: 200px;
 }
-.step-works-head .website-main-buttons{
-    justify-content: end;
-}
-.step-works-wrap .step-works-inner .row{
-    justify-content: center;
-}
-.step-works-box::before{
-    left: -40px;
-    background: #F9F9F9;
-    width: 350px;
-    height: 375px;
-}
-.step-works-box span.step-count{
-    margin: 0 20px;
-}
-.step-works-box .works-box-content{
-    width: 75%;
-    margin: 0 auto;
-}
-/*Step Works Section Responsive Css End Here*/
-
-/*Why Choose Section Css Responsive Start Here*/
-.why-choose-box .choose-box-content{
-    min-height: 210px;
-    max-height: 210px;
-}
-/*Why Choose Section Css Responsive End Here*/
-
-/*Great Pride Section Responsive Css Start Here*/
-.gert-pri-content-main .gert-pride-tab-btn ul{
-    gap: 20px;
-}
-.gert-pri-content-main .gert-pride-tab-btn ul li button{
-    font-size: 16px;
-    line-height: 22px;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv{
-    width: 100%;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-cont-text{
-    width: 70%;
-}
-/*Great Pride Section Responsive CSS End Here*/
+/*Main CTA Section Css Responsive End Here*/
 
 /*Testimonials Section Responsive CSS Start Here*/
-.testi-lft-text-main .website-main-buttons{
-    justify-content: left;
+.testi-main-left .website-main-buttons button.chat-btn{
+    width: 200px;
 }
-.testi-auth-image-main .testi-auth-images{
-    padding: 0 30px 30px
-}
-.testi-auth-content-items .testi-reviews-icon-main{
-    margin-top: 20px;
-}
-.testi-auth-content-main .slick-arrow{
-    bottom: -25%;
+.testi-auth-main .testi-auth-images{
+    padding: 0px 30px 30px;
 }
 /*Testimonials Section Responsive CSS End Here*/
 
-/*FAQS Section Responsive Css Start Here*/
-.faqs-sec-item .accordion-item .accordion-header button.accordion-button{
-    font-size: 18px;
-    line-height: 24px;
+/*Main Contact Form Section Responsive Css Start Here*/
+.main-contact-form .contact-form-side{
+    width: 100%;
 }
-.faqs-sec-item .accordion-item .accordion-collapse .accordion-body{
+.contact-form-side .form-group.select-form-group::after{
+    font-size: 16px;
+}
+.contact-form-side .form-group .form-select{
     font-size: 14px;
     line-height: 20px;
+    padding: 10px 20px 10px 5px;
+    text-align: left;
 }
-/*FAQS Section Responsive Css End Here*/
+.contact-form-side .form-group .form-select option{
+    font-size: 14px;
+}
+.contact-form-side .form-group input{
+    font-size: 14px;
+}
+.contact-form-side .form-group textarea{
+    font-size: 14px;
+}
+.contact-form-side .form-group button.submit-btn{
+    font-size: 14px;
+}
+/*Main Contact Form Section Responsive Css End Here*/
 
 /**************************************************************************
  --------------- Home Page Folds Responsive Css End Here ------------------
- --------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
---------------- Service Page Folds Responsive Css Start Here --------------
----------------------------------------------------------------------------
-**************************************************************************/
-
-/*Service Banner Section Responsive Css Start Here*/
-section.service-banner-sec{
-    padding: 150px 0 50px
-}
-.service-banner-brands img{
-    margin: 0 5px 10px;
-}
-.service-banner-content .website-main-buttons{
-    justify-content: left;
-}
-.service-banner-sec .service-banner-form{
-    width: 100%;
-}
-.service-banner-form .form-group button.submit-btn{
-    font-size: 16px;
-}
-/*Service Banner Section Responsive Css End Here*/
-
-/*CTA Bnner Section Responsive Css Start Here*/
-section.cta-banner-wrap{
-    padding: 50px 0;
-}
-.cta-banner-content .website-main-buttons{
-    flex-wrap: nowrap;
-    justify-content: left;
-}
-/*CTA Banner Section Responsive Css End Here*/
-
-/*Creative Service Section Responsive Css Start Here*/
-.creative-service-inner .creative-service-box{
-    padding: 20px 10px;
-}
-.creative-service-box .service-box-content{
-    min-height: inherit;
-    max-height: inherit;
-}
-.service-box-content .heading-four{
-    height: inherit;
-}
-/*Creative Service Section Responsive Css End Here*/
-
-/*Business Individual Section Responsive Css Start Here*/
-.individual-box-content p{
-    min-height: 175px;
-    max-height: 175px;
-}
-/*Business Individual Section Responsive Css End Here*/
-
-/**************************************************************************
----------------- Service Page Folds Responsive Css End Here ---------------
----------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
- --------------- Contact Page Folds Responsive Css Start Here -------------
- --------------------------------------------------------------------------
-**************************************************************************/
-
-/*Contact Area Section Responsive Css Start Here*/
-.contact-area-wrap .contact-area-content{
-    padding: 0 20px 0 0;
-    margin: 0 20px 0 0;
-}
-/*Contact Area Section Responsive Css End Here*/
-
-/**************************************************************************
- --------------- Contact Page Folds Responsive Css End Here ---------------
  --------------------------------------------------------------------------
 **************************************************************************/
 
@@ -1776,16 +1706,16 @@ ul.footer-social-list li a{
 
 /*Heading & Para Style Responsive Css*/
 .heading-one{
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 42px;
+    line-height: 48px;
 }
 .heading-two{
     font-size: 34px;
     line-height: 40px;
 }
 .heading-three{
-    font-size: 28px;
-    line-height: 34px;
+    font-size: 24px;
+    line-height: 30px;
 }
 .heading-four{
     font-size: 20px;
@@ -1796,6 +1726,10 @@ ul.footer-social-list li a{
     line-height: 22px;
 }
 .heading-six{
+    font-size: 16px;
+    line-height: 22px;
+}
+.heading-seven{
     font-size: 16px;
     line-height: 22px;
 }
@@ -1818,11 +1752,9 @@ li{
 .website-main-buttons button.popup-btn,
 .website-main-buttons button.chat-btn,
 .website-main-buttons a.call-btn{
-    font-size: 16px;
+    font-size: 14px;
     margin: 0 5px 5px;
-}
-.website-main-buttons span.or-end{
-    margin: 10px 10px 15px 10px;
+    width: 150px;
 }
 /*Buttons Style Responsive Css*/
 
@@ -1838,7 +1770,9 @@ header nav.navbar .navbar-brand{
 header .navbar-expand-lg .navbar-collapse{
     background: #e2e2e2;
     margin: 10px 0;
-    border-radius: 10px;
+}
+header .navbar-collapse .navbar-main-nav{
+    flex-wrap: wrap;
 }
 header .navbar-main-nav .navbar-main-center{
     width: 100%;
@@ -1852,11 +1786,17 @@ header .navbar-main-center ul.navbar-nav{
 header .navbar-main-center ul.navbar-nav li.nav-item{
     margin: 0 10px;
 }
-header .navbar-main-center ul.navbar-nav li.nav-item a.nav-link{    
+header .navbar-main-center ul.navbar-nav li.nav-item a.nav-link{ 
     padding: 10px 0px;
+    color: #141414;
+    font-size: 14px;
+    line-height: 20px;
+    border-bottom: 1px solid #efefef;
 }
 header ul.navbar-nav .nav-item.dropdown .dropdown-toggle::after{
     opacity: 1;
+    border-color: #141414 transparent transparent transparent;
+    display: block;
 }
 header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu{
     position: unset;
@@ -1889,6 +1829,12 @@ header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a{
     line-height: 20px;
     padding: 8px 8px;
 }
+header .navbar-main-nav .navbar-buttons{
+    margin: 10px 10px;
+}
+header .navbar-main-nav .navbar-buttons button.chat-btn{
+    font-size: 14px;
+}
 /*Header Responsive Css End Here*/
 
 /**************************************************************************
@@ -1898,222 +1844,109 @@ header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu li a{
 
 /*Banner Main Section Responsive Css Start Here*/
 section.banner-main-sec{
-    padding: 125px 0 50px
+    padding: 125px 0 50px;
 }
 .banner-main-sec .banner-main-content{
     text-align: center;
-    margin: 0 0 40px
+    margin: 0 0 40px;
 }
-.banner-main-content ul{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-.banner-main-content ul li{
-    width: 100%;
+.banner-main-content .heading-one span::before{
+    left: 0;
+    right: 0;
+    width: 250px;
+    margin: 0 auto;
 }
 .banner-brands .banner-brands-items{
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
 }
 .banner-brands .banner-brands-items img{
-    margin: 0 5px 0;
+    margin: 0 5px 10px;
 }
-.banner-main-sec .banner-main-img{
-    bottom: -5px;
+.banner-main-content .website-main-buttons button.chat-btn{
+    width: 200px;
 }
-.banner-main-img::before{
-    display: none;
+.banner-review-box .review-box-content{
+    text-align: center;
 }
-.banner-main-sec .banner-main-form{
-    border-radius: 50px;
-    width: 75%;
-    margin: 0 auto;
-    padding: 20px 20px;
-}
-.banner-main-form form{
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
-.banner-main-form .form-group{
-    width: 100%;
-    margin: 5px 10px;
-}
-.banner-main-form .form-group input{
-    font-size: 14px;
-    padding: 10px 10px;
-}
-.banner-main-form .form-group button.submit-btn{
-    font-size: 16px;
+.banner-review-box .review-rating-area{
+    right: -50px
 }
 /*Banner Main Section Responsive Css End Here*/
 
-/*Award Brands Section Responsive Css Start Here*/
-section.award-brands-wrap{
-    padding: 30px 0px;
+/*Wikipedia Page Section Responsive Css Start Here*/
+.wikipedia-page-inner .wikipedia-page-box{
+    padding: 10px 10px;
 }
-/*Award Brands Section Responsive Css End Here*/
+/*Wikipedia Page Section Responsive Css End Here*/
 
 /*Unlock Story Section Responsive Css Start Here*/
-section.unlock-story-wrap{
-    padding: 30px 0;
-}
-.unlock-story-inner .unlock-story-content{
+.unlock-story-wrap .unlock-story-content{
     text-align: center;
-    margin: 0 0 20px;
 }
-.unlock-story-content ul{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
+.unlock-story-content .short-heading::before{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
-.unlock-story-content ul li img{
-    margin: 0 5px 0 0;
+.unlock-story-content ul.unlock-story-list{
+    grid-template-columns: 1fr 1fr;
 }
-.unlock-story-inner .unlock-story-img{
-    text-align: center;
+.unlock-story-content .website-main-buttons button.chat-btn{
+    width: 200px;
 }
 /*Unlock Story Section Responsive Css End Here*/
 
 /*Service Offer Section Responsive Css Start Here*/
-section.service-offer-wrap{
-    padding: 30px 0;
-}
-.service-offer-wrap .service-offer-head{
-    margin: 0 0 30px;
-}
-.service-offer-slider .slick-arrow::before{
-    font-size: 20px;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-}
-.service-offer-slider .slick-prev{
-    left: -30px;
-}
-.service-offer-slider .slick-next{
-    right: 0px;
-}
 .service-offer-inner .service-offer-box{
-    padding: 40px 30px;
-    margin: 10px 10px;
+    padding: 20px 20px 40px;
 }
 /*Service Offer Section Responsive Css End Here*/
 
-/*Step Works Section Responsive Css Start Here*/
-section.step-works-wrap{
-    padding: 30px 0;
-}
-.step-works-wrap .step-works-head{
-    justify-content: center;
-    margin: 0 0 30px;
-    flex-direction: column;
-    text-align: center;
-}
-.step-works-head .step-head-content{
-    width: 100%;
-}
-.step-works-head .website-main-buttons{
-    margin: 20px 0 0;
-}
-.step-works-wrap .step-works-inner .row{
-    justify-content: center;
-}
-.step-works-inner .step-works-box{
-    text-align: center;
-}
-.step-works-box::before{
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-}
-.step-works-box span.step-count{
-    left: 0;
-    right: 0;
-}
-/*Step Works Section Responsive Css End Here*/
-
 /*Main CTA Section Responsive Css Start Here*/
 section.cta-main-wrap{
-    padding: 30px 0;
+    padding: 50px 0;
+}
+.cta-main-content .website-main-buttons button.chat-btn{
+    width: 200px;
 }
 /*Main CTA Section Css Responsive End Here*/
 
-/*Why Choose Section Css Responsive Start Here*/
-section.why-choose-wrap{
-    padding: 30px 0;
-}
-.why-choose-wrap .why-choose-head{
-    margin: 0 0 30px;
-}
-.why-choose-inner .short-heading{
-    font-size: 20px;
-    line-height: 26px;
-}
-.why-choose-box .choose-box-content{
-    min-height: 210px;
-    max-height: 210px;
-}
-.why-choose-inner .website-main-buttons{
-    margin: 0;
-}
-/*Why Choose Section Css Responsive End Here*/
-
-/*Great Pride Section Responsive Css Start Here*/
-section.gert-pride-main{
-    padding: 30px 0px;
-}
-.gert-pri-content-main .gert-pride-tab-btn ul{
-    gap: 10px;
-    position: inherit;
-    left: inherit;
-    top: inherit;
-}
-.gert-pri-content-main .gert-pride-tab-btn ul li button{
-    font-size: 16px;
-    line-height: 22px;
-}
-.gert-pride-tab-items-list .gert-pride-column:nth-child(2){
-    margin-top: 0px;
-}
-.gert-pride-tab-items-list .auth-cont-main{
-    margin: 0 0 20px;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-tit-dv{
-    width: 75%;
-}
-.gert-pride-tab-items-list .auth-cont-main .auth-cont-text{
-    width: 60%;
-}
-/*Great Pride Section Responsive CSS End Here*/
-
 /*Testimonials Section Responsive CSS Start Here*/
 section.testi-main-sec{
-    padding: 30px 0px;
+    padding: 50px 0px 100px;
 }
-.testi-main-sec .testi-lft-text-main{
+.testi-main-sec .testi-main-left{
     text-align: center;
-    margin: 0 0 30px;
+    margin: 0 0 20px;
 }
-.testi-auth-content-main .slick-arrow{
-    bottom: -20%;
+.testi-main-left .short-heading{
+    font-size: 18px;
+    line-height: 24px;
+}
+.testi-main-left .short-heading::before{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.testi-main-left .website-main-buttons button.chat-btn{
+    width: 200px;
+}
+.testi-auth-main .testi-auth-images{
+    padding: 0px 30px 30px;
+}
+.testi-auth-main .slick-arrow:before{
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
 }
 /*Testimonials Section Responsive CSS End Here*/
 
 /*FAQS Section Responsive Css Start Here*/
-section.faqs-sec-wrap{
-    padding: 30px 0;
-}
-.faqs-sec-wrap .faqs-sec-head{
-    margin: 0 0 30px;
-}
 .faqs-sec-item .accordion-item .accordion-header button.accordion-button{
-    font-size: 18px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 22px;
 }
 .faqs-sec-item .accordion-item .accordion-collapse .accordion-body{
     font-size: 14px;
@@ -2121,193 +1954,36 @@ section.faqs-sec-wrap{
 }
 /*FAQS Section Responsive Css End Here*/
 
-/**************************************************************************
- --------------- Home Page Folds Responsive Css End Here ------------------
- --------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
----------------- About Page Folds Responsive Css Start Here ---------------
----------------------------------------------------------------------------
-**************************************************************************/
-
-/*Who We Are Section Responsive CSS Start Here*/
-section.who-we-are-sec-main{
-    padding: 30px 0px;
+/*Main Contact Form Section Responsive Css Start Here*/
+.main-contact-form .contact-form-side{
+    width: 100%;
 }
-.who-we-are-content-main .who-we-are-cont-head{
-    justify-content: center;
-    margin: 0 0 30px;
-    flex-direction: column;
-    text-align: center;
-}
-.who-we-are-content-main .who-we-are-content-para{
-    text-align: center;
-}
-.who-we-are-content-main .who-we-are-content-para p{
+.contact-form-side .form-group.select-form-group::after{
     font-size: 16px;
-    line-height: 22px;
+    right: 5px;
 }
-/*Who We Are Section Responsive CSS End Here*/
-
-/*About Sapcer Section Responsive CSS Start Here*/
-section.about-space-main{
-    display: none;
-}
-/*About Sapcer Section Responsive CSS End Here*/
-  
-/**************************************************************************
----------------- About Page Folds Responsive Css End Here -----------------
---------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
---------------- Service Page Folds Responsive Css Start Here --------------
----------------------------------------------------------------------------
-**************************************************************************/
-
-/*Service Banner Section Responsive Css Start Here*/
-section.service-banner-sec{
-    padding: 125px 0 50px
-}
-.service-banner-sec .service-banner-content{
-    text-align: center;
-    margin: 0 0 20px;
-}
-.service-banner-content ul{
-    display: grid;
-    justify-content: center;
-    align-items: center;
+.contact-form-side .form-group .form-select{
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 20px 10px 5px;
     text-align: left;
 }
-.service-banner-content .service-banner-brands{
-    justify-content: center;
+.contact-form-side .form-group .form-select option{
+    font-size: 14px;
 }
-.service-banner-brands img{
-    margin: 0 5px 10px;
+.contact-form-side .form-group input{
+    font-size: 14px;
 }
-.service-banner-sec .service-banner-form{
-    width: 80%;
+.contact-form-side .form-group textarea{
+    font-size: 14px;
 }
-.service-banner-form .form-group button.submit-btn{
-    font-size: 16px;
+.contact-form-side .form-group button.submit-btn{
+    font-size: 14px;
 }
-/*Service Banner Section Responsive Css End Here*/
-
-/*CTA Bnner Section Responsive Css Start Here*/
-section.cta-banner-wrap{
-    padding: 50px 0;
-}
-.cta-banner-content .website-main-buttons{
-    flex-wrap: nowrap;
-    justify-content: left;
-}
-/*CTA Banner Section Responsive Css End Here*/
-
-/*Creative Service Section Responsive Css Start Here*/
-section.creative-service-wrap{
-    padding: 30px 0;
-}
-.creative-service-inner .creative-service-box{
-    padding: 30px 20px;
-    border-right: inherit;
-}
-.creative-service-box .service-box-content{
-    min-height: inherit;
-    max-height: inherit;
-}
-.service-box-content .heading-four{
-    height: inherit;
-}
-/*Creative Service Section Responsive Css End Here*/
-
-/*Business Individual Section Responsive Css Start Here*/
-section.business-individual-wrap{
-    padding: 30px 0;
-}
-.business-individual-wrap .business-individual-head{
-    margin: 0 0 30px;
-}
-.individual-head-content .short-heading{
-    font-size: 20px;
-    line-height: 26px;
-}
-.individual-box-content p{
-    min-height: 175px;
-    max-height: 175px;
-}
-/*Business Individual Section Responsive Css End Here*/
-
-/*About Info Section Responsive Css Start Here*/
-section.about-info-wrap{
-    padding: 30px 0;
-}
-.about-info-inner .about-info-content{
-    padding: 30px 0;
-    text-align: center;
-}
-/*About Info Section Responsive Css End Here*/
-
-/*Main Info Section Responsive Css Start Here*/
-section.main-info-wrap{
-    padding: 30px 0;
-}
-/*Main Info Section Responsive Css End Here*/
+/*Main Contact Form Section Responsive Css End Here*/
 
 /**************************************************************************
----------------- Service Page Folds Responsive Css End Here ---------------
----------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
- --------------- Contact Page Folds Responsive Css Start Here -------------
- --------------------------------------------------------------------------
-**************************************************************************/
-
-/*Contact Banner Responsive Css Start Here*/
-section.contact-banner-wrap{
-    padding: 120px 0 50px;
-}
-.contact-banner-wrap .contact-banner-content{
-    text-align: center;
-}
-.contact-banner-content ul.footer-social-list{
-    justify-content: center;
-}
-/*Contact Banner Responsive Css End Here*/
-
-/*Contact Area Section Responsive Css Start Here*/
-section.contact-area-wrap{
-    padding: 50px 0;
-}
-.contact-area-wrap .contact-area-content{
-    padding: 0 20px 0 0;
-    margin: 0 20px 0 0;
-}
-.contact-area-head .heading-two{
-    font-size: 40px;
-    line-height: 46px;
-}
-.contact-area-form .form-group input{
-    font-size: 16px;
-}
-.contact-area-form .form-group select{
-    font-size: 16px;
-}
-.contact-area-form .form-group textarea{
-    font-size: 16px;
-}
-.contact-area-form .form-group button.submit-btn{
-    font-size: 16px;
-}
-.contact-item-box a{
-    font-size: 16px;
-    line-height: 22px;
-}
-/*Contact Area Section Responsive Css End Here*/
-
-/**************************************************************************
- --------------- Contact Page Folds Responsive Css End Here ---------------
+ --------------- Home Page Folds Responsive Css End Here ------------------
  --------------------------------------------------------------------------
 **************************************************************************/
 
@@ -2398,6 +2074,7 @@ li{
 .website-main-buttons a.call-btn{
     font-size: 14px;
     margin: 0 5px 5px;
+    width: 150px;
 }
 /*Buttons Style Responsive Css*/
 
@@ -2408,7 +2085,7 @@ header nav.navbar{
     padding: 20px 0 20px;
 }
 header nav.navbar .navbar-brand{
-    width: 175px;
+    width: 200px;
 }
 header .navbar-expand-lg .navbar-collapse{
     background: #e2e2e2;
@@ -2436,10 +2113,10 @@ header .navbar-main-center ul.navbar-nav li.nav-item a.nav-link{
     line-height: 20px;
     border-bottom: 1px solid #efefef;
 }
-header .navbar-main-center ul.navbar-nav li.nav-item.dropdown{}
 header ul.navbar-nav .nav-item.dropdown .dropdown-toggle::after{
     opacity: 1;
     border-color: #141414 transparent transparent transparent;
+    display: block;
 }
 header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu{
     position: unset;
@@ -2552,10 +2229,6 @@ section.wikipedia-page-wrap{
 .wikipedia-page-inner .wikipedia-page-box{
     padding: 10px 10px;
 }
-.wikipedia-box-content p{
-    min-height: inherit;
-    max-height: inherit;
-}
 /*Wikipedia Page Section Responsive Css End Here*/
 
 /*Unlock Story Section Responsive Css Start Here*/
@@ -2577,10 +2250,7 @@ section.unlock-story-wrap{
     margin: 0 auto;
 }
 .unlock-story-content ul.unlock-story-list{
-    grid-template-columns: 1fr;
-}
-.unlock-story-content ul.unlock-story-list li{
-    margin: 0 0 20px;
+    grid-template-columns: 1fr 1fr;
 }
 .unlock-story-content .website-main-buttons button.chat-btn{
     width: 200px;
@@ -2629,15 +2299,11 @@ section.why-choose-wrap{
 .why-choose-wrap .why-choose-head{
     margin: 0 0 30px;
 }
-.why-choose-box .choose-box-content{
-    min-height: inherit;
-    max-height: inherit;
-}
 /*Why Choose Section Css Responsive End Here*/
 
 /*Testimonials Section Responsive CSS Start Here*/
 section.testi-main-sec{
-    padding: 50px 0px;
+    padding: 50px 0px 100px;
 }
 .testi-main-sec .testi-main-left{
     text-align: center;
@@ -2657,37 +2323,15 @@ section.testi-main-sec{
 }
 .testi-auth-main .testi-auth-images{
     padding: 0px 30px 30px;
-    margin: 55px 10px 60px;
-}
-.testi-auth-images .testi-images-items{
-    text-align: center;
-}
-.testi-images-items .rating-star-icons{
-    justify-content: center;
-}
-.testi-content-items .testi-content-main{
-    text-align: center;
-    margin: 20px 0 0;
-}
-.testi-content-items ul.testi-reviews-icon{
-    margin: 30px 0 0;
-    justify-content: center;
 }
 .testi-auth-main .slick-arrow{
-    bottom: 0%;
+    bottom: -15%;
 }
 .testi-auth-main .slick-arrow:before{
     font-size: 16px;
     width: 35px;
     height: 35px;
     line-height: 35px;
-}
-.testi-auth-main .slick-prev{
-    left: 5%;
-}
-.testi-auth-main .slick-next{
-    left: inherit;
-    right: 5%;
 }
 /*Testimonials Section Responsive CSS End Here*/
 
@@ -2713,8 +2357,7 @@ section.main-contact-form{
     padding: 30px 0px;
 }
 .main-contact-form .contact-form-side{
-    width: 100%;
-    margin: 0 0 20px;
+    margin: 0 auto 20px;
 }
 .contact-form-side .form-group.select-form-group::after{
     font-size: 16px;
@@ -2742,209 +2385,6 @@ section.main-contact-form{
 
 /**************************************************************************
  --------------- Home Page Folds Responsive Css End Here ------------------
- --------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
----------------- About Page Folds Responsive Css Start Here ---------------
----------------------------------------------------------------------------
-**************************************************************************/
-
-/*Who We Are Section Responsive CSS Start Here*/
-section.who-we-are-sec-main{
-    padding: 30px 0px;
-}
-.who-we-are-content-main .who-we-are-cont-head{
-    justify-content: center;
-    margin: 0 0 30px;
-    flex-direction: column;
-    text-align: center;
-}
-.who-we-are-content-main .who-we-are-content-para{
-    text-align: center;
-}
-.who-we-are-content-main .who-we-are-content-para p{
-    font-size: 16px;
-    line-height: 22px;
-}
-/*Who We Are Section Responsive CSS End Here*/
-
-/*About Sapcer Section Responsive CSS Start Here*/
-section.about-space-main{
-    display: none;
-}
-/*About Sapcer Section Responsive CSS End Here*/
-  
-/**************************************************************************
----------------- About Page Folds Responsive Css End Here -----------------
---------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
---------------- Service Page Folds Responsive Css Start Here --------------
----------------------------------------------------------------------------
-**************************************************************************/
-
-/*Service Banner Section Responsive Css Start Here*/
-section.service-banner-sec{
-    padding: 100px 0 50px
-}
-.service-banner-sec .service-banner-content{
-    text-align: center;
-    margin: 0 0 20px;
-}
-.service-banner-content ul{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-.service-banner-content .service-banner-brands{
-    justify-content: center;
-}
-.service-banner-brands img{
-    margin: 0 5px 10px;
-}
-.service-banner-sec .service-banner-form{
-    width: 100%;
-}
-.service-banner-form .form-group button.submit-btn{
-    font-size: 16px;
-}
-/*Service Banner Section Responsive Css End Here*/
-
-/*CTA Bnner Section Responsive Css Start Here*/
-section.cta-banner-wrap{
-    padding: 50px 0;
-}
-.cta-banner-wrap .cta-banner-content{
-    text-align: center;
-    margin: 0 0 20px;
-}
-.cta-banner-content ul{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-/*CTA Banner Section Responsive Css End Here*/
-
-/*Creative Service Section Responsive Css Start Here*/
-section.creative-service-wrap{
-    padding: 30px 0;
-}
-.creative-service-inner .creative-service-box{
-    padding: 30px 20px;
-    border-right: inherit;
-    border-bottom: 1px solid #E5E5E5;
-}
-.creative-service-box.service-box-last{
-    border-bottom: inherit;
-}
-.creative-service-box .service-box-content{
-    min-height: inherit;
-    max-height: inherit;
-}
-.service-box-content .heading-four{
-    height: inherit;
-}
-/*Creative Service Section Responsive Css End Here*/
-
-/*Business Individual Section Responsive Css Start Here*/
-section.business-individual-wrap{
-    padding: 30px 0;
-}
-.business-individual-wrap .business-individual-head{
-    margin: 0 0 30px;
-}
-.individual-head-content .short-heading{
-    font-size: 20px;
-    line-height: 26px;
-}
-/*Business Individual Section Responsive Css End Here*/
-
-/*About Info Section Responsive Css Start Here*/
-section.about-info-wrap{
-    padding: 30px 0;
-}
-.about-info-inner .about-info-content{
-    padding: 30px 0;
-    text-align: center;
-}
-/*About Info Section Responsive Css End Here*/
-
-/*Main Info Section Responsive Css Start Here*/
-section.main-info-wrap{
-    padding: 30px 0;
-}
-.main-info-inner .main-info-content{
-    text-align: center;
-}
-.main-info-inner .main-info-image{
-    text-align: center;
-    margin: 0 0 20px;
-}
-/*Main Info Section Responsive Css End Here*/
-
-/**************************************************************************
----------------- Service Page Folds Responsive Css End Here ---------------
----------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
- --------------- Contact Page Folds Responsive Css Start Here -------------
- --------------------------------------------------------------------------
-**************************************************************************/
-
-/*Contact Banner Responsive Css Start Here*/
-section.contact-banner-wrap{
-    padding: 120px 0 50px;
-}
-.contact-banner-wrap .contact-banner-content{
-    text-align: center;
-}
-.contact-banner-content ul.footer-social-list{
-    justify-content: center;
-}
-/*Contact Banner Responsive Css End Here*/
-
-/*Contact Area Section Responsive Css Start Here*/
-section.contact-area-wrap{
-    padding: 50px 0;
-}
-.contact-area-wrap .contact-area-content{
-    border-right: inherit;
-    border-bottom: 1px solid #707070;
-    padding: 0 0 30px;
-    margin: 0 0 30px;
-}
-.contact-area-head .heading-two{
-    font-size: 50px;
-    line-height: 56px;
-}
-.contact-area-form .form-group{
-    text-align: center;
-}
-.contact-area-form .form-group input{
-    font-size: 16px;
-}
-.contact-area-form .form-group select{
-    font-size: 16px;
-}
-.contact-area-form .form-group textarea{
-    font-size: 16px;
-}
-.contact-area-form .form-group button.submit-btn{
-    font-size: 16px;
-}
-.contact-item-box a{
-    font-size: 16px;
-    line-height: 22px;
-}
-/*Contact Area Section Responsive Css End Here*/
-
-/**************************************************************************
- --------------- Contact Page Folds Responsive Css End Here ---------------
  --------------------------------------------------------------------------
 **************************************************************************/
 
@@ -3043,6 +2483,7 @@ li{
 .website-main-buttons a.call-btn{
     font-size: 14px;
     margin: 0 5px 5px;
+    width: 150px;
 }
 /*Buttons Style Responsive Css*/
 
@@ -3081,10 +2522,10 @@ header .navbar-main-center ul.navbar-nav li.nav-item a.nav-link{
     line-height: 20px;
     border-bottom: 1px solid #efefef;
 }
-header .navbar-main-center ul.navbar-nav li.nav-item.dropdown{}
 header ul.navbar-nav .nav-item.dropdown .dropdown-toggle::after{
     opacity: 1;
     border-color: #141414 transparent transparent transparent;
+    display: block;
 }
 header ul.navbar-nav .nav-item.dropdown ul.dropdown-menu{
     position: unset;
@@ -3387,36 +2828,6 @@ section.main-contact-form{
 
 /**************************************************************************
  --------------- Home Page Folds Responsive Css End Here ------------------
- --------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
----------------- About Page Folds Responsive Css Start Here ---------------
----------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
----------------- About Page Folds Responsive Css End Here -----------------
---------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
---------------- Service Page Folds Responsive Css Start Here --------------
----------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
----------------- Service Page Folds Responsive Css End Here ---------------
----------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
- --------------- Contact Page Folds Responsive Css Start Here -------------
- --------------------------------------------------------------------------
-**************************************************************************/
-
-/**************************************************************************
- --------------- Contact Page Folds Responsive Css End Here ---------------
  --------------------------------------------------------------------------
 **************************************************************************/
 

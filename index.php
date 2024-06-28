@@ -85,7 +85,7 @@ $page = 'home';
             </div>
             <div class="wikipedia-page-inner">
                 <div class="row">
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="wikipedia-page-box">
                             <div class="wikipedia-box-img">
                                 <img src="assets/images/wikipedia-page-icons/01.png" data-src="assets/images/wikipedia-page-icons/01.png" alt="Icon" width="100" height="100"  class="img-fluid">
@@ -96,7 +96,7 @@ $page = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="wikipedia-page-box">
                             <div class="wikipedia-box-img">
                                 <img src="assets/images/wikipedia-page-icons/02.png" data-src="assets/images/wikipedia-page-icons/02.png" alt="Icon" width="100" height="100"  class="img-fluid">
@@ -107,7 +107,7 @@ $page = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="wikipedia-page-box">
                             <div class="wikipedia-box-img">
                                 <img src="assets/images/wikipedia-page-icons/03.png" data-src="assets/images/wikipedia-page-icons/03.png" alt="Icon" width="100" height="100"  class="img-fluid">
@@ -118,7 +118,7 @@ $page = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
+                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
                         <div class="wikipedia-page-box">
                             <div class="wikipedia-box-img">
                                 <img src="assets/images/wikipedia-page-icons/04.png" data-src="assets/images/wikipedia-page-icons/04.png" alt="Icon" width="100" height="100"  class="img-fluid">
@@ -183,7 +183,7 @@ $page = 'home';
             </div>
             <div class="service-offer-inner">
                 <div class="row">
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="service-offer-box">
                             <div class="offer-box-img">
                                 <img src="assets/images/service-offer-icons/ser-1.png" data-src="assets/images/service-offer-icons/ser-1.png" alt="Icon" width="75" height="75"  class="img-fluid">
@@ -199,7 +199,7 @@ $page = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="service-offer-box">
                             <div class="offer-box-img">
                                 <img src="assets/images/service-offer-icons/ser-2.png" data-src="assets/images/service-offer-icons/ser-2.png" alt="Icon" width="75" height="75"  class="img-fluid">
@@ -215,7 +215,7 @@ $page = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="service-offer-box">
                             <div class="offer-box-img">
                                 <img src="assets/images/service-offer-icons/ser-3.png" data-src="assets/images/service-offer-icons/ser-3.png" alt="Icon" width="75" height="75"  class="img-fluid">
@@ -231,7 +231,7 @@ $page = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="service-offer-box">
                             <div class="offer-box-img">
                                 <img src="assets/images/service-offer-icons/ser-4.png" data-src="assets/images/service-offer-icons/ser-4.png" alt="Icon" width="75" height="75"  class="img-fluid">
@@ -247,7 +247,7 @@ $page = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="service-offer-box">
                             <div class="offer-box-img">
                                 <img src="assets/images/service-offer-icons/ser-5.png" data-src="assets/images/service-offer-icons/ser-5.png" alt="Icon" width="75" height="75"  class="img-fluid">
@@ -263,7 +263,7 @@ $page = 'home';
                             </div>
                         </div>
                     </div>
-                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
                         <div class="service-offer-box">
                             <div class="offer-box-img">
                                 <img src="assets/images/service-offer-icons/ser-6.png" data-src="assets/images/service-offer-icons/ser-6.png" alt="Icon" width="75" height="75"  class="img-fluid">
@@ -400,7 +400,7 @@ $page = 'home';
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                     <div class="testi-auth-main">
                         <div class="testi-auth-images">
                             <div class="testi-images-items">
@@ -454,7 +454,7 @@ $page = 'home';
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
                     <div class="testi-auth-content">
                         <div class="testi-content-items">
                             <div class="testi-content-main">
